@@ -1,0 +1,4 @@
+_app.i18n.en.meta = 
+  title: 'Boris - Server Guard'
+  description: 'Boris is watching out your servers and websites availability, uptime, response time, resources usage (RAM, HDD, CPU and etc.), DNS, whois CRC, SSL (TLS) CRC, SSL (TLS) and domain expiration date control, with instant alerts about all fraud and suspicious activity - to your phone and PC via SMS and mail'
+  keywords: 'crc, server, website, protection, guard, ssl, whois, domain, content crc, analytics, analysis, server health, monitoring, expiration, expiration date, ssl expiration, domain expiration, tls crc, control, watch, watch out, certificate'
