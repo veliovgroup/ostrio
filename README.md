@@ -19,7 +19,7 @@ Thank you for visiting our repository, here you can:
      5. Wait for our response
 
 ### If you aren't familiar with Git and GitHub
-Your's emails always welcome at <a href='h&#101;&#108;p&#064;&#111;s&#116;&#114;&#046;io'>our mailbox</a>.
+Your's emails always welcome at <a href='mailto:h&#101;&#108;p&#064;&#111;s&#116;&#114;&#046;io'>our mailbox</a>.
 You may email us about suggestion, improvement, translations mistakes or anything else
  - You may DM or mention [@VeliovGroup](https://twitter.com/VeliovGroup) on Twitter
  - If you have GitHub account or ready to create one - you may [submit an issue](https://github.com/VeliovGroup/boris/issues) via GitHub
