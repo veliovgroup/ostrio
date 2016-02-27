@@ -21,7 +21,7 @@ Thank you for visiting our repository, here you can:
      5. Wait for our response
 
 ### If you aren't familiar with Git and GitHub
-Your's emails always welcome at <a href='mailto:h&#101;&#108;p&#064;&#111;s&#116;&#114;&#046;io'>our mailbox</a>.
-You may email us about suggestion, improvement, translations mistakes or anything else
- - You may DM or mention [@VeliovGroup](https://twitter.com/VeliovGroup) on Twitter
- - If you have GitHub account or ready to create one - you may [submit an issue](https://github.com/VeliovGroup/ostrio/issues) via GitHub
+Yours emails are always welcome at <a href='mailto:h&#101;&#108;p&#064;&#111;s&#116;&#114;&#046;io'>our mailbox</a>.
+ - You can send an email to us with suggestion, improvement, translations mistakes or anything else
+ - If you are using Twitter, then DM or mention [@ServerGuard](https://twitter.com/ServerGuard) within your question
+ - If you have GitHub account or ready to create one, then you can [submit an issue](https://github.com/VeliovGroup/ostrio/issues) via GitHub
