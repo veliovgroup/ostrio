@@ -18,5 +18,5 @@ _app.i18n.settings =
   #   'name': 'Deutsch'
   # 'zh':
   #   'code': 'zh'
-  #   'isoCode': 'zh-Hans'
+  #   'isoCode': 'zh-CN'
   #   'name': '中文'
