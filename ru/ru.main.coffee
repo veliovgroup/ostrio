@@ -10,7 +10,7 @@ _app.i18n.ru.main =
   contacts: 'контакты'
   contactUs: 'Обратная связь'
   content: 'контент'
-  copyRight: -> "© #{new Date().getFullYear()} <a href='https://veliovgroup.com' itemprop='url'><span itemprop='name'>Veliov Group LLC.</span></a> Все права защищены."
+  copyRight: -> "© #{new Date().getFullYear()} <a target='_blank' href='https://veliovgroup.com' itemprop='url'><span itemprop='name'>Veliov Group LLC.</span></a> Все права защищены."
   date: 'дата'
   docs: 'Документация'
   email: 'email'

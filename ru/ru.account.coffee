@@ -54,12 +54,12 @@ _app.i18n.ru.account =
         title: '"Whois" запись'
       expiresAt:
         title: "Окончание регистрации домена"
-        annotation: "Boris напомнит Вам за месяц, неделю и сутки до даты окончания регистрации домена"
+        annotation: "Ostr.io напомнит Вам за месяц, неделю и сутки до даты окончания регистрации домена"
         notDetected: "К сожалению информация о дате окончания регистрации домена не может быть получена."
       ssl:
         title: "SSL сертификат"
         valid_to:
-          annotation: "Boris отправит Вам уведомление об изменении отпечатка сертификата и окончании его срока действия.<br />За месяц, неделю и сутки до даты окончания действия сертификата"
+          annotation: "Ostr.io отправит Вам уведомление об изменении отпечатка сертификата и окончании его срока действия.<br />За месяц, неделю и сутки до даты окончания действия сертификата"
         notDetected: "К сожалению данные о SSL (TLS) сертификате не могут быть получены."
         incorrect: "Проверьте корректность настроек SSL сертификата. Домен не указан в сертификате."
     plan:
@@ -91,7 +91,7 @@ _app.i18n.ru.account =
       annotation: 'Укажите что Ваш сайт надежно защищен!<br /> Подберите один из бейджей для Вашего сайта, подвал сайта - отличное место для бейджа'
   websites:
     noWebsites: 'У Вас нет серверов'
-    title: 'Ваши сервера'
+    title: 'Cервера'
     verify: 'Подтвердить'
     notVerified: 'Права владения сервером не подтверждены'
     verificationCode: 
@@ -115,7 +115,7 @@ _app.i18n.ru.account =
         metatag: 'meta-тег'
         dns: 'DNS TXT запись'
         file: 'Файл'
-        fileAn: 'Добавьте/Создайте файл с именем "<span class="selectable">boris-domain.txt</span>" в корневом каталоге web-сервера, со следующим содержанием:'
+        fileAn: 'Добавьте/Создайте файл с именем "<span class="selectable">ostrio-domain.txt</span>" в корневом каталоге web-сервера, со следующим содержанием:'
         headers: 'Заголовок ответа'
         headersAn: 'Этот способ удобен когда у Вас есть доступ только к web-серверу.'
     remove:
@@ -130,6 +130,12 @@ _app.i18n.ru.account =
       add: 'Пополнить баланс'
   settings: 
     title: 'Настройки аккаунта'
+    contacts:
+      title: 'Контакты'
+    referral:
+      title: 'Пригласить друга'
+    passwd:
+      title: 'Управление паролем'
     locale: 'Язык аккаунта'
     search:
       phone:
@@ -171,7 +177,7 @@ _app.i18n.ru.account =
       #   title: 'Twitter'
       #   ph:    '@username'
       #   annotation: 'Twitter account might be used for Direct Messages'
-      #   verify: 'Follow @BorisGuard on twitter by {{address}} to confirm this notifications'
+      #   verify: 'Follow @ServerGuard on twitter by {{address}} to confirm this notifications'
       submit: 'Добавить'
       errors:
         '400':

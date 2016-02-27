@@ -1,6 +1,6 @@
 _app.i18n.en.beta = 
   main:
-    notice: 'Hey there! Welcome to Boris the Guard. <b>Currently we are in <em class="bolder">ß</em>-testing</b>. <em>Click here to read more</em>'
+    notice: 'Hey there! Welcome to ostr.io. <strong>Currently we are in <em class="bolder">ß</em>-testing</strong>. <em>Click here to read more</em>'
   form:
     success: 'Data successfully reported, thank you'
     error:   'Please fill the message (between 25 and 2000 symbols) and check box below to confirm you\'re human'

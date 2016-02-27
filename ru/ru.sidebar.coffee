@@ -4,4 +4,7 @@ _app.i18n.ru.sidebar =
   notifications: 'Уведомления'
   billing: 'Баланс'
   settings: 'Настройки'
+  contacts: 'Контакты'
+  referral: 'Пригласи друга'
+  passwd: 'Сменить пароль'
   logout: 'Выход'

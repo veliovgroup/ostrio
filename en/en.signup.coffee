@@ -15,3 +15,4 @@ _app.i18n.en.signup =
     '401':
       recaptcha: 'You\'re not a human. If you believe here is some mistake - try later and/or from another device/network, or contact us.'
     '404': 'No user registered with email "<em>{{email}}</em>"'
+    '500': 'Whoops... Something is went wrong. Please contact us, and try again later.'

@@ -54,12 +54,12 @@ _app.i18n.en.account =
         title: '"Whois" information'
       expiresAt:
         title: "Domain expiration"
-        annotation: "Boris will notify you one month, a week and a day before domain name will expire"
+        annotation: "Ostr.io will notify you one month, a week and a day before domain name will expire"
         notDetected: "Unfortunately, expiration date is not detected."
       ssl:
         title: "SSL Certificate"
         valid_to:
-          annotation: "Boris will notify you about changes of fingerprint, and soon expiration.<br />One month, a week and a day before SSL certificate expiration date"
+          annotation: "Ostr.io will notify you about changes of fingerprint, and soon expiration.<br />One month, a week and a day before SSL certificate expiration date"
         notDetected: "Unfortunately, SSL certificate is not detected."
         incorrect: "Attention! Please check your SSL certificate setup. Your domain is not listed as a subject."
     plan:
@@ -91,7 +91,7 @@ _app.i18n.en.account =
       annotation: 'Let \'em know about your server protection!<br /> Add one of the badges below to your website, footer of every page is a good place for it'
   websites:
     noWebsites: 'You have no servers, yet'
-    title: 'Your servers'
+    title: 'Servers'
     verify: 'Verify'
     notVerified: 'Ownership is not confirmed'
     verificationCode: 
@@ -115,7 +115,7 @@ _app.i18n.en.account =
         metatag: 'Via meta-tag'
         dns: 'Via DNS TXT record'
         file: 'Via file'
-        fileAn: 'Add/Create file "<span class="selectable">boris-domain.txt</span>" in root of your web-server, with next content:'
+        fileAn: 'Add/Create file "<span class="selectable">ostrio-domain.txt</span>" in root of your web-server, with next content:'
         headers: 'Via response header'
         headersAn: 'This is useful when you have access only to web-server, just set this custom header and you\'re good to go'
     remove:
@@ -130,6 +130,12 @@ _app.i18n.en.account =
       add: 'Add credit'
   settings: 
     title: 'Profile settings'
+    contacts:
+      title: 'Contacts'
+    referral:
+      title: 'Referral Program'
+    passwd:
+      title: 'Manage your password'
     locale: 'Contact locale'
     search:
       phone:
@@ -171,7 +177,7 @@ _app.i18n.en.account =
       #   title: 'Twitter'
       #   ph:    '@username'
       #   annotation: 'Twitter account might be used for Direct Messages'
-      #   verify: 'Follow @BorisGuard on twitter by {{address}} to confirm this notifications'
+      #   verify: 'Follow @ServerGuard on twitter by {{address}} to confirm this notifications'
       submit: 'Add'
       errors:
         '400':

@@ -9,7 +9,7 @@ _app.i18n.en.confirmation =
     error: 'We can\'t confirm this contact or it was already confirmed, please try again'
   phone:
     link: 'Please follow next link, to confirm your phone number: {{link}}'
-    code: 'Boris the Guard confirmation code: {{code}}'
+    code: 'Ostr.io confirmation code: {{code}}'
     errors: 
       '400': 'Code typed incorrectly (typo)'
       '403': 'Wrong code provided'

@@ -1,11 +1,11 @@
 _app.i18n.en.docs = 
-  title: 'Boris the Guard: Documentation'
+  title: 'Documentation'
   meta:
-    description: 'How to properly use Boris the Guard? How to receive SMS messages about SSH logins or server downtime? How to monitor server load and prevent longer website response time?'
+    description: 'How to properly use ostr.io? How to receive SMS messages about SSH logins or server downtime? How to monitor server load and prevent longer website response time?'
   basics:
     title: 'Service Explained'
     text: """
-    Boris the Guard is a web real-time application. The main purpose is protect servers and websites from potential risks, like, but not limited to: downtime, longer response time and suspicious activity and data integrity breach. The method to prevent such cases is data collection, control and analysis, and immediate notifications about accidents to responsible persons.
+    Ostr.io is a web real-time application. The main purpose is protect servers and websites from potential risks, like, but not limited to: downtime, longer response time and suspicious activity and data integrity breach. The method to prevent such cases is data collection, control and analysis, and immediate notifications about accidents to responsible persons.
     """
 
   forWhom:
@@ -28,7 +28,7 @@ _app.i18n.en.docs =
     Our product-manager and client will receive message about every 10,000 registered user, and administrator will receive message once endpoint become unavailable or respond for too long time.
 
     #### Case 2
-    When you're working alone or in terms of small company - often you just don't have time to check, monitor and manage all yours and client's servers, hostings and websites. Especially when someone moving to you with already formed infrastructure, old code and databases. Boris is coming with help here, with quick setup all systems is up, running and monitored.
+    When you're working alone or in terms of small company - often you just don't have time to check, monitor and manage all yours and client's servers, hostings and websites. Especially when someone moving to you with already formed infrastructure, old code and databases. Ostr.io is coming with help here, with quick setup all systems is up, running and monitored.
     """
 
   how:
@@ -54,11 +54,11 @@ _app.i18n.en.docs =
   preventDomainHijacking:
     title: 'Prevent domain hijacking'
     text: """
-    By adding domain name to Boris you can instantly start monitoring primary IP addresses, SSL (TLS) certificate, DNS and Whois records. Set up notifications about all changes in IP(s), DNS and Whois for all responsible persons. This is becoming very useful for popular case - when domain name is managed by its owner, but servers, websites, DBs and etc. is managed and operating by third IT-company.
+    By adding domain name to Ostr.io you can instantly start monitoring primary IP addresses, SSL (TLS) certificate, DNS and Whois records. Set up notifications about all changes in IP(s), DNS and Whois for all responsible persons. This is becoming very useful for popular case - when domain name is managed by its owner, but servers, websites, DBs and etc. is managed and operating by third IT-company.
 
     Changes and suspicious activity in IP(s), SSL (TLS) certificate, DNS and Whois records is first indicator of domain hijacking and fraud activity. To prevent such cases we highly recommend to monitor this data, and set up notifications for all responsible persons, this feature is 100% free. The main difference between "Free" and "Paid" plan is ability to send notifications not only via email, but SMS. SMS notifications is a way to take action urgently, to prevent all fraud activities.
 
-    Always remember to extend your domain names registration period and re-issue SSL certificates. And Boris will help you with it. Set notifications for expiration date and Boris will send you and all required contacts notifications a moth, a week and a day before domain will expire. For domains with SSL (TLS) certificates the fingerprint CRC and expiration date notifications is available too. For more info about SSL (TLS) certificates monitoring - see below.
+    Always remember to extend your domain names registration period and re-issue SSL certificates. And Ostr.io will help you with it. Set notifications for expiration date and Ostr.io will send you and all required contacts notifications a moth, a week and a day before domain will expire. For domains with SSL (TLS) certificates the fingerprint CRC and expiration date notifications is available too. For more info about SSL (TLS) certificates monitoring - see below.
     """
 
   SSLcertificate:
@@ -66,13 +66,13 @@ _app.i18n.en.docs =
     text: """
     It's easy to miss an expiration date of SSL (TLS) certificate. It's very important to re-issue new certificate in proper time, as this may cause big traffic cancellation on your resources.
 
-    To enable SSL (TLS) certificate CRC monitoring you have to prefix your server address with `https` protocol (scheme) when adding a new server, like: `https://example.com`. Once SSL certificate is fetched and validated - Boris will regularly check its fingerprint. Also Boris will notify about coming expiration date - a month, a week and a day before SSL (TLS) certificate will expire.
+    To enable SSL (TLS) certificate CRC monitoring you have to prefix your server address with `https` protocol (scheme) when adding a new server, like: `https://example.com`. Once SSL certificate is fetched and validated - Ostr.io will regularly check its fingerprint. Also Ostr.io will notify about coming expiration date - a month, a week and a day before SSL (TLS) certificate will expire.
     """
 
   domainExpiration:
     title: 'Notifications about domain expiration'
     text: """
-    If expiration date is available in Whois record (*available on 98% domains*). You're able to set notifications for all responsible persons (*primary useful for domain owner*) about coming expiration date. Boris will send notifications a month, a week and a day before domain will expire.
+    If expiration date is available in Whois record (*available on 98% domains*). You're able to set notifications for all responsible persons (*primary useful for domain owner*) about coming expiration date. Ostr.io will send notifications a month, a week and a day before domain will expire.
 
     It is important to extend your domain registration period, as once its expired - domain may be taken by anyone. And there is no chance to get it back.
     """
@@ -99,7 +99,7 @@ _app.i18n.en.docs =
     text: """
     To add yours, colleague, client or friend email address go to "*Settings*" (under your account name dropdown). Under "*Contacts*" area click on "*Add New Email*" type-in or paste email address you want to add, then select preferred language, this language will be used for all notifications.
 
-    Next, follow a link in received letter from Boris, to confirm email address. After email address is confirmed, this new contact can be used for notifications.
+    Next, follow a link in received letter from Ostr.io, to confirm email address. After email address is confirmed, this new contact can be used for notifications.
     """
 
   addPhone:
@@ -123,9 +123,9 @@ _app.i18n.en.docs =
     Next, you have to confirm server ownership, for this purpose you have next options:
 
     - __Meta-Tag__ - Classic meta-tag added into head section of your main (index) page or to all pages. Useful when you have access only to server's file system;
-    - __File__ - Drop-in file in a root path of your website, file's content must start with `boris-domain: `. Useful when you have access only to FTP;
-    - __DNS-record__ - Add TXT record to your primary domain name (`@`). Record must start with `boris-domain: `. Useful when you have access only to DNS records management;
-    - __Response Header__ - Add custom response header. Header key must be `x-boris-domain`. Useful when you have access only to web- or proxy-server.
+    - __File__ - Drop-in file in a root path of your website, file's content must start with `Ostr.io-domain: `. Useful when you have access only to FTP;
+    - __DNS-record__ - Add TXT record to your primary domain name (`@`). Record must start with `Ostr.io-domain: `. Useful when you have access only to DNS records management;
+    - __Response Header__ - Add custom response header. Header key must be `x-Ostr.io-domain`. Useful when you have access only to web- or proxy-server.
 
     More info with code examples can be found on confirmation page after adding server. Do not remove confirmation details after server is confirmed, this will cause server cancellation, unless confirmation details added back.
     """
@@ -137,7 +137,7 @@ _app.i18n.en.docs =
 
     - __Avoid cached results__ - To avoid cached results you may use special keyword `{{rand}}` (with double curly braces). This placeholder will be replaced with random string. Example: `/path?purge={{rand}}`;
     - __Fetch as a bot__ - If your application is depend on hashbang `#!`, we suggest to use next query: `/path?_escaped_fragment_=`;
-    - __Protected Endpoints__ - Boris supports user/password-protected endpoints, and recommend it, especially for *custom data*;
+    - __Protected Endpoints__ - Ostr.io supports user/password-protected endpoints, and recommend it, especially for *custom data*;
     - __Content CRC__ - Get notifications about all content changes. This is useful when you need to protect sensitive public data for you business. For example page with your official contacts, or license;
     - __Response Time__ - Analysis and Monitoring. Get notification about delayed and long-running responses from your server;
     - __Response Code__ - Get notified about changes in endpoint's response code;
@@ -163,7 +163,7 @@ _app.i18n.en.docs =
   json:
     title: 'Custom endpoint: JSON'
     text: """
-    To monitor and analyze custom data returned from your endpoint Boris offers support for JSON-data. Before adding JSON-endpoint in Boris - this endpoint has to be up and running on your end. Endpoint may be user/password-protected (recommended).
+    To monitor and analyze custom data returned from your endpoint Ostr.io offers support for JSON-data. Before adding JSON-endpoint in Ostr.io - this endpoint has to be up and running on your end. Endpoint may be user/password-protected (recommended).
 
     __Strict rules:__
 
@@ -223,7 +223,7 @@ _app.i18n.en.docs =
   xml:
     title: 'Custom endpoint: XML'
     text: """
-    To monitor and analyze custom data returned from your endpoint we offer support for XML-data. Before adding XML-endpoint in Boris - this endpoint has to be up and running on your end. Endpoint may be user/password-protected (recommended).
+    To monitor and analyze custom data returned from your endpoint we offer support for XML-data. Before adding XML-endpoint in Ostr.io - this endpoint has to be up and running on your end. Endpoint may be user/password-protected (recommended).
 
     __Strict rules:__
 
