@@ -37,6 +37,7 @@ _app.i18n.en.main =
   saved: 'Saved'
   send: 'Send'
   sending: 'sending...'
+  set: 'Set'
   server: 'server'
   showContent: 'Show Content'
   showMessages: 'Show Messages'

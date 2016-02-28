@@ -52,10 +52,15 @@ _app.i18n.en.account =
         title: 'DNS records'
       whois:
         title: '"Whois" information'
+        notFound: '"Whois" information is not available'
       expiresAt:
         title: "Domain expiration"
         annotation: "Ostr.io will notify you one month, a week and a day before domain name will expire"
         notDetected: "Unfortunately, expiration date is not detected."
+        ph: 'yyyy-mm-dd (1999-12-31)'
+        addManually: 'Set expiration date manually'
+        setManually: 'If expiration date is not correct, you can <a href="#" id="setExpiresAtMannually">set expiration date manually</a>'
+        wrongDate: 'Date is malformed. Required format: yyyy-mm-dd (1999-12-31)'
       ssl:
         title: "SSL Certificate"
         valid_to:

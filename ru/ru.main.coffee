@@ -37,6 +37,7 @@ _app.i18n.ru.main =
   saved: 'Сохранено'
   send: 'Отправить'
   sending: 'отправляю...'
+  set: 'Установить'
   server: 'сервер'
   showContent: 'Показать контент'
   showMessages: 'Показать сообщения'
