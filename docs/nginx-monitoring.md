@@ -1,0 +1,92 @@
+Basic stats for Nginx
+======
+
+This tutorial will show how to collect Nginx real-time connection metrics, like `active`, `reading`, `writing`, `waiting`. Including protection with simple `auth_basic`.
+
+__Do not forget to change value in between `<`` and `>` symbols to your own value!__
+
+#### First create
+```shell
+# Go to nginx directory
+cd /etc/nginx
+
+# There is various online websites
+# where you can easily generate 
+# login / password pair
+# if you don't trust them
+# use htpasswd CLI as shown below
+htpasswd .htpasswd <username>
+# You will be asked to prompt a password for the user.
+```
+
+#### Nginx configuration
+Lets assume you're editing `/etc/nginx/sites-available/default`
+```shell
+# Go to sites-available directory
+cd /etc/nginx/sites-available/
+# Edit default file, we using nano in example below, you;re free to use your favorite editor
+nano default
+```
+
+Configuration itself:
+```nginx
+server {
+  listen 80 default_server deferred;
+  server_name ngstat.example.com;
+
+  location / {
+    # Return empty response or do something else here
+    return 204;
+  }
+
+  location ~ ^/ngstat/ {
+    # Use auth_basic with .htpasswd created above
+    auth_basic "Show your pass please";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+
+    try_files $uri @stat;
+  }
+
+  location @stat {
+    # Internal redirect
+    rewrite ^(.*)$ /__$1 last;
+  }
+
+  # Return as JSON
+  location /__/ngstat/json {
+    # This block is accessible only
+    # after successful authentication
+    internal;
+    default_type "application/json";
+    return 200 "{\"active\":$connections_active, \"`\":$connections_reading, \"writing\":$connections_writing, \"waiting\":$connections_waiting}";
+  }
+
+  # Return as XML
+  location /__/ngstat/xml {
+    # This block is accessible only
+    # after successful authentication
+    internal;
+    default_type "text/xml";
+    return 200 "<data><active>$connections_active</active><reading>$connections_reading</reading><writing>$connections_writing</writing><waiting>$connections_waiting</waiting></data>";
+  }
+}
+```
+
+#### Make sure configuration syntax is valid
+```shell
+service nginx configtest
+```
+
+#### Reload configuration to apply changes
+```shell
+service nginx reload
+```
+
+#### Test endpoints
+Next URLs will ask for login and password and return Nginx stats upon successful authentication:
+```
+http://ngstat.example.com/ngstat/json
+http://ngstat.example.com/ngstat/xml
+```
+
+After steps above is done [add endpoint to Health Monitoring](https://ostr.io/service/health).
