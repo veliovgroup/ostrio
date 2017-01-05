@@ -89,4 +89,14 @@ http://ngstat.example.com/ngstat/json
 http://ngstat.example.com/ngstat/xml
 ```
 
-After steps above is done [add endpoint to Health Monitoring](https://ostr.io/service/health).
+Add endpoint at [ostr.io](https://ostr.io):
+ 1. Go to [Servers Health](https://ostr.io/service/health)
+ 2. Click on "*Add Endpoint*"
+ 3. To select server type-in its name
+ 4. Select "*HTTP*" (or *HTTPS*) in "*Protocol*" drop-down list
+ 5. Select desired "*Check Frequency*"
+ 6. Click on "*Add authentication*"
+ 7. Enter username provided to `htpasswd` command
+ 8. Enter password provided to `htpasswd` command
+ 9. Click on "*Add*" button
+ 10. Done!
