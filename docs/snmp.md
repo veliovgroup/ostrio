@@ -27,7 +27,7 @@ Collected data and its OIDs (*you may allow/deny any of list below to fit your n
 ## Install and configure SNMP
 *All installation and setup instructions is given for Debian/Ubintu Linux distributions.* Instructions for other systems can be easily googled.
 
-#### Installation
+### Installation
 ```shell
 # Install snmpd
 apt-get install snmpd
@@ -87,7 +87,7 @@ load   12 10 5
 master          agentx
 ```
 
-#### SNMP daemon settings:
+### SNMP daemon settings:
 ```shell
 nano /etc/default/snmpd
 ```
