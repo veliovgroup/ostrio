@@ -3,13 +3,15 @@ Let's Encrypt - Free SSL (TLS) certificates
 
 In order to make World Wide Web safer and faster, we strongly recommend to use HTTPS protocol for your website, and add H2 protocol support to your web-server.
 
-This tutorial will show how to use service by Let's Encrypt. Which let's you to generate fully qualified SSL (TLS) certificate for free.
+This tutorial will show how to use [Let's Encrypt](https://letsencrypt.org) project. Which let's you to generate fully qualified SSL (TLS) certificate for free.
 
-*Examples is given for Debian/Ubuntu Linux an Nginx*
+Notes: 
+ - Examples is given for Debian/Ubuntu Linux and Nginx. Instructions for other platforms can be easily googled
+ - We are not somehow affiliated with "Let's Encrypt", we just love to use this project. You can [support](https://letsencrypt.org/donate/) "Let's Encrypt" project if you like it too
 
-It is recommended to install certificates via [Certbot](https://certbot.eff.org) app.
 
 #### Install Certbot:
+It is recommended to install certificates via [Certbot](https://certbot.eff.org) app.
 ```shell
 # Debian 8
 apt-get install certbot -t jessie-backports
