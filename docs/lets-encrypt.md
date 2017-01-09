@@ -94,12 +94,12 @@ server {
 }
 ```
 
-#### Enable example.conf
+#### Enable example.conf:
 ```shell
 ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
 ```
 
-#### Enable http2 (H2)
+#### Enable http2 (H2):
 ```nginx
 # create or edit /etc/nginx/sites-available/default
 server {
@@ -117,7 +117,7 @@ server {
 }
 ```
 
-#### Generate `dhparam`
+#### Generate `dhparam`:
 ```shell
 # Go to /etc/nginx/ssl/
 mkdir -p /etc/nginx/ssl/
@@ -128,7 +128,7 @@ cd /etc/nginx/ssl/
 openssl dhparam -out dhparam.pem 4096
 ```
 
-#### Set permissions
+#### Set permissions:
 Use `chown` to set files owner, usually `www-data` for Nginx
 ```shell
 chown -R www-data:www-data /etc/nginx
@@ -145,7 +145,7 @@ service nginx configtest
 nginx -t
 ```
 
-#### Restart Nginx to apply changes
+#### Restart Nginx to apply changes:
 ```shell
 service nginx restart
 ```
