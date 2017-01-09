@@ -2,7 +2,7 @@ Monitoring via SNMP
 ======
 
 
-### Why SNMP?
+## Why SNMP?
 Monitoring via SNMP is very useful for double durability. While server is down, build-in server's tools for notifying administrator about high server usage, low HDD space, fraud logins and connectivity issues may not work. In mind of double durability ostr.io will check your servers from its end, from outside of your infrastructure, independently. It's better to receive notifications from multiple sources, than none.
 
 SNMP allows to collect data and notify about SSH logins, uptime, high memory (RAM) and CPU consumption, low storage space, hight network traffic.
@@ -24,7 +24,7 @@ Collected data and its OIDs (*you may allow/deny any of list below to fit your n
  - HDD/SSD/RAM/Swap usage (`1.3.6.1.2.1.25.2.3.1.6`)
  - Network Interfaces info (`1.3.6.1.2.1.31.1.1.1`, `1.3.6.1.2.1.2.2.1`)
 
-### Install and configure SNMP
+## Install and configure SNMP
 *All installation and setup instructions is given for Debian/Ubintu Linux distributions.* Instructions for other systems can be easily googled.
 
 #### Installation
@@ -36,8 +36,8 @@ apt-get install snmpd
 nano /etc/snmp/snmpd.conf
 ```
 
-#### Configuration
-__Do not forget to change value in between `<`` and `>` symbols to your own value!__
+### Configuration
+__Do not forget to change value in between `<` and `>` symbols to your own value!__
 ```bash
 # /etc/snmp/snmpd.conf
 # Change 161 to any other random port for more security
@@ -108,12 +108,12 @@ TRAPDRUN=no
 SNMPDOPTS='-Lsd -Lf /dev/null -u snmp -g snmp -I -smux,mteTrigger,mteTriggerConf -p /run/snmpd.pid'
 ```
 
-#### Restart SNMP to apply changes
+### Restart SNMP to apply changes
 ```shell
 service snmpd restart
 ```
 
-#### Check SNMP daemon status
+### Check SNMP daemon status
 ```shell
 service snmpd status # should return OK (active (running))
 ```
