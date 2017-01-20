@@ -3,7 +3,7 @@ Basic stats for Nginx
 
 This tutorial will show how to collect Nginx real-time connection metrics, like `active`, `reading`, `writing`, `waiting`. Including protection with simple `auth_basic`.
 
-__Do not forget to change value in between `<`` and `>` symbols to your own value!__
+__Do not forget to change value in between `<` and `>` symbols to your own value!__
 
 #### First create
 ```shell
@@ -32,7 +32,7 @@ Configuration itself:
 ```nginx
 server {
   listen 80 default_server deferred;
-  server_name ngstat.example.com;
+  server_name example.com;
 
   location / {
     # Return empty response or do something else here
@@ -85,8 +85,8 @@ service nginx reload
 #### Test endpoints
 Next URLs will ask for login and password and return Nginx stats upon successful authentication:
 ```
-http://ngstat.example.com/ngstat/json
-http://ngstat.example.com/ngstat/xml
+http://example.com/ngstat/json
+http://example.com/ngstat/xml
 ```
 
 Add endpoint at [ostr.io](https://ostr.io):
