@@ -1,7 +1,7 @@
 Linux / Security / Basic firewall with iptables
 ======
 
-__NOTE:__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise you may end up with unaccessible server
+__NOTE: IT'S DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise you may end up with unaccessible server
 
 This tutorial will set iptables rules to accept traffic only on `http (80)`, `https (443)` and `ssh (22)` ports. Which is fine setup for most basic applications. Using suggested rules you're free to add more udp/tcp ports on demand.
 
@@ -19,21 +19,28 @@ Now edit exported rules:
 :INPUT ACCEPT [0:0]
 :FORWARD ACCEPT [0:0]
 :OUTPUT ACCEPT [0:0]
+# Allow everything on localhost (loopback)
 -A INPUT -i lo -j ACCEPT
 -A OUTPUT -o lo -j ACCEPT
+
+# Allow all outgoing connections
 -A OUTPUT -j ACCEPT
 
+# Allow all active incoming connection to continue
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+# Allow all active outgoing connection to continue
 -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
+# Drop all INVALID incoming connections
 -A INPUT -m conntrack --ctstate INVALID -j DROP
 
--A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
--A OUTPUT -p tcp --sport 22 -m conntrack --ctstate ESTABLISHED -j ACCEPT
-
+# Main incoming connection rules
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 
+# Drop all other incoming connections
 -A INPUT -j DROP
+# Reject any forwarding
 -A FORWARD -j REJECT
 ```
 
