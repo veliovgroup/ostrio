@@ -42,6 +42,7 @@ Now edit exported rules:
 -A INPUT -j DROP
 # Reject any forwarding
 -A FORWARD -j REJECT
+COMMIT
 ```
 
 To test rules run:
