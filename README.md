@@ -123,6 +123,7 @@
 
 ### Tutorials / Linux
  - [Change timezone](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/change-timezone.md)
+ - [`.bash_profile` tuning](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/bash_profile-tuning.md)
 #### Tutorials / Linux / Users
  - [Change root password](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/root-passwd.md)
  - [Change user password](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/user-passwd.md)
@@ -132,7 +133,6 @@
  - [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
  - [Disable SSH login as root](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
  - [Disable SSH login with password (passwordless authentication), use SSH Keys](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/use-ssh-keys.md)
- - [SSH login fail2ban]()
  - [Use RKHunter (Rootkit Hunter) to scan OS for vulnerabilities]()
- - [Basics with `iptables`]()
+ - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
  - [Backups]()
