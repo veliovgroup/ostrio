@@ -1,20 +1,22 @@
-Linux / Security / Basic firewall with iptables
+Linux / Security / Basic ipv6 firewall with ip6tables
 ======
 
 __NOTE: IT'S DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise you may end up with unaccessible server
 
-This tutorial will set iptables rules to accept traffic only on `http (80)`, `https (443)` and `ssh (22)` ports. Which is fine setup for most basic applications. Using suggested rules you're free to add more udp/tcp ports on demand.
+Use ipv6 setting only if your server has assigned IPv6 address. To check assigned IPv6 addresses use: `/sbin/ifconfig | grep inet6`
 
-See also great article on iptables rules by [Digital Ocean](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands) and [VPS Cheap](https://crm.vpscheap.net/knowledgebase.php?action=displayarticle&id=29)
+This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `https (443)`. Which is fine setup for most basic web applications. Using suggested rules you're free to add more udp/tcp ports on demand.
 
-Start with creating blank iptables file:
+See also great article on ip6tables rules by [linode](https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables).
+
+Start with creating blank ip6tables file:
 ```shell
-iptables-save > /etc/firewall.conf
+ip6tables-save > /etc/firewallv6.conf
 ```
 
 Now edit exported rules:
 ```shell
-# nano /etc/firewall.conf
+# nano /etc/firewallv6.conf
 # You should end up with something like:
 :INPUT ACCEPT [0:0]
 :FORWARD ACCEPT [0:0]
@@ -36,7 +38,6 @@ Now edit exported rules:
 # Main incoming connection rules
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
--A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
 
 # Drop all other incoming connections
 -A INPUT -j DROP
@@ -47,13 +48,13 @@ COMMIT
 
 To test rules run:
 ```shell
-iptables-restore < /etc/firewall.conf
+ip6tables-restore < /etc/firewallv6.conf
 ```
 
 To make created rules persistent, create file `/etc/network/if-up.d/firewall`
 ```shell
 #!/bin/sh
-iptables-restore < /etc/firewall.conf
+ip6tables-restore < /etc/firewallv6.conf
 ```
 
 Make it executable:
