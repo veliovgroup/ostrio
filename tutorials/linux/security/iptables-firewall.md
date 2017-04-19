@@ -61,3 +61,5 @@ Make it executable:
 chmod +x /etc/network/if-up.d/firewall
 ```
 
+### Further reading:
+ - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)

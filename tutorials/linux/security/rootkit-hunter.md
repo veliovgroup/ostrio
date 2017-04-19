@@ -1,4 +1,4 @@
-Linux / Rootkit Hunter (RKHunter)
+Linux / Security / Rootkit Hunter (RKHunter)
 ======
 
  - Reference: [RKHunter project page](http://rkhunter.sourceforge.net/)
@@ -38,3 +38,7 @@ rkhunter -c --enable all --disable none
 ```
 
 Read more detailed setup at [Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-use-rkhunter-to-guard-against-rootkits-on-an-ubuntu-vps)
+
+### Further reading:
+ - [Use Lynis for security audit](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/lynis-security-audit.md)
+ - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
