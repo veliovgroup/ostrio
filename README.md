@@ -133,7 +133,7 @@
  - [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
  - [Disable SSH login as root](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
  - [Disable SSH login with password (passwordless authentication), use SSH Keys](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/use-ssh-keys.md)
- - [Use RKHunter (Rootkit Hunter) to scan OS for vulnerabilities]()
+ - [Use RKHunter (Rootkit Hunter) to scan OS for vulnerabilities](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/rootkit-hunter.md)
  - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
  - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
  - [Backups]()
