@@ -1,5 +1,8 @@
-Let's Encrypt - Free SSL (TLS) certificates
+SSL / Let's Encrypt / Free SSL (TLS) certificates
 ======
+
+In this tutorial we use HTTP for domain ownership validation, as alternative see:
+ - [Validation via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
 
 In order to make World Wide Web safer and faster, we strongly recommend to use HTTPS protocol for your website, and add H2 protocol support to your web-server.
 
@@ -11,16 +14,10 @@ Notes:
 
 
 #### Install Certbot:
-It is recommended to install certificates via [Certbot](https://certbot.eff.org) app.
+Clone Certbot from its [GitHub repository](https://github.com/certbot/certbot)
 ```shell
-# Debian 8
-apt-get install certbot -t jessie-backports
-
-# Debian 7
-wget https://dl.eff.org/certbot-auto
-chmod a+x certbot-auto
-# For more info go to:
-# https://certbot.eff.org/#debianwheezy-nginx
+git clone https://github.com/certbot/certbot.git
+cd certbot
 ```
 
 #### Set Nginx configuration:
@@ -47,11 +44,22 @@ mkdir -p /var/www/example
 # --email admin@example.com <- Email for important notifications
 # -w /var/www/example/ <- Nginx host "root"
 # -d example.com <- Domain name
-certbot-auto certonly --email ceo@veliovgroup.com --webroot -w /var/www/default/ -d 185.48.236.86
+./certbot-auto certonly --email admin@example.com --webroot -w /var/www/example/ -d example.com -d www.example.com
 
 # This command will return
 # path to directory with certificates
 # like: /etc/letsencrypt/live/example.com/
+```
+
+#### Generate `dhparam`:
+```shell
+# Go to /etc/nginx/ssl/
+mkdir -p /etc/nginx/ssl/
+cd /etc/nginx/ssl/
+
+# Generate dhparam
+# Note: it may take up to few hours
+openssl dhparam -out dhparam.pem 4096
 ```
 
 #### Update Nginx configuration:
@@ -59,7 +67,7 @@ certbot-auto certonly --email ceo@veliovgroup.com --webroot -w /var/www/default/
 # /etc/nginx/sites-available/example.conf
 server{
   listen 80;
-  listen [::]:80 ipv6only=on;
+  listen [::]:80;
   server_name example.com;
 
   # Redirect all requests to HTTPS
@@ -117,17 +125,6 @@ server {
 
   return 444;
 }
-```
-
-#### Generate `dhparam`:
-```shell
-# Go to /etc/nginx/ssl/
-mkdir -p /etc/nginx/ssl/
-cd /etc/nginx/ssl/
-
-# Generate dhparam
-# Note: it may take up to few hours
-openssl dhparam -out dhparam.pem 4096
 ```
 
 #### Set permissions:

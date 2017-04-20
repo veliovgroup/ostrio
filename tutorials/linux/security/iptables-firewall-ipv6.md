@@ -39,6 +39,9 @@ Now edit exported rules:
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 
+# Allow everything on link-local (interface)
+-A INPUT -s fe80::/10 -j ACCEPT
+
 # Drop all other incoming connections
 -A INPUT -j DROP
 # Reject any forwarding

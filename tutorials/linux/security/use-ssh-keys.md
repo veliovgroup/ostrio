@@ -97,9 +97,18 @@ ssh -i ~/.ssh/my-app-proj username@host -o PubkeyAuthentication=no
 ```
 
 ### Login with password (mac os)
-If for any reason you would like to force login with password, use `-o PubkeyAuthentication=no` flag:
+If for any reason you would like to force login with password, use `-o PubkeyAuthentication=no` and/or `-o PreferredAuthentications="password"` flags:
 ```shell
 ssh username@host -o PubkeyAuthentication=no
+# or
+ssh username@host -o PreferredAuthentications="password"
+# or use both flags:
+ssh username@host -o PreferredAuthentications="password" -o PubkeyAuthentication=no
+```
+
+If you're getting "Too many authentication failures" error, try to use `-o IdentitiesOnly=yes` flag:
+```shell
+ssh username@host -o IdentitiesOnly=yes
 ```
 
 Further reading:

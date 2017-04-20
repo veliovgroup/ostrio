@@ -35,7 +35,7 @@
  - [Build "uncacheable" path to endpoint, prevent cached results]()
  - [HTTP(S) Monitoring with web-authentication]()
  - [Nginx stats and usage Monitoring]()
- - [Apache stats and usage Monitoring]()
+<!--  - [Apache stats and usage Monitoring]()
  - [MongoDB stats and usage Monitoring]()
  - [PHP stats and usage Monitoring]()
  - [Node.js stats and usage Monitoring]()
@@ -54,7 +54,7 @@
  - Custom: [Server stats Monitoring with PHP]()
  - Custom: [JSON Endpoint Monitoring]()
  - Custom: [XML Endpoint Monitoring]()
- - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]()
+ - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]() -->
 
 ### Ostr.io / Web-CRON
  - [Introduction]()
@@ -68,7 +68,7 @@
  - [Proxy injections]()
  - [gzip compressions]()
  - [Optimization]()
- - [Fine tune up]()
+ - [Fine tuning]()
  - [Create login/password protected path]()
  - [Security & Protection]()
  - [Enable WebSockets Support]()
@@ -85,41 +85,41 @@
 
 #### Tutorials / MongoDB / Performance & Maintenance
  - [Create ReplicaSet]()
- - [Create OpLog]()
+ - [Use OpLog]()
 
 ### Tutorials / MongoDB / Other
  - [Self-destroying records, TTL]()
 
 ### Tutorials / SSL/TLS certificates
- - [Free letsencrypt certificate]()
- - [Verify letsencrypt certificate via DNS]()
+ - [Free letsencrypt certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md)
+ - [Verify letsencrypt certificate via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
  - [Install SSL/TLS certificate to Nginx]()
- - [Install SSL/TLS certificate to Apache]()
+ <!-- - [Install SSL/TLS certificate to Apache]() -->
 
-### Tutorials / Website
+<!-- ### Tutorials / Website
 ### Tutorials / Website / Security
  - [Basic Security Check-list]()
  - [Google reCAPTCA]()
- - [Advanced Google reCAPTCHA integration]()
+ - [Advanced Google reCAPTCHA integration]() -->
 
-### Tutorials / Website / Visitors Analytics
+<!-- ### Tutorials / Website / Visitors Analytics
  - [Ostr.io Analytics]()
  - [Google Analytics]()
- - [Yandex Metrika]()
+ - [Yandex Metrika]() -->
 
-### Tutorials / Website / Development
+<!-- ### Tutorials / Website / Development
  - [Service Workers - Build off-line website]()
  - [Service Workers - App install banner]()
  - [Service Workers - Standalone App]()
  - [favicon - for all devices and browsers]()
- - [robots.txt]()
+ - [robots.txt]() -->
 
-### Tutorials / Website / Meteor.js
- - [Build simple off-line application]()
+<!-- ### Tutorials / Website / Meteor.js
+ - [Build simple off-line application]() -->
 
-### Tutorials / CDN
+<!-- ### Tutorials / CDN
  - [CloudFlare]()
- - [Advanced security with CloudFlare]()
+ - [Advanced security with CloudFlare]() -->
 
 ### Tutorials / Linux
  - [Change timezone](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/change-timezone.md)
@@ -134,6 +134,7 @@
  - [Disable SSH login as root](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
  - [Disable SSH login with password (passwordless authentication), use SSH Keys](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/use-ssh-keys.md)
  - [Use RKHunter (Rootkit Hunter) to scan OS for vulnerabilities](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/rootkit-hunter.md)
+ - [Use Lynis for security audit](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/lynis-security-audit.md)
  - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
  - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
  - [Backups]()
