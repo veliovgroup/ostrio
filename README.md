@@ -80,12 +80,13 @@
 #### Tutorials / MongoDB / Security
  - [Run MongoDB locally, prevent external access]()
  - [Change default ports]()
- - [Use SSL certificates]()
+ - [Use SSL certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/use-ssl-http-encryption.md)
  - [Protect database with password]()
 
 #### Tutorials / MongoDB / Performance & Maintenance
- - [Create ReplicaSet]()
- - [Use OpLog]()
+ - [Create Single Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/single-server-replica-set.md)
+ - [Create Multiple (Custer) Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
+ - [Use OpLog](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
 
 ### Tutorials / MongoDB / Other
  - [Self-destroying records, TTL]()
@@ -93,7 +94,7 @@
 ### Tutorials / SSL/TLS certificates
  - [Free letsencrypt certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md)
  - [Verify letsencrypt certificate via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
- - [Install SSL/TLS certificate to Nginx]()
+ <!-- - [Install SSL/TLS certificate to Nginx]() -->
  <!-- - [Install SSL/TLS certificate to Apache]() -->
 
 <!-- ### Tutorials / Website
