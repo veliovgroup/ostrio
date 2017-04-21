@@ -61,7 +61,8 @@ replication:
   replSetName: rs0
 ```
 
-### 6. On __one__ server generate shared auth key for secure communication between Replica Set members ([more info](https://docs.mongodb.com/v3.2/tutorial/enforce-keyfile-access-control-in-existing-replica-set/)):
+### 6. On __one__ server generate shared auth key:
+For secure communication between Replica Set members ([more info](https://docs.mongodb.com/v3.2/tutorial/enforce-keyfile-access-control-in-existing-replica-set/)):
 ```shell
 openssl rand -base64 741 > /data/mongo/key
 chown mongodb:mongodb /data/mongo/key
@@ -73,7 +74,8 @@ chmod 400 /data/mongo/key
 cat /data/mongo/key
 ```
 
-### 7. On __each__ server create CRON job to start MongoDB as `mongodb` user (`crontab -u mongodb -e`):
+### 7. On __each__ server create CRON job:
+To start MongoDB as `mongodb` user (`crontab -u mongodb -e`):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod.conf --fork
 ```
@@ -109,26 +111,29 @@ var conf = {
 rs.initiate(conf)
 ```
 
-### 11. Define PRIMARY member
+### 11. Define PRIMARY member:
 Next steps should be performed only on PRIMARY member. To find out which member is primary, run:
 ```shell
 # Mongo Shell
 rs.status()
 ```
 
-### 12. On PRIMARY: Create `admin` user with `root` privileges:
+### 12. On PRIMARY: Create `admin` user:
+With `root` privileges:
 ```shell
 # Mongo Shell
 use admin
 db.createUser({user:"admin", pwd:<password>, roles:[{role:"root", db:"admin"}]})
 ```
 
-### 13. On __each__ server update CRON job to start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
+### 13. On __each__ server update CRON job:
+To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod.conf --auth --fork
 ```
 
-### 14. On __each__ server add next lines into each configuration of Replica Set members: 
+### 14. On __each__ server add next lines:
+Into MongoDB configuration file: 
 ```yaml
 # nano /etc/mongod.conf
 security:
@@ -137,7 +142,8 @@ security:
 
 ### 15. Reboot the machine
 
-### 16. On PRIMARY: Create user with `readWrite` permissions for db of your app (*you will use this user to access MongoDB from your application*):
+### 16. On PRIMARY: Create application user:
+With `readWrite` permissions for db of your app (*you will use this user to access MongoDB from your application*):
 ```shell
 # Mongo Shell `mongo -u "admin" -p <password> --authenticationDatabase "admin"`
 use admin

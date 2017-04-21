@@ -32,7 +32,8 @@ chown -R mongodb:mongodb /var/log/mongodb
 rm /etc/init.d/mongod
 ```
 
-### 5. Edit MongoDB configuration file for first member of Replica Set (`nano /etc/mongod-one.conf`):
+### 5. Edit MongoDB configuration file:
+For first member of Replica Set (`nano /etc/mongod-one.conf`):
 ```yaml
 storage:
   dbPath: /data/mongos/one
@@ -50,7 +51,8 @@ replication:
   replSetName: rs0
 ```
 
-### 6. Edit mongodb configuration for second member of Replica Set (`nano /etc/mongod-two.conf`):
+### 6. Edit MongoDB configuration:
+For second member of Replica Set (`nano /etc/mongod-two.conf`):
 ```yaml
 storage:
   dbPath: /data/mongos/two
@@ -68,7 +70,8 @@ replication:
   replSetName: rs0
 ```
 
-### 7. Edit MongoDB configuration for third member of Replica Set (`nano /etc/mongod-three.conf`):
+### 7. Edit MongoDB configuration:
+For third member of Replica Set (`nano /etc/mongod-three.conf`):
 ```yaml
 storage:
   dbPath: /data/mongos/three
@@ -86,14 +89,16 @@ replication:
   replSetName: rs0
 ```
 
-### 8. Create shared auth key for secure communication between Replica Set members ([more info](https://docs.mongodb.com/v3.2/tutorial/enforce-keyfile-access-control-in-existing-replica-set/)):
+### 8. Create shared auth key:
+For secure communication between Replica Set members ([more info](https://docs.mongodb.com/v3.2/tutorial/enforce-keyfile-access-control-in-existing-replica-set/)):
 ```shell
 openssl rand -base64 741 > /data/mongos/key
 chown mongodb:mongodb /data/mongos/key
 chmod 400 /data/mongos/key
 ```
 
-### 9. Create Cron job to start MongoDB as `mongodb` user (`crontab -u mongodb -e`):
+### 9. Create CRON job
+To start MongoDB as `mongodb` user (`crontab -u mongodb -e`):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod-one.conf --fork
 @reboot /usr/bin/mongod --config /etc/mongod-two.conf --fork
@@ -125,14 +130,15 @@ var conf = {
 rs.initiate(conf)
 ```
 
-### 12. Define PRIMARY member
+### 12. Define PRIMARY member:
 Next steps should be performed only on PRIMARY member. To find out which member is primary, run:
 ```shell
 # Mongo Shell
 rs.status()
 ```
 
-### 13. On PRIMARY: Create `admin` user with `root` privileges:
+### 13. On PRIMARY: Create `admin` user:
+With `root` privileges:
 ```shell
 # Mongo Shell:
 $ mongo --port 27017
@@ -140,14 +146,16 @@ use admin
 db.createUser({user:"admin", pwd:<password>, roles:[{role:"root", db:"admin"}]})
 ```
 
-### 14. Update Cron job to start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
+### 14. Update CRON job:
+To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod-one.conf --auth --fork
 @reboot /usr/bin/mongod --config /etc/mongod-two.conf --auth --fork
 @reboot /usr/bin/mongod --config /etc/mongod-three.conf --auth --fork
 ```
 
-### 15. Add next lines into each configuration of Replica Set members: 
+### 15. Add next lines:
+To __each__ configuration of Replica Set members: 
 ```yaml
 # nano /etc/mongod-one.conf
 # nano /etc/mongod-two.conf
@@ -158,7 +166,8 @@ security:
 
 ### 16. Reboot the machine
 
-### 17. Create user with `readWrite` permissions for db of your app (*you will use this user to access MongoDB from your application*):
+### 17. Create application user:
+With `readWrite` permissions for db of your app (*you will use this user to access MongoDB from your application*):
 ```shell
 # Mongo Shell `mongo -u "admin" -p <password> --authenticationDatabase "admin"`
 use admin
