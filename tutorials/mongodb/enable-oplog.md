@@ -57,6 +57,8 @@ Via `mongod` command flag:
 mongod --oplogSize 8192 --config /etc/mongod.conf
 ```
 
+__Note__: This won't work on existing OpLog, to change size of existing OpLog [read this article](https://docs.mongodb.com/manual/tutorial/change-oplog-size/).
+
 ### 5. Connection string:
 ```plain
 mongodb://oplogger:<password>@<SRV_1>:<PORT>,<SRV_2>:<PORT>,<SRV_3>:<PORT>/local?authSource=admin&replicaSet=rs0
