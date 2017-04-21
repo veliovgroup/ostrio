@@ -130,12 +130,14 @@ server {
 #### Set permissions:
 Use `chown` to set files owner, usually `www-data` for Nginx
 ```shell
-chown -R www-data:www-data /etc/nginx
+# Run only if nginx operates under www-data user
+# chown -R www-data:www-data /etc/nginx
 chmod -R 644 /etc/nginx
 find /etc/nginx -type d -exec chmod 700 {} \;
 chmod -R 600 /etc/nginx/ssl
 
-chown -R www-data:www-data /var/www/example
+# Run only if nginx operates under www-data user
+# chown -R www-data:www-data /var/www/example
 ```
 
 #### Test configuration:
