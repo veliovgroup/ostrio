@@ -8,19 +8,19 @@ To switch to users' home folder use:
 cd ~
 ```
 
-Enable history completion with up and down arrows:
+### Enable history completion with up and down arrows:
 ```bash
 bind '"\e[A":history-search-backward'
 bind '"\e[B":history-search-forward'
 ```
 
-Enable case-insensitive completions (tab key):
+### Enable case-insensitive completions (tab key):
 ```bash
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 ```
 
-Enable xterm colors:
+### Enable xterm colors:
 ```bash
 export TERM='xterm-256color'
 
@@ -28,7 +28,7 @@ export CLICOLOR=1
 export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 ```
 
-Add even more colors (using famous [solarized theme](http://git.io/solarized-colors)):
+### Add even more colors (using famous [solarized theme](http://git.io/solarized-colors)):
 ```bash
 if tput setaf 1 &> /dev/null; then
   tput sgr0;
@@ -60,7 +60,7 @@ else
 fi;
 ```
 
-Set terminal title and prompt format to `username at hostname in current/path`:
+### Set terminal title and prompt format to `username at hostname in current/path`:
 ```bash
 userStyle="${orange}";
 hostStyle="${yellow}";
@@ -82,7 +82,7 @@ PS2="\[${yellow}\]→ \[${reset}\]";
 export PS2;
 ```
 
-Apply changes:
+### Apply changes:
 ```shell
 source ~/.bash_profile
 ```

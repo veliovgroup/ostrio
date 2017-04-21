@@ -8,19 +8,19 @@ In order to make World Wide Web safer and faster, we strongly recommend to use H
 
 This tutorial will show how to use [Let's Encrypt](https://letsencrypt.org) project. Which let's you to generate fully qualified SSL (TLS) certificate for free.
 
-Notes: 
+### Notes: 
  - Examples is given for Debian/Ubuntu Linux and Nginx. Instructions for other platforms can be easily googled
  - We are not somehow affiliated with "Let's Encrypt", we just love to use this project. You can [support](https://letsencrypt.org/donate/) "Let's Encrypt" project if you like it too
 
 
-#### Install Certbot:
+### Install Certbot:
 Clone Certbot from its [GitHub repository](https://github.com/certbot/certbot)
 ```shell
 git clone https://github.com/certbot/certbot.git
 cd certbot
 ```
 
-#### Set Nginx configuration:
+### Set Nginx configuration:
 ```nginx
 # /etc/nginx/sites-available/example.conf
 server{
@@ -34,12 +34,12 @@ server{
 }
 ```
 
-#### Make sure root exists:
+### Make sure root exists:
 ```shell
 mkdir -p /var/www/example
 ```
 
-#### Generate certificate:
+### Generate certificate:
 ```shell
 # --email admin@example.com <- Email for important notifications
 # -w /var/www/example/ <- Nginx host "root"
@@ -51,7 +51,7 @@ mkdir -p /var/www/example
 # like: /etc/letsencrypt/live/example.com/
 ```
 
-#### Generate `dhparam`:
+### Generate `dhparam`:
 ```shell
 # Go to /etc/nginx/ssl/
 mkdir -p /etc/nginx/ssl/
@@ -62,7 +62,7 @@ cd /etc/nginx/ssl/
 openssl dhparam -out dhparam.pem 4096
 ```
 
-#### Update Nginx configuration:
+### Update Nginx configuration:
 ```nginx
 # /etc/nginx/sites-available/example.conf
 server{
@@ -104,12 +104,12 @@ server {
 }
 ```
 
-#### Enable example.conf:
+### Enable example.conf:
 ```shell
 ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
 ```
 
-#### Enable http2 (H2):
+### Enable http2 (H2):
 ```nginx
 # create or edit /etc/nginx/sites-available/default
 server {
@@ -127,7 +127,12 @@ server {
 }
 ```
 
-#### Set permissions:
+### Set permissions:
+If you've been generating certificates remotely (*not on the server*). 
+You may copy-paste all generated files to `/etc/nginx/ssl/` directory. 
+
+To provide security after copying files - we should set owner and restrict access.
+
 Use `chown` to set files owner, usually `www-data` for Nginx
 ```shell
 # Run only if nginx operates under www-data user
@@ -140,18 +145,18 @@ chmod -R 600 /etc/nginx/ssl
 # chown -R www-data:www-data /var/www/example
 ```
 
-#### Test configuration:
+### Test configuration:
 ```shell
 service nginx configtest
 nginx -t
 ```
 
-#### Restart Nginx to apply changes:
+### Restart Nginx to apply changes:
 ```shell
 service nginx restart
 ```
 
-#### Test SSL (TLS) setup:
+### Test SSL (TLS) setup:
  - Go to [ssllabs.com](https://www.ssllabs.com/ssltest/index.html)
  - Enter your domain
  - You should get A+ rating with this setup

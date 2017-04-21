@@ -1,7 +1,9 @@
 Linux / Restricted users (`rbash`)
 ======
 
-Based on [`rbash` article](https://veliovgroup.com/article/BmtWycSfZL37zXMZc/how-to-rbash). When to use `rbash`?
+Based on [`rbash` article](https://veliovgroup.com/article/BmtWycSfZL37zXMZc/how-to-rbash)
+
+### When to use `rbash`?
  - SSH login-only user
  - Other users accounts
  - Application users

@@ -1,12 +1,14 @@
 Linux / Security / Rootkit Hunter (RKHunter)
 ======
 
- - Reference: [RKHunter project page](http://rkhunter.sourceforge.net/)
+### References:
+ - [RKHunter project page](http://rkhunter.sourceforge.net/)
  - Article by [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-rkhunter-to-guard-against-rootkits-on-an-ubuntu-vps)
  - For latest release [go here](https://sourceforge.net/projects/rkhunter/files/)
 
 On the moment of writing latest release is: `v1.4.2 2014-03-12`
 
+### Installation:
 Download RKHunter script
 ```shell
 wget https://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.2/rkhunter-1.4.2.tar.gz
@@ -21,18 +23,18 @@ cd ../
 rm -Rf rkhunter-1.4.2*
 ```
 
-Install prerequisites:
+### Install prerequisites:
 ```shell
 apt-get install binutils libreadline5 ssl-cert unhide.rb
 ```
 RKHunter also requires `ruby` to be installed. Read more about [ruby installation](https://www.ruby-lang.org/en/documentation/installation).
 
-Update RKHunter database and generate file properties database used by RKHunter:
+### Update RKHunter database and generate file properties database used by RKHunter:
 ```shell
 rkhunter --update --propupd
 ```
 
-Run full system check:
+### Run full system check:
 ```shell
 rkhunter -c --enable all --disable none
 ```
@@ -42,3 +44,4 @@ Read more detailed setup at [Digital Ocean article](https://www.digitalocean.com
 ### Further reading:
  - [Use Lynis for security audit](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/lynis-security-audit.md)
  - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
+ - [Digital Ocean article](https://www.digitalocean.com/community/tutorials/how-to-use-rkhunter-to-guard-against-rootkits-on-an-ubuntu-vps)

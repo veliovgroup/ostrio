@@ -1,11 +1,11 @@
 Linux / Security / SSH key-based authentication
 ======
 
-Why?
+### Why?
  - No chance to brute-force SSH service if password-based login is disabled
  - No need to type-in password on every login via SSH
 
-Disadvantages:
+### Disadvantages:
  - No way to login if key-file is lost
  - No way to login if passphrase from key-file is forgotten
 
@@ -111,7 +111,7 @@ If you're getting "Too many authentication failures" error, try to use `-o Ident
 ssh username@host -o IdentitiesOnly=yes
 ```
 
-Further reading:
+### Further reading:
  - [SSH Key-Based Authentication by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
  - [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
  - [Disable root login via SSH](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)

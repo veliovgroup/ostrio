@@ -1,13 +1,13 @@
 Linux / Create new system user
 ======
 
-Why create another system users in Linux?
+### Why create another system users in Linux?
  - Web-applications should run under its own users, to isolate system files in case of the breach
  - Databases should run under its own user
  - SSH login should be allowed to user with limited permissions on server, and disabled for `root` user
  - Other security and usage reasons
 
-We can differentiate two basic Linux users types:
+### We can differentiate two basic Linux users types:
  - With login permissions (password and home folder is not set)
  - Without login permissions
 
@@ -21,7 +21,7 @@ useradd username
 # that's it
 ```
 
-To allow login under user without password, just set new password for such user:
+To allow login as `user` without password, just set new password for such user:
 ```shell
 passwd username
 
@@ -51,4 +51,3 @@ adduser username
 
 ### Further reading:
  - [rbash - restricted users](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/rbash.md)
-

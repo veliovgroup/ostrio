@@ -3,7 +3,7 @@ Linux / Security / Security audit with Lynis
 
 Lynis is an open source security auditing tool. Lynis is light-weight and easy to use.
 
-References:
+### References:
  - [Official project page](https://cisofy.com/lynis/)
  - [GitHub project page](https://github.com/CISOfy/Lynis)
 
@@ -20,12 +20,12 @@ Go to cloned directory:
 cd lynis/
 ```
 
-Run script:
+### Run script:
 ```shell
 ./lynis audit system
 ```
 
-To run security audit against docker, run:
+### To run security audit against docker, run:
 ```shell
 lynis audit dockerfile <path/to/docker>
 ```
