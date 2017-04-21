@@ -59,5 +59,5 @@ mongod --oplogSize 8192 --config /etc/mongod.conf
 
 ### 5. Connection string:
 ```plain
-mongodb://oplogger:<password>@<IP_OR_DOMAIN>:<PORT>/local?authSource=admin&replicaSet=rs0
+mongodb://oplogger:<password>@<SRV_1>:<PORT>,<SRV_2>:<PORT>,<SRV_3>:<PORT>/local?authSource=admin&replicaSet=rs0
 ```
