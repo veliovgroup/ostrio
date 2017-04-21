@@ -16,7 +16,8 @@ We will use wiredTiger as engine, you can read [its release notes](https://www.m
  - `appDB` - Database used for application
  - `<password>` - placeholder, should be changed to strong password. __Always placed in double quotes__
 
-### 1. On __each__ server follow steps described in [installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian). During installation `mongodb` user in `mongodb` group will be created automatically
+### 1. Installation:
+On __each__ server follow steps described in [installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian). During installation `mongodb` user in `mongodb` group will be created automatically
 
 ### 2. On __each__ server create and set right permissions for storage folder:
 ```shell
