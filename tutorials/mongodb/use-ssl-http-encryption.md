@@ -87,7 +87,23 @@ tail -n 50 -f /var/log/mongodb/mongod.log
 
 ### Connect:
 ```shell
-mongo mongodb://[LOCAL/PUBLIC IP, OR DOMAIN]:[PORT]/ --ssl --sslPEMKeyFile=/etc/nginx/ssl/mongodb.pem
+mongo mongodb://[hostname]:[PORT]/ --ssl --sslPEMKeyFile=/etc/nginx/ssl/mongodb.pem
+```
+
+### Connect in app (node.js):
+```jsx
+// Note: File "mongodb.pem" must accessible
+// make sure parent folder and file has 404 or higher permissions
+
+const fs = require('fs');
+MongoClient.connect('mongodb://[hostname]:[PORT]?ssl=true', {
+  ssl: true,
+  sslKey: fs.readFileSync('/path/to/mongodb.pem'),
+  sslCert: fs.readFileSync('/path/to/mongodb.pem'),
+  sslValidate: true
+}, (mongoErr, db) => {
+  /* .... */
+});
 ```
 
 ### Further reading:
