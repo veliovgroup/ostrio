@@ -22,11 +22,11 @@ db.runCommand({createRole:"oplogger", privileges:[{resource: {db:"local", collec
 
 ### 2. In Mongo Shell on PRIMARY: Create `oplogger` user and grant `oplogger` role:
 ```javascript
-# Mongo Shell:
+// Mongo Shell:
 use admin
-# For MongoDB 2.4
+// For MongoDB 2.4
 db.createUser({user:"oplogger", pwd:<password>, roles:[], otherDBRoles:{local:["read"]}})
-# For MongoDB >= 2.6
+// For MongoDB >= 2.6
 db.createUser({user:"oplogger", pwd:<password>, roles:[{role: "read", db: "local"}]})
 db.runCommand({grantRolesToUser:"oplogger", roles:["oplogger"]})
 ```
