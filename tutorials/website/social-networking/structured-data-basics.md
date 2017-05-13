@@ -15,7 +15,7 @@ This is only most used case - *Website + Article*. There is much more types to u
 <html itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta itemprop="name" content="My Website">
-    <meta itemprop="description" content="Awesome articles about travell">
+    <meta itemprop="description" content="Awesome articles about travel">
     <meta itemprop="keywords" content="awesome, travel, article, blog">
     <link rel="canonical" itemprop="url" content="https://example.com/acticles/norway" href="https://example.com/acticles/norway">
     <title>My Awesome Website</title>

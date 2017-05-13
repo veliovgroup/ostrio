@@ -17,7 +17,7 @@ This example is very basic usage, but will cover most of the cases. For more inf
     <meta name="twitter:site" content="@BUSINESS_TWITTER_ACCOUNT">
     <meta name="twitter:creator" content="@PERSONAL_TWITTER_ACCOUNT">
     <meta name="twitter:title" content="My Awesome Website">
-    <meta name="twitter:description" content="Awesome articles about travell">
+    <meta name="twitter:description" content="Awesome articles about travel">
     <meta name="twitter:image" content="https://example.com/share.png">
     <title>My Awesome Website</title>
   </head>

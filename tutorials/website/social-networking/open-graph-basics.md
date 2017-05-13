@@ -20,7 +20,7 @@ This example is very basic usage, but will cover most of the cases. For more inf
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Travel and Blogs">
     <meta property="og:title" content="My Awesome Website">
-    <meta property="og:description" content="Awesome articles about travell">
+    <meta property="og:description" content="Awesome articles about travel">
     <meta property="og:image" content="http://example.com/share.png">
     <!-- Use "og:image:secure_url" only if website has both http and httpS versions -->
     <meta property="og:image:secure_url" content="https://example.com/share.png">
