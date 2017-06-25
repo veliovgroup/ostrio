@@ -4,13 +4,18 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
 
 ## Ostr.io
 ### Account Basics
- - [Registration]()
- - [Password Recovery]()
- - [Password Change]()
- - [Change login (primary email)]()
- - [Add extra email(s) for notifications]()
+ - [Registration](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/sign-up.md)
+ - [Password Recovery](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/password-recovery.md)
+ - [Password Change](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/password-change.md)
+ - [Change login (primary email)](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/change-primary-email.md)
+ - [Add extra email(s) for notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-email.md)
  - [Add phone number(s) for SMS notifications]()
  - [Payments & Free Bonuses]()
+
+### General User Support
+ - [Fill an issue](https://github.com/VeliovGroup/ostrio/issues) - Quickly solve your issue with power of our customer support and open source community
+ - __Pro__ Plan Support - Contact directly us via email
+ - __Business__ Plan Support - Contact us directly via email or messenger of your choice
 
 ### Resources Management
  - Server: [Add and verify by IP]()
