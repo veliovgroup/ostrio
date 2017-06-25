@@ -1,4 +1,4 @@
-MongoDB / Single Server / Replica Set
+Single Server / Replica Set
 ======
 
 For more info see [original article](https://veliovgroup.com/article/2qsjtNf8NSB9XxZDh/mongodb-replica-set-with-oplog).

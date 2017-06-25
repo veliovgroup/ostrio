@@ -1,4 +1,4 @@
-Linux / Permanently change server timezone
+Permanently change server timezone
 ======
 
 Often you may want to set your server(s) to some exact time zone, and exclude cases of time shift when daylight saving time, winter time, summer time, etc. occurs.

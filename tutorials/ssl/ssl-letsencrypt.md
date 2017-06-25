@@ -1,4 +1,4 @@
-SSL / Let's Encrypt / Free SSL (TLS) certificates
+Let's Encrypt / Free SSL (TLS) certificates
 ======
 
 In this tutorial we use HTTP for domain ownership validation, as alternative see:

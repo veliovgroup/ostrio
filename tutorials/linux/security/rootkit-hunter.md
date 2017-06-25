@@ -1,4 +1,4 @@
-Linux / Security / Rootkit Hunter (RKHunter)
+Rootkit Hunter (RKHunter)
 ======
 
 ### References:

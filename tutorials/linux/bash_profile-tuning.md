@@ -1,4 +1,4 @@
-Linux / .bash_profile tuning
+.bash_profile tuning
 ======
 
 Create a file named `.bash_profile` in home folder of Linux user.

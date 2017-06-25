@@ -1,4 +1,4 @@
-Linux / Create new system user
+Create new system user
 ======
 
 ### Why create another system users in Linux?

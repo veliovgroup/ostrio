@@ -1,4 +1,4 @@
-Linux / Change user password
+Change user password
 ======
 
 __NOTE:__ change `username` to actual users' name

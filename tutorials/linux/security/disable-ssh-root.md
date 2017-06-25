@@ -1,4 +1,4 @@
-Linux / Security / Disable SSH login for root user
+Disable SSH login for root user
 ======
 
 ### Why?

@@ -1,4 +1,4 @@
-Linux / Security / SSH key-based authentication
+SSH key-based authentication
 ======
 
 ### Why?

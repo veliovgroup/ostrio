@@ -1,4 +1,4 @@
-SSL / Let's Encrypt / Validation via DNS
+Let's Encrypt / Validation via DNS
 ======
 
 ### Alternative:

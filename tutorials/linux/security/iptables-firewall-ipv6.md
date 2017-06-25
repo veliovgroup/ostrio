@@ -1,4 +1,4 @@
-Linux / Security / Basic ipv6 firewall with ip6tables
+Basic ipv6 firewall with ip6tables
 ======
 
 __NOTE: IT'S DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise you may end up with unaccessible server

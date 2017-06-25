@@ -1,4 +1,4 @@
-Linux / Restricted users (`rbash`)
+Restricted users (`rbash`)
 ======
 
 Based on [`rbash` article](https://veliovgroup.com/article/BmtWycSfZL37zXMZc/how-to-rbash)

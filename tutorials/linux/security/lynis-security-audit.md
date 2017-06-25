@@ -1,4 +1,4 @@
-Linux / Security / Security audit with Lynis
+Security audit with Lynis
 ======
 
 Lynis is an open source security auditing tool. Lynis is light-weight and easy to use.

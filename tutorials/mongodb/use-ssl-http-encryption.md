@@ -1,4 +1,4 @@
-MongoDB / SSL/TLS/HTTPS Encrypted connection
+SSL/TLS/HTTPS Encrypted connection
 ======
 
 Assuming you have SSL/TLS certificate and private key, if not [read how to generate one for free](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md). All examples below for case when certificate, chain and private key at `/etc/nginx/ssl/` directory.

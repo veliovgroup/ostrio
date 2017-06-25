@@ -1,4 +1,4 @@
-Website / Pinterest Rich Pins basics
+Pinterest Rich Pins basics
 ======
 
 ### About:

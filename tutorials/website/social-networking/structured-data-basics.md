@@ -1,4 +1,4 @@
-Website / Structured data basics
+Structured data basics
 ======
 
 ### About:

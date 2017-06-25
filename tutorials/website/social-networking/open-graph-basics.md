@@ -1,4 +1,4 @@
-Website / Open Graph basics
+Open Graph basics
 ======
 
 ### About:

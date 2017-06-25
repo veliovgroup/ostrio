@@ -1,8 +1,9 @@
-# [Personal Server Guard](https://ostr.io)
-<a href="https://ostr.io/" target="_blank"><img src="https://ostr.io/images/cover-800.png" /></a>
+# [ostr.io](https://ostr.io)
+
+One service for all modern web applications needs - Prerendering, Monitoring, Domain Name Protection, Web-Analytics, Web-CRON.
 
 ## Ostr.io
-### Ostr.io / Account Basics
+### Account Basics
  - [Registration]()
  - [Password Recovery]()
  - [Password Change]()
@@ -11,35 +12,38 @@
  - [Add phone number(s) for SMS notifications]()
  - [Payments & Free Bonuses]()
 
-### Ostr.io / Resources Management
+### Resources Management
  - Server: [Add and verify by IP]()
  - Server: [Add and verify by domain name]()
  - Domain: [Whois integrity monitoring]()
  - Domain: [DNS records integrity monitoring]()
  - Website: [SSL certificate integrity monitoring]()
 
-### Ostr.io / Website Visitors Analytics
+### Website Visitors Analytics
  - [Introduction]()
  - [Install to website]()
  - [Custom integration]()
  - [User events]()
 
-### Ostr.io / Prerendering
+### Prerendering (Spiderable / Crawlable)
  - [Introduction]()
  - [Integration & Installation]()
  - [Optimization]()
  - [Cache purge]()
 
-### Ostr.io / Monitoring
+### Monitoring
  - [Basic HTTP(S) Monitoring]()
  - [Build "uncacheable" path to endpoint, prevent cached results]()
  - [HTTP(S) Monitoring with web-authentication]()
  - [Nginx stats and usage Monitoring]()
-<!--  - [Apache stats and usage Monitoring]()
- - [MongoDB stats and usage Monitoring]()
+ - Custom: [JSON Endpoint Monitoring]()
+ - Custom: [XML Endpoint Monitoring]()
+ - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]()
+
+<!--  - [Phusion Passenger `passenger-status` Monitoring]()
  - [PHP stats and usage Monitoring]()
  - [Node.js stats and usage Monitoring]()
- - [Phusion Passenger `passenger-status` Monitoring]()
+ - [MongoDB stats and usage Monitoring]()
  - PHP: [MySQL Database Monitoring]()
  - Ruby: [MySQL Database Monitoring]()
  - Node.js: [MySQL Database Monitoring]()
@@ -51,19 +55,17 @@
  - Node.js: [Redis Database Monitoring]()
  - Custom: [Server stats Monitoring with Node.js]()
  - Custom: [Server stats Monitoring with Ruby]()
- - Custom: [Server stats Monitoring with PHP]()
- - Custom: [JSON Endpoint Monitoring]()
- - Custom: [XML Endpoint Monitoring]()
- - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]() -->
+ - Custom: [Server stats Monitoring with PHP]() -->
 
-### Ostr.io / Web-CRON
+### Web-CRON
  - [Introduction]()
  - [Integration examples]()
 
 ## Tutorials
-### Tutorials / nginx
+### nginx
+ - [nginx + Node.js with WebSockets]() - Meteor.js, MEAN.js or any other Node.js project with WebSockets
  - [Load monitoring]()
- - [Set up support for h2/SPDY]()
+ - [Set up support for h2]()
  - [Basic proxy configuration]()
  - [Proxy injections]()
  - [gzip compressions]()
@@ -73,64 +75,71 @@
  - [Security & Protection]()
  - [Enable WebSockets Support]()
 
-### Tutorials / Apache
- - Apache: [Load monitoring]()
-
-### Tutorials / MongoDB
-#### Tutorials / MongoDB / Security
+### MongoDB Tutorials
+#### Security
  - [Run MongoDB locally, prevent external access]()
  - [Change default ports]()
  - [Use SSL certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/use-ssl-http-encryption.md)
  - [Protect database with password]()
 
-#### Tutorials / MongoDB / Performance & Maintenance
+#### Performance & Maintenance
  - [Create Single Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/single-server-replica-set.md)
  - [Create Multiple (Custer) Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
  - [Use OpLog](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
 
-### Tutorials / MongoDB / Other
+### Other MongoDB Tips & Tricks
  - [Self-destroying records, TTL]()
 
-### Tutorials / SSL/TLS certificates
+### SSL/TLS certificates Tutorials
  - [Free letsencrypt certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md)
  - [Verify letsencrypt certificate via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
- <!-- - [Install SSL/TLS certificate to Nginx]() -->
- <!-- - [Install SSL/TLS certificate to Apache]() -->
 
-<!-- ### Tutorials / Website
-### Tutorials / Website / Security
+<!--  - [Install SSL/TLS certificate to Nginx]() -->
+
+### Web Development Tutorials
+### Social Networks Integration
+ - [Open Graph basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/open-graph-basics.md) - For Facebook and other platforms with Open Graph support
+ - [Pinterest Rich Pins basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/pinterest-rich-pins-basics.md)
+ - [Structured Data basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/pinterest-rich-pins-basics.md) - Schema.org for Google rich snippets
+ - [Twitter Card basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/twitter-cards-basics.md) - Nice shared URLs with image, title and text preview
+
+<!-- ### Security
  - [Basic Security Check-list]()
  - [Google reCAPTCA]()
  - [Advanced Google reCAPTCHA integration]() -->
 
-<!-- ### Tutorials / Website / Visitors Analytics
+<!-- ### Visitors Analytics
  - [Ostr.io Analytics]()
  - [Google Analytics]()
  - [Yandex Metrika]() -->
 
-<!-- ### Tutorials / Website / Development
+<!-- ### Development
  - [Service Workers - Build off-line website]()
  - [Service Workers - App install banner]()
  - [Service Workers - Standalone App]()
  - [favicon - for all devices and browsers]()
  - [robots.txt]() -->
 
-<!-- ### Tutorials / Website / Meteor.js
+<!-- ### Meteor.js
  - [Build simple off-line application]() -->
 
-<!-- ### Tutorials / CDN
+### Meteor.js Security
+ - [DDP Rate limiting]()
+ - [reCAPTCHA]()
+
+<!-- ### CDN
  - [CloudFlare]()
  - [Advanced security with CloudFlare]() -->
 
-### Tutorials / Linux
+### Linux Tutorials
  - [Change timezone](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/change-timezone.md)
  - [`.bash_profile` tuning](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/bash_profile-tuning.md)
-#### Tutorials / Linux / Users
+#### Users
  - [Change root password](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/root-passwd.md)
  - [Change user password](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/user-passwd.md)
  - [Create new system user](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/create-user.md)
  - [rbash - restricted users](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/rbash.md)
-#### Tutorials / Linux / Security
+#### Security
  - [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
  - [Disable SSH login as root](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
  - [Disable SSH login with password (passwordless authentication), use SSH Keys](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/use-ssh-keys.md)

@@ -1,4 +1,4 @@
-Linux / Security / Change default SSH port
+Change default SSH port
 ======
 
 When it comes to basic Linux security and "best practice", the best idea is to start with changing default SSH port. Why? - Most of automatic brute-force software will start with attacking default `22` port.

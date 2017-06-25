@@ -1,4 +1,4 @@
-Linux / Change root password
+Change root password
 ======
 
 When it comes to purchasing virtual or dedicated Linux-based servers - its credentials is sent somehow over the wire (http(s), email, sms, push-notification and etc.). Any data sent over the wire - can not be trusted.

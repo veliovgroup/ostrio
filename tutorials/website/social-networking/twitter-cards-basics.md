@@ -1,4 +1,4 @@
-Website / Twitter Card basics
+Twitter Card basics
 ======
 
 ### About:
