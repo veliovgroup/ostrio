@@ -4,41 +4,47 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
 
 ## Ostr.io
 ### Account Basics
- - [Registration]()
- - [Password Recovery]()
- - [Password Change]()
- - [Change login (primary email)]()
- - [Add extra email(s) for notifications]()
- - [Add phone number(s) for SMS notifications]()
- - [Payments & Free Bonuses]()
+ - [Registration](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/sign-up.md)
+ - [Password Recovery](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/password-recovery.md)
+ - [Password Change](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/password-change.md)
+ - [Change login (primary email)](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/change-primary-email.md)
+ - [Add extra email(s) for notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-email.md)
+ - [Add phone number(s) for SMS notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-phone-number.md)
 
-### Resources Management
+<!--  - [Payments & Free Bonuses]() -->
+
+### General User Support
+ - [Fill an issue](https://github.com/VeliovGroup/ostrio/issues) - Quickly solve your issue with power of our customer support and open source community
+ - __Pro__ Plan Support - Contact us directly via email
+ - __Business__ Plan Support - Contact us directly via email or messenger of your choice
+
+<!-- ### Resources Management
  - Server: [Add and verify by IP]()
  - Server: [Add and verify by domain name]()
  - Domain: [Whois integrity monitoring]()
  - Domain: [DNS records integrity monitoring]()
- - Website: [SSL certificate integrity monitoring]()
+ - Website: [SSL certificate integrity monitoring]() -->
 
-### Website Visitors Analytics
+<!-- ### Website Visitors Analytics
  - [Introduction]()
  - [Install to website]()
  - [Custom integration]()
- - [User events]()
+ - [User events]() -->
 
-### Prerendering (Spiderable / Crawlable)
+<!-- ### Prerendering (Spiderable / Crawlable)
  - [Introduction]()
  - [Integration & Installation]()
  - [Optimization]()
- - [Cache purge]()
+ - [Cache purge]() -->
 
-### Monitoring
+<!-- ### Monitoring
  - [Basic HTTP(S) Monitoring]()
  - [Build "uncacheable" path to endpoint, prevent cached results]()
  - [HTTP(S) Monitoring with web-authentication]()
  - [Nginx stats and usage Monitoring]()
  - Custom: [JSON Endpoint Monitoring]()
  - Custom: [XML Endpoint Monitoring]()
- - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]()
+ - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]() -->
 
 <!--  - [Phusion Passenger `passenger-status` Monitoring]()
  - [PHP stats and usage Monitoring]()
@@ -57,12 +63,12 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - Custom: [Server stats Monitoring with Ruby]()
  - Custom: [Server stats Monitoring with PHP]() -->
 
-### Web-CRON
+<!-- ### Web-CRON
  - [Introduction]()
- - [Integration examples]()
+ - [Integration examples]() -->
 
 ## Tutorials
-### nginx
+<!-- ### nginx
  - [nginx + Node.js with WebSockets]() - Meteor.js, MEAN.js or any other Node.js project with WebSockets
  - [Load monitoring]()
  - [Set up support for h2]()
@@ -73,22 +79,22 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Fine tuning]()
  - [Create login/password protected path]()
  - [Security & Protection]()
- - [Enable WebSockets Support]()
+ - [Enable WebSockets Support]() -->
 
 ### MongoDB Tutorials
 #### Security
- - [Run MongoDB locally, prevent external access]()
- - [Change default ports]()
+<!--  - [Run MongoDB locally, prevent external access]()
+ - [Change default ports]() -->
  - [Use SSL certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/use-ssl-http-encryption.md)
- - [Protect database with password]()
+ <!-- - [Protect database with password]() -->
 
 #### Performance & Maintenance
  - [Create Single Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/single-server-replica-set.md)
  - [Create Multiple (Custer) Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
  - [Use OpLog](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
 
-#### Other MongoDB Tips & Tricks
- - [Self-destroying records, TTL]()
+<!-- #### Other MongoDB Tips & Tricks
+ - [Self-destroying records, TTL]() -->
 
 ### SSL/TLS certificates Tutorials
  - [Free letsencrypt certificates](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md)
@@ -123,9 +129,9 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
 <!-- #### Meteor.js
  - [Build simple off-line application]() -->
 
-#### Meteor.js Security
+<!-- #### Meteor.js Security
  - [DDP Rate limiting]()
- - [reCAPTCHA]()
+ - [reCAPTCHA]() -->
 
 <!-- ### CDN
  - [CloudFlare]()
@@ -147,4 +153,7 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Use Lynis for security audit](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/lynis-security-audit.md)
  - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
  - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
+
+<!-- 
  - [Backups]()
+ -->
