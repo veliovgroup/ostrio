@@ -15,7 +15,7 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
 
 ### General User Support
  - [Fill an issue](https://github.com/VeliovGroup/ostrio/issues) - Quickly solve your issue with power of our customer support and open source community
- - __Pro__ Plan Support - Contact directly us via email
+ - __Pro__ Plan Support - Contact us directly via email
  - __Business__ Plan Support - Contact us directly via email or messenger of your choice
 
 <!-- ### Resources Management
