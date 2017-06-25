@@ -87,7 +87,7 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Create Multiple (Custer) Server ReplicaSet](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
  - [Use OpLog](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
 
-### Other MongoDB Tips & Tricks
+#### Other MongoDB Tips & Tricks
  - [Self-destroying records, TTL]()
 
 ### SSL/TLS certificates Tutorials
@@ -97,33 +97,33 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
 <!--  - [Install SSL/TLS certificate to Nginx]() -->
 
 ### Web Development Tutorials
-### Social Networks Integration
+#### Social Networks Integration
  - [Open Graph basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/open-graph-basics.md) - For Facebook and other platforms with Open Graph support
  - [Pinterest Rich Pins basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/pinterest-rich-pins-basics.md)
  - [Structured Data basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/pinterest-rich-pins-basics.md) - Schema.org for Google rich snippets
  - [Twitter Card basics](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/website/social-networking/twitter-cards-basics.md) - Nice shared URLs with image, title and text preview
 
-<!-- ### Security
+<!-- #### Security
  - [Basic Security Check-list]()
  - [Google reCAPTCA]()
  - [Advanced Google reCAPTCHA integration]() -->
 
-<!-- ### Visitors Analytics
+<!-- #### Visitors Analytics
  - [Ostr.io Analytics]()
  - [Google Analytics]()
  - [Yandex Metrika]() -->
 
-<!-- ### Development
+<!-- #### Development
  - [Service Workers - Build off-line website]()
  - [Service Workers - App install banner]()
  - [Service Workers - Standalone App]()
  - [favicon - for all devices and browsers]()
  - [robots.txt]() -->
 
-<!-- ### Meteor.js
+<!-- #### Meteor.js
  - [Build simple off-line application]() -->
 
-### Meteor.js Security
+#### Meteor.js Security
  - [DDP Rate limiting]()
  - [reCAPTCHA]()
 
