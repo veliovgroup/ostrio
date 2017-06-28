@@ -2,9 +2,9 @@ Monitoring Basics
 ======
 
 ### ToC:
- - [Availability Monitoring]()
- - [Custom Data Monitoring]()
- - [SNMP (Health) Monitoring]()
+ - [Availability Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#availability-httphttps-monitoring)
+ - [Custom Data Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#custom-data-monitoring)
+ - [SNMP (Health) Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#snmp-monitoring)
 
 ### Availability HTTP/HTTPS Monitoring
 This is most basic type of monitoring. Only most basic data is collected and analyzed - "Response Time", "Status Code", "Uptime".
@@ -12,7 +12,7 @@ This is most basic type of monitoring. Only most basic data is collected and ana
 ![Availability Monitoring Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/availability-monitoring.png?raw=true)
 
 ### Custom Data Monitoring
-Return custom data from endpoint as JSON or XML to parse its data into charts with notifications triggers. 
+Return custom data from endpoint as JSON or XML to parse it into charts with notifications triggers.
 
 #### As JSON:
 ```json
