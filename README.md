@@ -160,7 +160,5 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Use Lynis for security audit](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/lynis-security-audit.md)
  - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
  - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
+ - [Scheduled and Automated Backups](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md)
 
-<!-- 
- - [Backups]()
- -->
