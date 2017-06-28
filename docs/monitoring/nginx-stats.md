@@ -5,7 +5,7 @@ This tutorial will show how to collect Nginx real-time connection metrics, like 
 
 __Do not forget to change value in between `<` and `>` symbols to your own value!__
 
-#### First create
+#### First create `.htpasswd` file
 ```shell
 # Go to nginx directory
 cd /etc/nginx
@@ -24,11 +24,11 @@ Lets assume you're editing `/etc/nginx/sites-available/default`
 ```shell
 # Go to sites-available directory
 cd /etc/nginx/sites-available/
-# Edit default file, we using nano in example below, you;re free to use your favorite editor
+# Edit `default` file, we using nano in example below, you're free to use your favorite editor
 nano default
 ```
 
-Configuration itself:
+Configuration:
 ```nginx
 server {
   listen 80 default_server deferred;
@@ -90,7 +90,7 @@ http://example.com/ngstat/xml
 ```
 
 Add endpoint at [ostr.io](https://ostr.io):
- 1. Go to [Servers Health](https://ostr.io/service/health)
+ 1. Go to [Monitoring](https://ostr.io/service/monitoring)
  2. Click on "*Add Endpoint*"
  3. To select server type-in its name
  4. Select "*HTTP*" (or *HTTPS*) in "*Protocol*" drop-down list
