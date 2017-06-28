@@ -31,20 +31,27 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Custom integration]()
  - [User events]() -->
 
-<!-- ### Prerendering (Spiderable / Crawlable)
- - [Introduction]()
- - [Integration & Installation]()
- - [Optimization]()
- - [Cache purge]() -->
+### Prerendering (Spiderable / Crawlable)
+ - [Node.js Integration via NPM](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/node-npm.md)
+ - [Meteor.js Integration via Atmosphere](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
+ - [Nginx Integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md)
+ - [Return genuine status code](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+ - [Optimization](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md)
+ - [Caching](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache.md)
+ - [Cache purge](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
+ - [ES6 / ECMAScript 2015 Support](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/es6-support.md)
+ - [Strip JavaScript](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
 
-<!-- ### Monitoring
- - [Basic HTTP(S) Monitoring]()
- - [Build "uncacheable" path to endpoint, prevent cached results]()
- - [HTTP(S) Monitoring with web-authentication]()
- - [Nginx stats and usage Monitoring]()
- - Custom: [JSON Endpoint Monitoring]()
- - Custom: [XML Endpoint Monitoring]()
- - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring]() -->
+### Monitoring
+ - [Basic HTTP(S) Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md)
+ - [Build "uncacheable" path to endpoint, prevent cached results](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/custom-path.md)
+ - [HTTP(S) Monitoring with web-authentication](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/with-auth.md)
+ - [Nginx stats and usage Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/nginx-stats.md)
+ - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/snmp.md)
+
+
+<!--  - Custom: [JSON Endpoint Monitoring]()
+ - Custom: [XML Endpoint Monitoring]() -->
 
 <!--  - [Phusion Passenger `passenger-status` Monitoring]()
  - [PHP stats and usage Monitoring]()
