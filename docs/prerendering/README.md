@@ -1,0 +1,10 @@
+### Prerendering ToC:
+ - [Node.js Integration via NPM](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/node-npm.md)
+ - [Meteor.js Integration via Atmosphere](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
+ - [Nginx Integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md)
+ - [Return genuine status code](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+ - [Optimization](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md)
+ - [Caching](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache.md)
+ - [Cache purge](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
+ - [ES6 / ECMAScript 2015 Support](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/es6-support.md)
+ - [Strip JavaScript](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)

@@ -5,13 +5,13 @@ Nginx Integration
  - For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware).
 
 ### ToC:
- - [Installation]()
- - [Update HTML Markup]()
- - [Nginx integration]()
- - [Nginx: Simple proxy pass]()
- - [Nginx: Phusion Passenger + Nginx + Prerendering integration]()
- - [Nginx: Advanced: WebSockets, socket.io, socketjs]()
- - [Nginx: Advanced: Prerendering on Load Balancer]()
+ - [Installation](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#installation)
+ - [Update HTML Markup](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#update-html-markup)
+ - [Nginx integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#nginx-integration-1)
+ - [Nginx: Simple proxy pass](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#simple-proxy-pass)
+ - [Nginx: Phusion Passenger + Nginx + Prerendering integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#phusion-passenger--nginx--prerendering-integration)
+ - [Nginx: Advanced: WebSockets, socket.io, socketjs](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-websockets-socketio-socketjs)
+ - [Nginx: Advanced: Prerendering on Load Balancer](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
 
 ### Installation
 All you need is installed Nginx in latest stable release.
@@ -111,7 +111,7 @@ server {
     proxy_http_version 1.0;
 
     # You can change resolver to local DNS server
-    # And resolver can be moved to nginx.conf
+    # Resolver can be moved into `http` block
     # Add ipv6=off if your server has no IPv6 support, ex.: `resolver 8.8.4.4 8.8.8.8 valid=300s ipv6=off;`
     resolver 8.8.4.4 8.8.8.8 valid=300s;
     resolver_timeout 15s;
