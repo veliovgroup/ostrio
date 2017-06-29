@@ -83,7 +83,7 @@ mongodump \
   --gzip \
   --archive="/root/backups/mongodb.$DATE.gz"
 
-tar -zcf "/root/backups/www.$DATE.tar.gz" /var/www
+tar --exclude='node_modules' -zcf "/root/backups/www.$DATE.tar.gz" /var/www
 tar -zcf "/root/backups/syslog.$DATE.tar.gz" /var/log/syslog
 tar -zcf "/root/backups/auth.$DATE.tar.gz" /var/log/auth.log
 faillog -a > /root/backups/faillog.log
@@ -112,6 +112,11 @@ rm "/root/backups/nginx-access.$DATE.tar.gz"
 
 # Remove backup older than 7 days:
 rm "/root/backups/b.$DATEOLD.7z"
+# Remove old backup from repository history:
+git rm --cached "b.$DATEOLD.7z"
+
+# Optional for rare cases:
+# git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch b.$DATEOLD.7z' --prune-empty --tag-name-filter cat -- --all
 
 git pull
 git add .
