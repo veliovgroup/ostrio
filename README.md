@@ -1,8 +1,9 @@
-# [ostr.io](https://ostr.io)
+[ostr.io](https://ostr.io)
+======
 
 One service for all modern web applications needs - Prerendering, Monitoring, Domain Name Protection, Web-Analytics, Web-CRON.
 
-## Ostr.io
+## ostr.io documentation
 ### Account Basics
  - [Registration](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/sign-up.md)
  - [Password Recovery](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/password-recovery.md)
@@ -122,7 +123,7 @@ One service for all modern web applications needs - Prerendering, Monitoring, Do
  - [Advanced Google reCAPTCHA integration]() -->
 
 <!-- #### Visitors Analytics
- - [Ostr.io Analytics]()
+ - [ostr.io Analytics]()
  - [Google Analytics]()
  - [Yandex Metrika]() -->
 

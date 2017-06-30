@@ -112,10 +112,10 @@ rm "/root/backups/nginx-access.$DATE.tar.gz"
 
 # Remove backup older than 7 days:
 rm "/root/backups/b.$DATEOLD.7z"
-# Remove old backup from repository history:
+# Remove old backup from repository history (save LFS storage space):
 git rm --cached "b.$DATEOLD.7z"
 
-# Optional for rare cases:
+# Optional for rare cases (save LFS storage space):
 # git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch b.$DATEOLD.7z' --prune-empty --tag-name-filter cat -- --all
 
 git pull
@@ -142,6 +142,6 @@ crontab -e
 
 Enter next rule:
 ```crontab
-# Daily at 00:00, save log to /var/log/backup.log
+# Daily at 00:00, saving logs to /var/log/backup.log
 0 0 * * * /root/backup.sh > /var/log/backup.log 2>&1
 ```
