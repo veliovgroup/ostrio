@@ -95,7 +95,7 @@ tar -zcf "/root/backups/mongod.$DATE.tar.gz" /var/log/mongodb/mongod.log
 tar -zcf "/root/backups/nginx-access.$DATE.tar.gz" /var/log/nginx/error.log
 
 # CHANGE <PASSWORD> TO THE PASSWORD OF YOUR CHOICE
-7z a "/root/backups/b.$DATE.7z" "/root/backups/mongodb.$DATE.gz" "/root/backups/www.$DATE.tar.gz" "/root/backups/syslog.$DATE.tar.gz" "/root/backups/auth.$DATE.tar.gz" "/root/backups/faillog.$DATE.tar.gz" "/root/backups/lastlog.$DATE.tar.gz" "/root/backups/messages.$DATE.tar.gz" "/root/backups/mongod.$DATE.tar.gz" "/root/backups/nginx-err.$DATE.tar.gz" "/root/backups/nginx-access.$DATE.tar.gz" -<PASSWORD>
+7z a "/root/backups/b.$DATE.7z" "/root/backups/mongodb.$DATE.gz" "/root/backups/www.$DATE.tar.gz" "/root/backups/syslog.$DATE.tar.gz" "/root/backups/auth.$DATE.tar.gz" "/root/backups/faillog.$DATE.tar.gz" "/root/backups/lastlog.$DATE.tar.gz" "/root/backups/messages.$DATE.tar.gz" "/root/backups/mongod.$DATE.tar.gz" "/root/backups/nginx-err.$DATE.tar.gz" "/root/backups/nginx-access.$DATE.tar.gz" -p<PASSWORD>
 
 rm "/root/backups/mongodb.$DATE.gz"
 rm "/root/backups/www.$DATE.tar.gz"
