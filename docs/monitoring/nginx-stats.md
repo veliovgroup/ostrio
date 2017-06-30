@@ -58,7 +58,7 @@ server {
     # after successful authentication
     internal;
     default_type "application/json";
-    return 200 "{\"active\":$connections_active, \"`\":$connections_reading, \"writing\":$connections_writing, \"waiting\":$connections_waiting}";
+    return 200 "{\"active\":$connections_active, \"reading\":$connections_reading, \"writing\":$connections_writing, \"waiting\":$connections_waiting}";
   }
 
   # Return as XML
