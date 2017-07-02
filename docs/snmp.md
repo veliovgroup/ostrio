@@ -3,9 +3,9 @@ Monitoring via SNMP
 
 
 ## Why SNMP?
-Monitoring via SNMP is very useful for double durability. While server is down, build-in server's tools for notifying administrator about high server usage, low HDD space, fraud logins and connectivity issues may not work. In mind of double durability ostr.io will check your servers from its end, from outside of your infrastructure, independently. It's better to receive notifications from multiple sources, than none.
+Monitoring via SNMP is very useful for double durability. While the server is down, build-in server's tools for notifying the administrator about high server usage, low HDD space, fraud logins and connectivity issues may not work. In mind of double durability ostr.io will check your servers from its end, from outside of your infrastructure, independently. It's better to receive notifications from multiple sources, than none.
 
-SNMP allows to collect data and notify about SSH logins, uptime, high memory (RAM) and CPU consumption, low storage space, hight network traffic.
+SNMP allows to collect data and notify about SSH logins, uptime, high memory (RAM) and CPU consumption, low storage space, high network traffic.
 
 Requirements for monitoring your server via SNMP-endpoint:
 
