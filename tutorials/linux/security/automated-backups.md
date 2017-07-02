@@ -92,10 +92,11 @@ lastlog > /root/backups/lastlog.log
 tar -zcf "/root/backups/lastlog.$DATE.tar.gz" /root/backups/lastlog.log
 tar -zcf "/root/backups/messages.$DATE.tar.gz" /var/log/messages
 tar -zcf "/root/backups/mongod.$DATE.tar.gz" /var/log/mongodb/mongod.log
-tar -zcf "/root/backups/nginx-access.$DATE.tar.gz" /var/log/nginx/error.log
+tar -zcf "/root/ostrio-b/nginx-access.$DATE.tar.gz" /var/log/nginx/access.log
+tar -zcf "/root/ostrio-b/nginx-error.$DATE.tar.gz" /var/log/nginx/error.log
 
 # CHANGE <PASSWORD> TO THE PASSWORD OF YOUR CHOICE
-7z a "/root/backups/b.$DATE.7z" "/root/backups/mongodb.$DATE.gz" "/root/backups/www.$DATE.tar.gz" "/root/backups/syslog.$DATE.tar.gz" "/root/backups/auth.$DATE.tar.gz" "/root/backups/faillog.$DATE.tar.gz" "/root/backups/lastlog.$DATE.tar.gz" "/root/backups/messages.$DATE.tar.gz" "/root/backups/mongod.$DATE.tar.gz" "/root/backups/nginx-err.$DATE.tar.gz" "/root/backups/nginx-access.$DATE.tar.gz" -p<PASSWORD>
+7z a "/root/backups/b.$DATE.7z" "/root/backups/mongodb.$DATE.gz" "/root/backups/www.$DATE.tar.gz" "/root/backups/syslog.$DATE.tar.gz" "/root/backups/auth.$DATE.tar.gz" "/root/backups/faillog.$DATE.tar.gz" "/root/backups/lastlog.$DATE.tar.gz" "/root/backups/messages.$DATE.tar.gz" "/root/backups/mongod.$DATE.tar.gz" "/root/backups/nginx-error.$DATE.tar.gz" "/root/backups/nginx-access.$DATE.tar.gz" -p<PASSWORD>
 
 rm "/root/backups/mongodb.$DATE.gz"
 rm "/root/backups/www.$DATE.tar.gz"
@@ -107,7 +108,7 @@ rm "/root/backups/lastlog.$DATE.tar.gz"
 rm "/root/backups/lastlog.log"
 rm "/root/backups/messages.$DATE.tar.gz"
 rm "/root/backups/mongod.$DATE.tar.gz"
-rm "/root/backups/nginx-err.$DATE.tar.gz"
+rm "/root/backups/nginx-error.$DATE.tar.gz"
 rm "/root/backups/nginx-access.$DATE.tar.gz"
 
 # Remove backup older than 7 days:
