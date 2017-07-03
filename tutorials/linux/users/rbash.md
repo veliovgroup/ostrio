@@ -24,7 +24,7 @@ passwd ruser
 ```
 
 ### Confirm you have rbash installed
-Most of Linux distributions comes with rbash, however to make sure rbash is installed - execute next line:
+Most of Linux distributions come with rbash, however, to make sure rbash is installed - execute next line:
 ```shell
 cat /etc/shells 
 # and:
@@ -67,7 +67,7 @@ mkdir -p /home/ruser/usr/bin
 *From now, user named* `ruser` *after login via* `su`*,* `sudo` *or* `ssh` *can not run any commands.*
 
 ### Link allowed commands
-For example we would like to add `su`, as allowed command for `ruser`
+For example, we would like to add `su`, as allowed command for `ruser`
 ```shell
 which su
 # returns /bin/su, copy it
@@ -75,7 +75,7 @@ ln -s /bin/su /home/ruser/usr/bin
 #     ^- output from `which`  ^- symlink to ruser's bin
 ```
 
-Repeat same procedure for all commands (programs, packages) you would like be allowed for `ruser`
+Repeat the same procedure for all commands (programs, packages) you would like to be allowed for `ruser`
 
 ### Set right permissions
 ```shell
