@@ -17,7 +17,7 @@ ssh-keygen
 # "Enter file in which to save the key"
 # it's a good idea to have separate
 # keys for every host.
-# Create key with name related to host
+# Create a key with the name related to host
 # ~/.ssh/my-app-proj
 
 # "Enter passphrase"
@@ -33,7 +33,7 @@ ssh-keygen
 
 ssh-add -K ~/.ssh/my-app-proj
 
-# If key-file is encrypted with passphrase
+# If key file is encrypted with the passphrase
 # You will be asked to enter it
 ```
 
@@ -63,7 +63,7 @@ cd /home/username
 # Create .ssh directory (if not yet exists)
 mkdir -p /home/username/.ssh
 
-# Paste copied public key to new line at:
+# Paste copied public key to the new line at:
 nano /home/username/.ssh/authorized_keys
 # Save file with: "ctrl + o" combination
 # Close file with: "ctrl + x" combination
@@ -75,10 +75,10 @@ chown -R username:username /home/username/.ssh
 ```
 
 ### Disable password auth (extra security)
-If you have backups of your local machine, and you 100% sure SSH keys is secure and won't be lost. You may add extra layer of security by disabling password authentication:
+If you have backups of your local machine, and you 100% sure SSH keys is secure and won't be lost. You may add an extra layer of security by disabling password authentication:
 ```shell
 # nano /etc/ssh/sshd_config
-# find line with PasswordAuthentication
+# find the line with PasswordAuthentication
 # remove "#" if presented at the beginning of the line
 
 PasswordAuthentication no
@@ -90,8 +90,8 @@ service sshd restart
 ```
 
 ### Issue with many keys (mac os)
-If you have multiple keys, system will try login with each of added "identity file" into keychain in alphabet order. 
-By default Linux server will accept only 5 login attempts per connection, so if you will have more than 5 SSH keys in keychain you may end up with rejected connection. To solve this issue use `-i` flag to explicitly set "identity file":
+If you have multiple keys, the system will try login with each of added "identity file" into keychain in alphabet order. 
+By default, Linux server will accept only 5 login attempts per connection, so if you will have more than 5 SSH keys in keychain you may end up with rejected connection. To solve this issue use `-i` flag to explicitly set "identity file":
 ```shell
 ssh -i ~/.ssh/my-app-proj username@host -o PubkeyAuthentication=no
 ```
