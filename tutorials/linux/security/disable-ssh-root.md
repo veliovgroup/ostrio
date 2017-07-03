@@ -2,7 +2,7 @@ Disable SSH login for root user
 ======
 
 ### Why?
- - Most of automatic brute-force software will start with attacking SSH service on `22` port and try to find password for `root` user
+ - Most of the automatic brute-force software will start with attacking SSH service on `22` port and try to find a password for `root` user
  - Not only `root` user is under risk, brute-force software has rich dictionaries of most common used user-names, so it's a good idea to [create user](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/create-user.md) with some random-gibberish name, like: `hjkGJY78_ajks`
 
 ### Before you go:
