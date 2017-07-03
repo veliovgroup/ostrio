@@ -3,7 +3,7 @@ Basic stats for Nginx
 
 This tutorial will show how to collect Nginx real-time connection metrics, like `active`, `reading`, `writing`, `waiting`. Including protection with simple `auth_basic`.
 
-__Do not forget to change value in between `<` and `>` symbols to your own value!__
+__Do not forget to change a value in between `<` and `>` symbols to your own value!__
 
 #### First create `.htpasswd` file
 ```shell
@@ -27,7 +27,7 @@ cd /etc/nginx/sites-available/
 <<<<<<< HEAD:docs/nginx-monitoring.md
 # Edit default file, we using nano in the example below, you're free to use your favorite editor
 =======
-# Edit `default` file, we using nano in example below, you're free to use your favorite editor
+# Edit `default` file, we using nano in the example below, you're free to use your favorite editor
 >>>>>>> VeliovGroup/master:docs/monitoring/nginx-stats.md
 nano default
 ```
