@@ -7,7 +7,7 @@ Monitoring Basics
  - [SNMP (Health) Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#snmp-monitoring)
 
 ### Availability HTTP/HTTPS Monitoring
-This is most basic type of monitoring. Only most basic data is collected and analyzed - "Response Time", "Status Code", "Uptime".
+This is the most basic type of monitoring. Only most basic data is collected and analyzed - "Response Time", "Status Code", "Uptime".
 
 ![Availability Monitoring Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/availability-monitoring.png?raw=true)
 
