@@ -8,7 +8,7 @@ In the case of significant changes on a website, cached results can be purged. F
 ![Purge Full Prerendering Cache Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/prerendering-cache-purge.png?raw=true)
 
 ### Individual page cache purge:
-While full cache purging is limited by time-frame. The individually cached page can be purged anytime without limits. To purge single page from cache "Cache ID" have to be obtained in response headers as `X-Prerender-Id`.
+While full cache purging is limited by time-frame. The individually cached page can be purged anytime without limits. To purge single page from cache "Cache ID" has to be obtained in response headers as `X-Prerender-Id`.
 
 <table><tbody><tr>
   <td>
