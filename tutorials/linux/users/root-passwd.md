@@ -3,7 +3,7 @@ Change root password
 
 When it comes to purchasing virtual or dedicated Linux-based servers - its credentials is sent somehow over the wire (http(s), email, sms, push-notification and etc.). Any data sent over the wire - can not be trusted.
 
-So after first login to your new and shiny server - __change default passwords__.
+So after the first login to your new and shiny server - __change default passwords__.
 
 Let's change `root` (the very powerful user) password:
 ```shell
