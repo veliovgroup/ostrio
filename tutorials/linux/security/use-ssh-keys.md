@@ -33,7 +33,7 @@ ssh-keygen
 
 ssh-add -K ~/.ssh/my-app-proj
 
-# If key file is encrypted with the passphrase
+# If the key file is created with the passphrase
 # You will be asked to enter it
 ```
 
