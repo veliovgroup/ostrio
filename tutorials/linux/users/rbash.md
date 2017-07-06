@@ -24,7 +24,7 @@ passwd ruser
 ```
 
 ### Confirm you have rbash installed
-Most of Linux distributions come with rbash, however, to make sure rbash is installed - execute next line:
+`rbash` shell is preinstalled on most of Linux distributions, however, to confirm `rbash` shell is installed, execute next line:
 ```shell
 cat /etc/shells 
 # and:
@@ -75,7 +75,7 @@ ln -s /bin/su /home/ruser/usr/bin
 #     ^- output from `which`  ^- symlink to ruser's bin
 ```
 
-Repeat the same procedure for all commands (programs, packages) you would like to be allowed for `ruser`
+Repeat thesame procedure for all commands (programs, packages) you would like to be allowed for `ruser`
 
 ### Set right permissions
 ```shell
