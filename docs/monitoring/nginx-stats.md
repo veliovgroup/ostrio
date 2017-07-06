@@ -3,7 +3,7 @@ Basic stats for Nginx
 
 This tutorial will show how to collect Nginx real-time connection metrics, like `active`, `reading`, `writing`, `waiting`. Including protection with simple `auth_basic`.
 
-__Do not forget to change a value in between `<` and `>` symbols to your own value!__
+__Do not forget to change the value in between `<` and `>` symbols to your own value!__
 
 #### First create `.htpasswd` file
 ```shell
