@@ -5,7 +5,7 @@ __NOTE: IT'S A DANGER ZONE.__ This is expert-level settings setup. You must know
 
 Use ipv6 setting only if your server has assigned the IPv6 address. To check assigned IPv6 addresses use: `/sbin/ifconfig | grep inet6`
 
-This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `https (443)`,which is fine setup for most basic web applications. Using suggested rules you're free to add more udp/tcp ports on demand.
+This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `https (443)`, which is fine setup for most basic web applications. Using suggested rules you're free to add more udp/tcp ports on demand.
 
 See also the great article on ip6tables rules by [linode](https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables).
 
