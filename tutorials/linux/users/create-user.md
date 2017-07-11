@@ -4,11 +4,11 @@ Create new system user
 ### Why create another system users in Linux?
  - Web-applications should run under its own users, to isolate system files in case of the breach
  - Databases should run under its own user
- - SSH login should be allowed to user with limited permissions on server, and disabled for `root` user
+ - SSH login should be allowed to the user with limited permissions on the server and disabled for `root` user
  - Other security and usage reasons
 
 ### We can differentiate two basic Linux users types:
- - With login permissions (password and home folder is not set)
+ - With login permissions (password and home folder are not set)
  - Without login permissions
 
 __NOTE:__ change `username` to actual users' name
@@ -29,7 +29,7 @@ passwd username
 # to prompt new password twice
 ```
 
-To add home folder for such limited user, run:
+To add a home folder for such limited user, run:
 ```shell
 # Create folder
 mkdir -p /home/username

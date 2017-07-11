@@ -1,15 +1,15 @@
 Basic ipv6 firewall with ip6tables
 ======
 
-__NOTE: IT'S DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise you may end up with unaccessible server
+__NOTE: IT'S A DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise, you may end up with the unaccessible server
 
-Use ipv6 setting only if your server has assigned IPv6 address. To check assigned IPv6 addresses use: `/sbin/ifconfig | grep inet6`
+Use ipv6 setting only if your server has assigned the IPv6 address. To check assigned IPv6 addresses use: `/sbin/ifconfig | grep inet6`
 
-This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `https (443)`. Which is fine setup for most basic web applications. Using suggested rules you're free to add more udp/tcp ports on demand.
+This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `https (443)`, which is fine setup for most basic web applications. Using suggested rules you're free to add more udp/tcp ports on demand.
 
-See also great article on ip6tables rules by [linode](https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables).
+See also the great article on ip6tables rules by [linode](https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables).
 
-Start with creating blank ip6tables file:
+Start with creating the blank ip6tables file:
 ```shell
 ip6tables-save > /etc/firewallv6.conf
 ```
@@ -54,7 +54,7 @@ To test rules run:
 ip6tables-restore < /etc/firewallv6.conf
 ```
 
-To make created rules persistent, create file `/etc/network/if-up.d/firewall`
+To make created rules persistent, create the file `/etc/network/if-up.d/firewall`
 ```shell
 #!/bin/sh
 ip6tables-restore < /etc/firewallv6.conf

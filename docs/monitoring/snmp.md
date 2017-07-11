@@ -2,9 +2,9 @@ Monitoring via SNMP
 ======
 
 ## Why SNMP?
-Monitoring via SNMP is very useful for double durability. While server is down, build-in server's tools for notifying administrator about high server usage, low HDD space, fraud logins and connectivity issues may not work. In mind of double durability ostr.io will check your servers from its end, from outside of your infrastructure, independently. It's better to receive notifications from multiple sources, than none.
+Monitoring via SNMP is very useful for double durability. While the server is down, build-in server's tools for notifying the administrator about high server usage, low HDD space, fraud logins and connectivity issues may not work. In mind of double durability ostr.io will check your servers from its end, from outside of your infrastructure, independently. It's better to receive notifications from multiple sources, than none.
 
-SNMP allows to collect data and notify about SSH logins, uptime, high memory (RAM) and CPU consumption, low storage space, hight network traffic.
+SNMP allows to collect data and notify about SSH logins, uptime, high memory (RAM) and CPU consumption, low storage space, high network traffic.
 
 Requirements for monitoring your server via SNMP-endpoint:
 
@@ -24,7 +24,7 @@ Collected data and its OIDs (*you may allow/deny any of list below to fit your n
  - Network Interfaces info (`1.3.6.1.2.1.31.1.1.1`, `1.3.6.1.2.1.2.2.1`)
 
 ## Install and configure SNMP
-*All installation and setup instructions is given for Debian/Ubintu Linux distributions.* Instructions for other systems can be easily Googled.
+*All installation and setup instructions are given for Debian/Ubuntu Linux distributions.* Instructions for other systems can be easily Googled.
 
 ### Installation
 ```shell
@@ -37,7 +37,7 @@ nano /etc/snmp/snmpd.conf
 ```
 
 ### Configuration
-__Do not forget to change value in between `<` and `>` symbols to your own value!__
+__Do not forget to change the value in between `<` and `>` symbols to your own value!__
 ```bash
 # /etc/snmp/snmpd.conf
 # Change 161 to any other random port for more security
@@ -101,7 +101,7 @@ Add SNMP endpoint at [ostr.io](https://ostr.io):
  2. Click on "*Add Endpoint*"
  3. To select server type-in its name, and hit <kbd>Enter</kbd>
  4. Select "*SNMP*" in "*Protocol*" drop-down list
- 5. Select desired "*Check Frequency*". We recommend to add same SNMP endpoint twice - one with high frequency (*less than 5 mins*), and second with low frequency (1-4 times per day). This will give better overview of server resources usage
+ 5. Select desired "*Check Frequency*". We recommend to add same SNMP endpoint twice - one with high frequency (*less than 5 mins*), and second with low frequency (1-4 times per day). This will give the better overview of server resources usage
  6. Enter "*SNMP port*" (from `/etc/snmp/snmpd.conf` file)
  7. Enter "*SNMP Community*" (a.k.a. `password` from `/etc/snmp/snmpd.conf` file)
  8. Click on "*Add*" button

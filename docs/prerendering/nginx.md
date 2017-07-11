@@ -14,10 +14,10 @@ Nginx Integration
  - [Nginx: Advanced: Prerendering on Load Balancer](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
 
 ### Installation
-All you need is installed Nginx in latest stable release.
+All you need is installed Nginx in the latest stable release.
 
 ### Update HTML Markup
-To cause special behavior of web crawlers on JavaScript powered websites use `fragment` meta tag. Although it's officially deprecated by Google search engine, it's may be used by other search engines and web crawlers. [Learn more](https://developers.google.com/webmasters/ajax-crawling/docs/specification):
+To cause the special behavior of web crawlers on JavaScript powered websites use `fragment` meta tag. Although it's officially deprecated by Google search engine, it's may be used by other search engines and web crawlers. [Learn more](https://developers.google.com/webmasters/ajax-crawling/docs/specification):
 ```html
 <html>
   <head>
@@ -40,7 +40,7 @@ server {
   root /path/to/public;
 
   location / {
-    # Try static files, if request is not for
+    # Try static files, if the request is not for
     # the static file - proxy pass to Prerendering
     try_files $uri @crawlable;
   }
@@ -50,14 +50,14 @@ server {
     set $fragment  '';
     set $orig_uri  $request_uri;
 
-    # Avoid dead loop and drop get query
+    # Avoid dead loop and drop get the query
     if ($orig_uri ~ "^(.*)\?(.*)$") {
       set $orig_uri $1;
     }
 
     # Feel free to edit bots User Agent regular expression
     # to meet your needs we have included most of the bots
-    # which have been active around Internet at least last 5 years
+    # which have been active around the Internet at least last 5 years
     if ($http_user_agent ~* "\.net crawler|360spider|50\.nu|8bo crawler bot|aboundex|accoona|adldxbot|adsbot-google|ahrefsbot|altavista|appengine-google|applebot|archiver|arielisbot|ask jeeves|auskunftbot|baidumobaider|baiduspider|becomebot|bingbot|bingpreview|bitbot|bitlybot|blitzbot|blogbridge|boardreader|botseer|catchbot|catchpoint bot|charlotte|checklinks|cliqzbot|clumboot|coccocbot|converacrawler|crawl-e|crawlconvera|dataparksearch|daum|deusu|developers\.google\.com/+/web/snippet|discordbot|dotbot|duckduckbot|elefent|embedly|evernote|exabot|facebookbot|facebookexternalhit|fatbot|fdse robot|feed seeker bot|feedfetcher|femtosearchbot|findlinks|flamingo_searchengine|flipboard|followsite bot|furlbot|fyberspider|gaisbot|galaxybot|geniebot|genieo|gigablast|gigabot|girafabot|gomezagent|gonzo1|google sketchup|google-structured-data-testing-tool|googlebot|haosouspider|heritrix|holmes|hoowwwer|htdig|ia_archiver|idbot|infuzapp|innovazion crawler|instagram|internetarchive|iqdb|iskanie|istellabot|izsearch\.com|kaloogabot|kaz\.kz_bot|kd bot|konqueror|kraken|kurzor|larbin|leia|lesnikbot|linguee bot|linkaider|linkapediabot|linkedinbot|lite bot|llaut|lookseek|lycos|mail\.ru_bot|masidani_bot|masscan|mediapartners-google|metajobbot|mj12bot|mnogosearch|mogimogi|mojeekbot|motominerbot|mozdex|msiecrawler|msnbot|msrbot|netpursual|netresearch|netvibes|newsgator|ng-search|nicebot|nutchcvs|nuzzel|nymesis|objectssearch|odklbot|omgili|oovoo|oozbot|openfosbot|orangebot|orbiter|org_bot|outbrain|pagepeeker|pagesinventory|parsijoobot|paxleframework|peeplo screenshot bot|pinterest|plantynet_webrobot|plukkie|pompos|psbot|quora link preview|qwantify|read%20later|reaper|redcarpet|redditbot|retreiver|riddler|rival iq|rogerbot|saucenao|scooter|scrapy|scrubby|searchie|searchsight|seekbot|semanticdiscovery|seznambot|showyoubot|simplepie|simpy|sitelockspider|skypeuripreview|slack-imgproxy|slackbot|slurp|snappy|sogou|solofield|speedy spider|speedyspider|sputnikbot|stackrambler|teeraidbot|teoma|theusefulbot|thumbshots\.ru|thumbshotsbot|tineye|toweya\.com|toweyabot|tumblr|tweetedtimes|tweetmemebot|twitterbot|url2png|vagabondo|vebidoobot|viber|visionutils|vkshare|voilabot|vortex|votay bot|voyager|w3c_validator|wasalive\.bot|web-sniffer|websquash\.com|webthumb|whatsapp|whatweb|wire|wotbox|yacybot|yahoo|yandex|yeti|yisouspider|yodaobot|yooglifetchagent|yoozbot|yottaamonitor|yowedo|zao-crawler|zebot_www\.ze\.bz|zooshot|zyborg") {
       set $crawlable 1;
     }
@@ -88,7 +88,7 @@ server {
       set $crawlable 0;
     }
   
-    # Minimize amount of forwarded headers
+    # Minimize the number of forwarded headers
     proxy_pass_request_headers off;
 
     # !Very important and required:

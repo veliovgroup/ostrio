@@ -38,12 +38,12 @@ Host github.com
  - Click on <kbd>Add SSH key</kbd> button
 
 ### Enable LFS
- - LFS is highly recommended if final backup archive is larger than 50 MBs
+ - LFS is highly recommended if the final backup archive is larger than 50 MBs
  - Read [official docs](https://help.github.com/articles/configuring-git-large-file-storage/)
  - Track `7z` archives with: `git lfs track "*.7z"` for our case
 
 ### Select resources to backup
-Think about what are you planning to backup, here is some paths and files for inspiration:
+Think about what are you planning to backup, here are some paths and files for inspiration:
  - `/var/www`
  - `/var/log/syslog`
  - `/var/log/auth.log`
@@ -64,7 +64,7 @@ Before you go:
 In this file:
 
  - Keep backups only for last 7 days (*change to meet your needs*)
- - Every backup have unique name with date stamp
+ - Every backup has unique name with a date stamp
  - Backup Mongo DB (*change to DB of your choice*)
  - Backup `/var/www/` directory
  - Backup most useful log files
