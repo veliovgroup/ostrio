@@ -35,7 +35,7 @@ which rbash
 If `rbash` is not listed in `/etc/shells` install it via `agt-get` or `aptitude`. After installation, check `/etc/shells` again to make sure it is activated.
 
 ### Change user's shell
-To change user's default shell use `chsh` (*__ch__ange __sh__ell*):
+To change user's default shell use `chsh` (*__ch__ ange __sh__ ell*):
 ```shell
 chsh -s /bin/rbash ruser
 ```
