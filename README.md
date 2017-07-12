@@ -19,7 +19,7 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
     * <a href="mailto:info@ostr.io" target="_parent">Send us a message</a>
     * Follow us on [Twitter](https://twitter.com/ostrio_service)
     * Like and subscribe at [Facebook](https://www.facebook.com/ostrio.service)
-    * Subscribe on [Google+](https://plus.google.com/+OstrIo)
+    * Follow at [Google+](https://plus.google.com/+OstrIo)
 
 ## ostr.io documentation
 ### Account Basics
