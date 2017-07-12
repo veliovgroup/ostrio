@@ -7,9 +7,9 @@ Based on [`rbash` article](https://veliovgroup.com/article/BmtWycSfZL37zXMZc/how
  - SSH login-only user
  - Other users accounts
  - Application users
- - Other cases
+ - Other security and permission restriction cases
 
-Example below creates `ruser`, with only access to `su` command. Great usage for SSH login-only user.
+Example below creates `ruser`, with only access to `su` command. SSH login-only user is the great use case for `rbash`.
 
 ### Create a user
 Create user named `ruser`:
@@ -17,13 +17,13 @@ Create user named `ruser`:
 useradd ruser
 ```
 
-Set password for this user (*so you can login as this user*):
+Set password for new user (*only users with password can login on server*):
 ```shell
 passwd ruser
-# then type-in twice new password
+# then type-in new password twice
 ```
 
-### Confirm you have rbash installed
+### Confirm have `rbash` is installed
 `rbash` shell is preinstalled on most of Linux distributions, however, to confirm `rbash` shell is installed, execute next line:
 ```shell
 cat /etc/shells 
@@ -75,7 +75,7 @@ ln -s /bin/su /home/ruser/usr/bin
 #     ^- output from `which`  ^- symlink to ruser's bin
 ```
 
-Repeat thesame procedure for all commands (programs, packages) you would like to be allowed for `ruser`
+Repeat the same procedure for all commands (programs, packages) which should be allowed to run by `ruser`
 
 ### Set right permissions
 ```shell
