@@ -24,11 +24,7 @@ Let's assume you're editing `/etc/nginx/sites-available/default`
 ```shell
 # Go to the sites-available directory
 cd /etc/nginx/sites-available/
-<<<<<<< HEAD:docs/nginx-monitoring.md
-# Edit default file, we using nano in the example below, you're free to use your favorite editor
-=======
 # Edit `default` file, we using nano in the example below, you're free to use your favorite editor
->>>>>>> VeliovGroup/master:docs/monitoring/nginx-stats.md
 nano default
 ```
 

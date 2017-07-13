@@ -7,9 +7,9 @@ Based on [`rbash` article](https://veliovgroup.com/article/BmtWycSfZL37zXMZc/how
  - SSH login-only user
  - Other users accounts
  - Application users
- - Other cases
+ - Other security and permission restriction cases
 
-Example below creates `ruser`, with only access to `su` command. Great usage for SSH login-only user.
+Example below creates `ruser`, with only access to `su` command. SSH login-only user is the great use case for `rbash`.
 
 ### Create a user
 Create user named `ruser`:
@@ -17,14 +17,14 @@ Create user named `ruser`:
 useradd ruser
 ```
 
-Set password for this user (*so you can login as this user*):
+Set password for new user (*only users with password can login on server*):
 ```shell
 passwd ruser
-# then type-in twice new password
+# then type-in new password twice
 ```
 
-### Confirm you have rbash installed
-`rbash` shell is preinstalled on most of Linux distributions, however, to confirm `rbash` shell is installed, execute next line:
+### Confirm `rbash` is installed
+`rbash` shell is preinstalled on most of Linux distributions, however, to confirm `rbash` shell is installed, execute next lines:
 ```shell
 cat /etc/shells 
 # and:
@@ -32,26 +32,26 @@ which rbash
 # both commands should have /bin/rbash in return
 ```
 
-If rbash is not listed in `/etc/shells` install it via `agt-get` or `aptitude`. After installation, check `/etc/shells` again to make sure it is activated properly.
+If `rbash` is not listed in `/etc/shells` install it via `agt-get` or `aptitude`. After installation, check `/etc/shells` again to make sure it is activated.
 
 ### Change user's shell
-To change user's default shell use `chsh`:
+To change user's default shell use `chsh` (*__ch__ ange __sh__ ell*):
 ```shell
 chsh -s /bin/rbash ruser
 ```
 
-### Create user's home folder
+### Create user's home directory
 ```shell
-# Create folder
+# Create directory
 mkdir -p /home/ruser
 
-# Set home folder
+# Set home directory
 usermod -m -d /home/ruser ruser
 ```
 
 ### Create shell profiles
 ```shell
-# Go to ruser home folder
+# Go to ruser home directory
 cd /home/ruser
 # Create profile
 touch .bashrc
@@ -72,10 +72,11 @@ For example, we would like to add `su`, as allowed command for `ruser`
 which su
 # returns /bin/su, copy it
 ln -s /bin/su /home/ruser/usr/bin
-#     ^- output from `which`  ^- symlink to ruser's bin
+#     │       └─ symlink to ruser's bin
+#     └─ output from `which`
 ```
 
-Repeat thesame procedure for all commands (programs, packages) you would like to be allowed for `ruser`
+Repeat the same procedure for all commands (programs, packages) which should be allowed to run by `ruser`
 
 ### Set right permissions
 ```shell
