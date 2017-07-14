@@ -34,7 +34,7 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
  - [Add phone number(s) for SMS notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-phone-number.md)
 
 ### General User Support
- - [Fill an issue](https://github.com/VeliovGroup/ostrio/issues) - Quickly solve your issue with power of our customer support and open source community
+ - [Fill an issue](https://github.com/VeliovGroup/ostrio/issues) - Quickly solve your issue with the power of our customer support and open source community
  - __Pro__ Plan Support - Contact us directly via email
  - __Business__ Plan Support - Contact us directly via email or messenger of your choice
 
