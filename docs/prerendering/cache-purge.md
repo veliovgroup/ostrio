@@ -20,16 +20,16 @@ While full cache purging is limited by time-frame. The individually cached page 
 </tr></tbody></table>
 
 #### Purge aggressively cached pages or AppCache
-The reason why you may not found x-prerender-id header in DevTools is aggressive caching or usage of AppCache, to avoid this issue please follow next steps (in Chrome or Opera):
- 1. Open new Private window
- 2. Open URL with appended ?_escaped_fragment_=
+The reason why you may not found `x-prerender-id` header in DevTools is aggressive caching or usage of AppCache, to avoid this issue please follow next steps (*in Chrome or Opera*):
+ 1. Open new **Private** window
+ 2. Open URL with appended `?_escaped_fragment_=`
  3. Open "Developer Tools"
  4. In "Developer Tools" go to "Network" tab
  5. Check "Disable Cache" checkbox
  6. Reload/Refresh page
- 7. In "Network" tab select "/?_escaped_fragment_=" document (should be the first)
+ 7. In "Network" tab select `/?_escaped_fragment_=` document (*should be the first*)
  8. In opened area make sure "Header" tab is selected
- 9. In "Response Headers" section find "x-prerender-id" header
+ 9. In "Response Headers" section find `x-prerender-id` header
  
 ### Notes:
 While cache is purged from Prerendering engine it may remain cached for up to 2 hours on intermediate proxy servers.
