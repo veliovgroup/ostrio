@@ -8,3 +8,5 @@
  - [Cache purge](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
  - [ES6 / ECMAScript 2015 Support](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/es6-support.md)
  - [Strip JavaScript](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
+ - [Detect Prerendering engine requests during runtime](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+ - [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)

@@ -57,6 +57,8 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
  - [Cache purge](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
  - [ES6 / ECMAScript 2015 Support](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/es6-support.md)
  - [Strip JavaScript](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
+ - [Detect Prerendering engine requests during runtime](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+ - [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
 
 ### Monitoring
  - __About__: Nowadays website downtime may cause profit loss for any online business, and nearly every business is presented online. It's very important to take an action as soon as possible in event of server, hardware or software failure. We offer proactive monitoring with alerts about occurred issues and issues prediction which may lead to failures in the future.
