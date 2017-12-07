@@ -23,6 +23,7 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
     * Follow us on [Twitter](https://twitter.com/ostrio_service)
     * Like and subscribe at [Facebook](https://www.facebook.com/ostrio.service)
     * Follow at [Google+](https://plus.google.com/+OstrIo)
+ - [CHANGELOG](https://github.com/VeliovGroup/ostrio/blob/master/HISTORY.md) - Dev blog
 
 ## ostr.io documentation
 ### Account Basics
