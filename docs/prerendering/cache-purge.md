@@ -32,4 +32,4 @@ The reason why you may not found `x-prerender-id` header in DevTools is aggressi
  9. In "Response Headers" section find `x-prerender-id` header
  
 ### Notes:
-While cache is purged from Prerendering engine it may remain cached for up to 2 hours on intermediate proxy servers.
+While cache is purged from Prerendering engine it may remain cached from few minutes to several days, it depends from selected "Cache TTL" and [rendering endpoint](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md).
