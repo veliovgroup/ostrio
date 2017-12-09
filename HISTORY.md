@@ -1,6 +1,16 @@
 [ostr.io](https://ostr.io) changelog
 ========
 
+#### [2017-12-09]
+  - __Prerendering__ - Introducing "[Rendering Endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)"
+  - Upgrade front-face app to [`meteor@1.6.0.1`](https://github.com/meteor/meteor/blob/devel/History.md#v1601-2017-12-08)
+
+#### [2017-12-08]
+ - Gradients (*the striped lines*) fix for Safari on mobile and desktop
+ - Minor micro-schema optimization + validation
+ - SSL certs update
+ - Fix play/pause icons
+
 #### [2017-12-06]
  - Slightly refreshed UI, bringing better UX
  - Overall codebase strengthening
