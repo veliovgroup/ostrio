@@ -1,9 +1,14 @@
 [ostr.io](https://ostr.io) changelog
 ========
 
+#### [2017-12-10]
+ - Minor Prerendering docs update
+ - Hide "Next" field on paused CRONs and Monitors
+ - Make pause button great again
+
 #### [2017-12-09]
-  - __Prerendering__ - Introducing "[Rendering Endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)"
-  - Upgrade front-face app to [`meteor@1.6.0.1`](https://github.com/meteor/meteor/blob/devel/History.md#v1601-2017-12-08)
+ - __Prerendering__ - Introducing "[Rendering Endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)"
+ - Upgrade front-face app to [`meteor@1.6.0.1`](https://github.com/meteor/meteor/blob/devel/History.md#v1601-2017-12-08)
 
 #### [2017-12-08]
  - Gradients (*the striped lines*) fix for Safari on mobile and desktop
