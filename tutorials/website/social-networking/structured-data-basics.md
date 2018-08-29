@@ -1,14 +1,15 @@
-Structured data basics
-======
+# Structured data basics
 
-### About:
+## About:
+
 __TL;TR;__
 Adding structured data (*a.k.a. special tags and attributes*) to your website will make it appear more user-friendly in search results, and as a consequence - will cause more click and traffic.
 
 __Description by Google:__
 > The structured data markup you provide for your pages helps Google algorithms better understand the kinds of things you offer your users so that their attributes can be featured in a visually compelling way—from ratings for recipe content, to structured layouts for events, to carousels for a related collection of items such as recipes from a specific host. These experiences are also streamlined for the user’s device and context, enhancing your content previews and making it easier for users to take action on your content wherever they are.
 
-### Basic structure:
+## Basic structure:
+
 This is only most used case - *Website + Article*. There is much more types to use, like - reviews, video, audio, software, applications, recipes, movies, albums, etc. (*see links below for more info*).
 
 ```html
@@ -29,8 +30,8 @@ This is only most used case - *Website + Article*. There is much more types to u
         <meta itemprop="exifData" content="image/png">
         <link itemprop="contentUrl" href="https://example.com/images/norway.png" content="https://example.com/images/norway.png">
         <link itemprop="url" href="https://example.com/acticles/norway#about" content="https://example.com/acticles/norway#about">
-        <meta itemprop="width" content="1200">
-        <meta itemprop="height" content="650">
+        <meta itemprop="width" content="1200 px">
+        <meta itemprop="height" content="650 px">
       </picture>
       <link itemprop="thumbnailUrl" href="https://example.com/images/norway-sm.png" content="https://example.com/images/norway-sm.png">
       <!-- Proper Linking -->
@@ -48,8 +49,8 @@ This is only most used case - *Website + Article*. There is much more types to u
           <meta itemprop="exifData" content="image/png">
           <meta itemprop="contentUrl" content="https://example-travel-co.com/images/logo-1200x630.png">
           <meta itemprop="url" content="https://example-travel-co.com">
-          <meta itemprop="width" content="1200">
-          <meta itemprop="height" content="630">
+          <meta itemprop="width" content="1200 px">
+          <meta itemprop="height" content="630 px">
         </picture>
       </div>
       <!-- Date/Time -->
@@ -72,6 +73,7 @@ This is only most used case - *Website + Article*. There is much more types to u
 ```
 
 ### Further reading:
- - [Test your markup with testing-tool by Google](https://search.google.com/structured-data/testing-tool)
- - [Structured Data guidelines by Google](https://developers.google.com/search/docs/guides/search-features)
- - [Structured Data specs at schema.org](https://schema.org/)
+
+- [Test your markup with testing-tool by Google](https://search.google.com/structured-data/testing-tool)
+- [Structured Data guidelines by Google](https://developers.google.com/search/docs/guides/search-features)
+- [Structured Data specs at schema.org](https://schema.org/)
