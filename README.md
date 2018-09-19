@@ -52,9 +52,10 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
 ### Prerendering (Spiderable / Crawlable)
 
 - __About__: Modern front-end JavaScript solutions don't render pages on a server side, instead, the server returns same HTML markup to all requests, while a page is rendered in a browser. This technology leads to many benefits - faster page load, lower bandwidth usage, great user experience with fast and responsive UI. On the other hand web crawlers and search engines, like Google, Bing, Yandex, Facebook, Slack, Skype etc. doesn't execute JavaScript and fetch an empty page without content. Prerendering will serve content properly to every request by a web crawler, social network, messaging app and search engine, which is so important for SEO and social sharing.
-- [`spiderable-middleware` open source repository](https://github.com/VeliovGroup/spiderable-middleware)
-- [NPM `spiderable-middleware` package](https://www.npmjs.com/package/spiderable-middleware)
-- [Atmosphere `ostrio:spiderable-middleware` package](https://atmospherejs.com/ostrio/spiderable-middleware)
+- __Packages & Open Source:__
+  - [`spiderable-middleware` open source repository](https://github.com/VeliovGroup/spiderable-middleware)
+  - [NPM `spiderable-middleware` package](https://www.npmjs.com/package/spiderable-middleware)
+  - [Atmosphere `ostrio:spiderable-middleware` package](https://atmospherejs.com/ostrio/spiderable-middleware)
 - [Learn more about Prerendering](https://ostr.io/info/prerendering)
 - [Accelerated Mobile Pages (AMP) Integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/amp-support.md)
 - [Node.js Integration via NPM](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/node-npm.md)
@@ -84,9 +85,10 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
 ### Analytics
 
 - __About__: Our solution is made to be Open Source and transparent in a soul, lightweight, efficient and with respect to DNT policy. No heavy tasks, no mouse tracking, no DOM changes, no UI freezes, no negative UX impact. All data is available instantly in real-time.
-- [`ostrio-analytics` open source repository](https://github.com/VeliovGroup/ostrio-analytics)
-- [NPM `ostrio-analytics` package](https://www.npmjs.com/package/ostrio-analytics)
-- [Atmosphere `ostrio:analytics` package](https://atmospherejs.com/ostrio/analytics)
+- __Packages & Open Source:__
+  - [`ostrio-analytics` open source repository](https://github.com/VeliovGroup/ostrio-analytics)
+  - [NPM `ostrio-analytics` package](https://www.npmjs.com/package/ostrio-analytics)
+  - [Atmosphere `ostrio:analytics` package](https://atmospherejs.com/ostrio/analytics)
 - [Detect AdBlock usage](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/detect-adblock.md)
 - [Track Accelerated Mobile Pages (AMP)](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/track-amp.md)
 - [Learn more about Web-Analytics](https://ostr.io/info/web-analytics)
