@@ -2,14 +2,14 @@
 
 #### [2018-09-25]
 
-- Monitoring - [UI] Show polling interval in a table
-- Monitoring - [UI] Fix showing "One click setup" detailed info
-- Monitoring - [UI] Fix showing notification trigger settings in the lower right corner of chart preview
-- Analytics - [UX] In "Referrers" section show full URL for single records, otherwise grouped by origin
-- Analytics - [UX] Speed up rendering of data-table (*table below charts*)
-- Analytics - [UX/UX] Various fixes; Fix clicking on same tabs in data-table
-- Prerendering - Upgrade ES6/7 rendering engine, decreasing rendering time for at least 10% for all users on all plans
-- Prerendering - Better AMP support, now with dynamic "renderable" content. Now on AMP pages, the prerendering engine will execute all JS scripts except `*ampproject.org`, so Google will recognize it as static AMP page
+- ▲ Monitoring - [UI] Show polling interval in a table
+- ▲ Monitoring - [UI] Fix showing "One click setup" detailed info
+- ▲ Monitoring - [UI] Fix showing notification trigger settings in the lower right corner of chart preview
+- 📈 Analytics - [UX] In "Referrers" section show full URL for single records, otherwise grouped by origin
+- 📈 Analytics - [UX] Speed up rendering of data-table (*table below charts*)
+- 📈 Analytics - [UX/UX] Various fixes; Fix clicking on same tabs in data-table
+- 🕸 Prerendering - Upgrade ES6/7 rendering engine, decreasing rendering time for at least 10% for all users on all plans
+- 🕸 Prerendering - Better AMP support, now with dynamic "renderable" content. Now on AMP pages, the prerendering engine will execute all JS scripts except `*ampproject.org`, so Google will recognize it as static AMP page
 
 #### [2018-09-13]
 
