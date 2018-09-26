@@ -1,13 +1,15 @@
-Prerendering Optimization
-======
+# Prerendering Optimization
 
-### ToC:
- - [Speed up rendering](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md#speed-up-rendering)
- - [Nginx](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md#nginx)
+## ToC:
+
+- [Speed up rendering](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md#speed-up-rendering)
+- [Nginx](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md#nginx)
 
 ### Speed up rendering
+
 You should tell to the Prerendering engine when the page is fully rendered. It's can be easily done via `IS_RENDERED` variable located in the global scope.
 `window.IS_RENDERED` should be defined and set to `false` at the very beginning of your page or application bundle script file, for example right in `head` tag:
+
 ```html
 <html>
   <head>
@@ -19,6 +21,7 @@ You should tell to the Prerendering engine when the page is fully rendered. It's
 ```
 
 After the page is fully rendered and filled with data, set `IS_RENDERED` to `true`:
+
 ```html
 <html><
   <head>
@@ -38,6 +41,7 @@ After the page is fully rendered and filled with data, set `IS_RENDERED` to `tru
 ```
 
 It is a good idea to set a timeout, for the case if the page wasn't rendered in an expected period of time (*due to an error or bad application logic*):
+
 ```js
 setTimeout(function () {
   window.IS_RENDERED = true;
@@ -45,7 +49,9 @@ setTimeout(function () {
 ```
 
 ### Nginx
-If you're using Nginx integration for Prerendering and default settings doesn't satisfy you, you may wand to do precise tuning with next directives:
+
+If you're using Nginx integration for Prerendering and default settings doesn't satisfy you, you may want to do precise tuning with next directives:
+
 ```nginx
 http {
   # Enable caching
