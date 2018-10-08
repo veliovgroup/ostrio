@@ -2,7 +2,14 @@
 
 AdBlock is the great add-on in most of the cases as the Internet full of scam, spam, and inappropriate ads. Sadly for other, good side of the Internet, publishers are losing revenue. Track how many of your website visitors are using AdBlock browser extension with ostr.io web analytics.
 
+__Two options:__
+
+- [Vanilla solution without 3rd party libraries](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/detect-adblock.md#vanilla-solution-without-3rd-party-libraries)
+- [Detect using NPM library](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/detect-adblock.md#with-npm-library)
+
 ## Vanilla solution without 3rd party libraries
+
+Install [`ostrio-analytics`](https://github.com/VeliovGroup/ostrio-analytics#analytics-for-ostrio) library:
 
 ```shell
 # For CommonJS (Browser/Node.js):
@@ -11,6 +18,8 @@ npm install ostrio-analytics --save
 # For Meteor.js
 meteor add ostrio:analytics
 ```
+
+Run test and report AdBlock usage to analytics:
 
 ```js
 // For CommonJS (Browser/Node.js):
@@ -40,7 +49,7 @@ setTimeout(function() {
 
 ## With NPM library
 
-Install `adblock-detect` and `ostrio-analytics` NPM packages:
+Install [`adblock-detect`](https://www.npmjs.com/package/adblock-detect) and [`ostrio-analytics`](https://github.com/VeliovGroup/ostrio-analytics#analytics-for-ostrio) NPM packages:
 
 ```shell
 # For CommonJS (Browser/Node.js):
@@ -52,12 +61,12 @@ meteor add ostrio:analytics
 meteor npm install adblock-detect --save
 ```
 
-Implement code:
+Check AdBlock usage with `adblock-detect` and send result to analytics:
 
 ```js
 // For CommonJS (Browser/Node.js):
-var analyticsTracker = new (require('ostrio-analytics'))('trackingId');
-var adblockDetect    = require('adblock-detect');
+const analyticsTracker = new (require('ostrio-analytics'))('trackingId');
+const adblockDetect    = require('adblock-detect');
 
 adblockDetect(function(adblockDetected) {
   if (adblockDetected) {
