@@ -6,26 +6,26 @@ Rootkit Hunter (RKHunter)
  - Article by [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-use-rkhunter-to-guard-against-rootkits-on-an-ubuntu-vps)
  - For latest release [go here](https://sourceforge.net/projects/rkhunter/files/)
 
-On the moment of writing latest release is: `v1.4.2 2014-03-12`
+On the moment of writing latest release is: `v1.4.6 2018-02-24`
 
 ### Installation:
 Download RKHunter script
 ```shell
-wget https://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.2/rkhunter-1.4.2.tar.gz
+wget https://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.6/rkhunter-1.4.6.tar.gz
 ```
 
 Unpack RKHunter archive and install:
 ```shell
-tar xzvf rkhunter-1.4.2.tar.gz
-cd rkhunter-1.4.2
+tar xzvf rkhunter-1.4.6.tar.gz
+cd rkhunter-1.4.6
 ./installer.sh --install
 cd ../
-rm -Rf rkhunter-1.4.2*
+rm -Rf rkhunter-1.4.6*
 ```
 
 ### Install prerequisites:
 ```shell
-apt-get install binutils libreadline5 ssl-cert unhide.rb
+apt-get install binutils libreadline5 ssl-cert unhide
 ```
 RKHunter also requires `ruby` to be installed. Read more about [ruby installation](https://www.ruby-lang.org/en/documentation/installation).
 

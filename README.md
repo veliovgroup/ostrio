@@ -14,10 +14,10 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
   - [__Web-CRON__](https://github.com/VeliovGroup/ostrio#web-cron)
   - [Referral Program](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/referral-program.md)
 - [Tutorials](https://github.com/VeliovGroup/ostrio#tutorials):
-  - [MongoDB](https://github.com/VeliovGroup/ostrio#mongodb-tutorials)
-  - [SSL/TLS certificates](https://github.com/VeliovGroup/ostrio#ssltls-certificates-tutorials)
-  - [Web Development](https://github.com/VeliovGroup/ostrio#web-development-tutorials)
-  - [Linux](https://github.com/VeliovGroup/ostrio#linux-tutorials)
+  - MongoDB
+  - SSL/TLS certificates
+  - Web Development
+  - Linux
 - Get in touch:
   - <a href="mailto:info@ostr.io" target="_parent">Send us a message</a>
   - Follow us on [Twitter](https://twitter.com/ostrio_service)
