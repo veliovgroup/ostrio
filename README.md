@@ -24,6 +24,8 @@ One service for all modern web applications needs - [Prerendering](https://ostr.
   - Like and subscribe at [Facebook](https://www.facebook.com/ostrio.service)
   - Follow at [Google+](https://plus.google.com/+OstrIo)
 - [CHANGELOG](https://github.com/VeliovGroup/ostrio/blob/master/HISTORY.md) - Dev blog
+- Misc:
+  - [Desktop and Mobile Wallpapers](https://github.com/VeliovGroup/ostrio/tree/master/wallpapers)
 
 ## ostr.io documentation
 
