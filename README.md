@@ -1,6 +1,6 @@
 # [ostr.io](https://ostr.io)
 
-One service for all modern web applications needs - [Prerendering](https://ostr.io/info/prerendering), [Monitoring](https://ostr.io/info/monitoring), [Domain Name Protection](https://ostr.io/info/domain-names-protection), [Web-Analytics](https://ostr.io/info/web-analytics), [Web-CRON](https://ostr.io/info/web-cron).
+Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, and other JavaScript-based websites, web apps, single page applications (SPA), and progressive web applications (PWA). Our services: [Pre-rendering](https://ostr.io/info/prerendering), [Monitoring](https://ostr.io/info/monitoring), [Web Analytics](https://ostr.io/info/web-analytics), [WebSec](https://ostr.io/info/domain-names-protection), [Web-CRON](https://ostr.io/info/web-cron).
 
 ## ToC
 
