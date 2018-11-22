@@ -1,5 +1,30 @@
 # [ostr.io](https://ostr.io) changelog
 
+#### [2018-11-15 - 2018-11-23]
+
+This is a very unusual release for our team, new features were delivered over the week by small portions. Our server infrastructure got smoothly upgraded throughout the week too.
+
+We're listening you carefully, thank you all for contributions, suggestions, and offers. Using your feedback we're releasing one of the major releases focused on mobile experience (Mobile UX) and on more verbose communication with users. This release brings mid-level redesign, - we've re-factored all colors, buttons, forms, and other elements. You gonna ♥ it.
+
+- 📈 All charts has now 2 preview modes, "table" and "dashboard"
+- 📈 Analytics - Add biweekly stats to preview table, verbose metrics data
+- 👨‍🎨 All tables now has straightforward design with favicon preview
+- 👨‍🎨 Re-factored pagination element
+- 👨‍🎨 New alternative "table" charts look, see `table`|`dashboard` toggle.
+- 👨‍🎨 Yellow focus on active/important elements
+- 👨‍🎨 Overall design revision
+- 🏗 Make notifications are more readable and informative (*wip*)
+- 😎 Much-much better high-visibility/contrast mode, which now can be comfortably used as "dark" mode
+- 🕸 Prerendering - Fix for pages with `iframe[src="about:blank"]`
+- 🕸 Prerendering - Fix issue with slow pagination in "active cache" browser
+- 📜 FAQ - New FAQ section on main page
+- 👷‍♂️ PWA - "Add to homescreen" for supported browsers
+- 👷‍ Fixed all known issues
+- 👷‍ Overall codebase enhancements
+- 👷‍ Bind search field focus to <kbd>ctrl</kbd>+<cbd>f</cbd> keys combination
+- 👷‍ Bind pagination to <kbd>←</kbd> and <cbd>→</cbd> keys
+- ⚠️ New feature: wildcard domains support for "business" and "pro" plans (*available only for Analytics and Pre-rendering*)
+
 #### [2018-09-25]
 
 - ▲ Monitoring - [UI] Show polling interval in a table
