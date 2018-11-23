@@ -21,8 +21,8 @@ We're listening you carefully, thank you all for contributions, suggestions, and
 - 👷‍♂️ PWA - "Add to homescreen" for supported browsers
 - 👷‍ Fixed all known issues
 - 👷‍ Overall codebase enhancements
-- 👷‍ Bind search field focus to <kbd>ctrl</kbd>+<cbd>f</cbd> keys combination
-- 👷‍ Bind pagination to <kbd>←</kbd> and <cbd>→</cbd> keys
+- 👷‍ Bind search field focus to <kbd>ctrl</kbd>+<kbd>f</kbd> keys combination
+- 👷‍ Bind pagination to <kbd>←</kbd> and <kbd>→</kbd> keys
 - ⚠️ New feature: wildcard domains support for "business" and "pro" plans (*available only for Analytics and Pre-rendering*)
 
 #### [2018-09-25]
