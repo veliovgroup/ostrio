@@ -1,5 +1,8 @@
 # [ostr.io](https://ostr.io) changelog
 
+#### [v.Next]
+- Add sitemap [to GitHub](https://github.com/VeliovGroup/ostrio/blob/master/SITEMAP.md) and [website](https://ostr.io/info/sitemap)
+
 #### [2018-11-15 - 2018-11-23]
 
 This is a very unusual release for our team, new features were delivered over the week by small portions. Our server infrastructure got smoothly upgraded throughout the week too.

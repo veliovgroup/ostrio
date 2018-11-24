@@ -24,6 +24,7 @@ Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, a
   - Like and subscribe at [Facebook](https://www.facebook.com/ostrio.service)
   - Follow at [Google+](https://plus.google.com/+OstrIo)
 - [CHANGELOG](https://github.com/VeliovGroup/ostrio/blob/master/HISTORY.md) - Dev blog
+- [Sitemap](https://github.com/VeliovGroup/ostrio/blob/master/SITEMAP.md)
 - Misc:
   - [Desktop and Mobile Wallpapers](https://github.com/VeliovGroup/ostrio/tree/master/wallpapers)
 
