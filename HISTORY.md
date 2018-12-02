@@ -1,7 +1,10 @@
 # [ostr.io](https://ostr.io) changelog
 
-#### [v.Next]
+#### [2018-11-24 - 2018-12-02]
+
 - Add sitemap [to GitHub](https://github.com/VeliovGroup/ostrio/blob/master/SITEMAP.md) and [website](https://ostr.io/info/sitemap)
+- Add support for sitemap.xml in prerender panel. Now you can scan your `/sitemap.xml` to render and cache all pages of your website
+- Various minor UI enhancements
 
 #### [2018-11-15 - 2018-11-23]
 
