@@ -1,5 +1,15 @@
 # [ostr.io](https://ostr.io) changelog
 
+#### [v.Next]
+- 👷‍♂️🏗 wip
+
+#### [2018-12-09]
+
+- Better emails for monitoring alerts
+- Better pricing page
+- Minor UI enhancements
+- Fix timestamps (dates) in notifications and notification center
+
 #### [2018-11-24 - 2018-12-02]
 
 - Add sitemap [to GitHub](https://github.com/VeliovGroup/ostrio/blob/master/SITEMAP.md) and [website](https://ostr.io/info/sitemap)
