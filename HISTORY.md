@@ -3,6 +3,25 @@
 #### [v.Next]
 - 👷‍♂️🏗 wip
 
+#### [2019-02-19]
+
+- New splash-screen
+- Better pre-rendering timings
+- New images on promo pages
+- New main social image
+- New favicons & pin-icon
+- Better "native" behavior as PWA (remember last opened route; remember last opened modal; larger bottom buttons; and many other UI/UX enhancements)
+- No more Google products, switch reCAPTCHA to [hCAPTCHA](https://hCaptcha.com/?r=dbcc2f68f654)
+- Fix and enhance web-analytics module
+- Fix charts — missing last month/day
+- Fix charts — iOS & MacOS Safari
+- Fix switching High Contrast Mode (HCM) back and forth
+- Improve CSS painting on Mobile & PWA
+- Better ServiceWorker and offline capabilities support
+- <kbd>copy<kbd> button for quick copy/paste operation (Mobile and Desktop support)
+- Minor update to pricing page
+- "business" plan now has option to get monthly invoices and special offers. Interested? Email/text to us using links at the bottom of any page
+
 #### [2018-12-09]
 
 - Better emails for monitoring alerts
