@@ -18,7 +18,7 @@
 - Fix switching High Contrast Mode (HCM) back and forth
 - Improve CSS painting on Mobile & PWA
 - Better ServiceWorker and offline capabilities support
-- <kbd>copy<kbd> button for quick copy/paste operation (Mobile and Desktop support)
+- <kbd>copy</kbd> button for quick copy/paste operation (Mobile and Desktop support)
 - Minor update to pricing page
 - "business" plan now has option to get monthly invoices and special offers. Interested? Email/text to us using links at the bottom of any page
 
