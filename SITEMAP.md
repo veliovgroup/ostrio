@@ -4,7 +4,7 @@
 
 - 🏠 [Homepage landing](https://ostr.io)
 - 🤖 [Pre-rendering](https://ostr.io/info/prerendering)
-- ▲  [Monitoring](https://ostr.io/info/monitoring)
+- 🔭 [Monitoring](https://ostr.io/info/monitoring)
 - 🛡 [Web Security](https://ostr.io/info/domain-names-protection)
 - 📈 [Web Anlytics](https://ostr.io/info/web-analytics)
 - ⏰ [Web-CRON](https://ostr.io/info/web-cron)
@@ -20,9 +20,9 @@
 
 These pages exist only for logged-in users.
 
-- 👾 [My Servers](https://ostr.io/service/servers)
+- 🎛 [My Servers](https://ostr.io/service/servers)
 - 🌎 [My Domains](https://ostr.io/service/domains)
-- ▲  [Monitoring Panel](https://ostr.io/service/monitoring)
+- 🔭 [Monitoring Panel](https://ostr.io/service/monitoring)
 - 📈 [Website Analytics Panel](https://ostr.io/service/analytics)
 - 🤖 [Pre-rendering Panel](https://ostr.io/service/prerender)
 - ⏰ [Web-CRON Tasks Panel](https://ostr.io/service/crons)
@@ -33,7 +33,7 @@ These pages exist only for logged-in users.
 These pages exist only for logged-in users.
 
 - ⚙️ [Account Setting](https://ostr.io/account)
-- 🚨 [Notifications](https://ostr.io/account/notifications)
+- 🔔 [Notifications](https://ostr.io/account/notifications)
 - 📓 [Contacts](https://ostr.io/account/contacts)
 - 🛒 [Cart](https://ostr.io/account/cart)
 - 🤑 [Billing & Bonuses](https://ostr.io/account/billing)
