@@ -4,6 +4,15 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-04-27]
+
+- Fix date (time AP/PM) on real-time charts
+- Allow shorter pre-rendering cache TTL on "business" (no cache) and pro (2 hours) plans, on "hobby" plan (4 hours) will remain to be the shortest possible cache record TTL
+- Framework, packages and dependencies upgrade
+- Fix *ServiceWorker* on some mobile devices
+- No more CAPTCHA on user sign up
+- Fix domain/server ownership confirmation to pass WAP security settings
+
 #### [2019-02-19]
 
 - New splash-screen
