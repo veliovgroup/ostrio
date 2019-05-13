@@ -4,6 +4,17 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-05-11]
+
+- Now pre-rendering cache TTL has step of `0.1` hours
+- Better UI on large screens
+- Better UI/UX in some part of application (re-pre-rendering)
+- General codebase enhancements
+- Now user have 96 hours to confirm a server (*was: 48 hours*)
+- Fix an issue with Pricing page on Safari (*page was getting reloaded, until it crashed*)
+- Fix an issue when some of the users wasn't getting emails (*on private mail-servers*)
+- Fix an issue when some of the users wasn't able to confirm the server ownership
+
 #### [2019-04-27]
 
 - Fix date (time AP/PM) on real-time charts
