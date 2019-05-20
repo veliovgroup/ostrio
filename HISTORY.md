@@ -4,6 +4,11 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-05-20]
+
+- Minor UI/UX fixes and enhancements, mostly related to fonts
+- Micro-data fixes for better SEO (*mostly FAQ section*)
+
 #### [2019-05-11]
 
 - Now pre-rendering cache TTL has step of `0.1` hours
