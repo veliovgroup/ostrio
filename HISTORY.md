@@ -4,6 +4,15 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-06-15]
+
+- Fix "glasses" icon in template footer
+- Add "related" domain names to sitemap
+- Add double-checks for domain verifications
+- Add double-checks for failed health checks
+- Extend server verification period to 6 days (144 hours)
+- Overall service speed and performance enhancements
+
 #### [2019-05-20]
 
 - Minor UI/UX fixes and enhancements, mostly related to fonts
