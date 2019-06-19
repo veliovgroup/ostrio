@@ -4,6 +4,11 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-06-19]
+
+- Minor codebase fixes related to charts
+- Minor CSS fixes advised by Google
+
 #### [2019-06-15]
 
 - Fix "glasses" icon in template footer
