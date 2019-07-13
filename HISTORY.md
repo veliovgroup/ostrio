@@ -4,6 +4,14 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-07-13]
+
+- Notification Triggers: More verbose UX interactions with UI
+- Prerendering > Pre-render a website: Scan up to `500` pages in a single run! *Was: 100*
+- Prerendering > Pre-render a website form: Remember latest `path` and `links limit` fields
+- Emails: Prioritize critical emails
+- Better Sign-up flow
+
 #### [2019-06-19]
 
 - Minor codebase fixes related to charts
