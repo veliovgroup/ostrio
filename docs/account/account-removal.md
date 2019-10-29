@@ -16,6 +16,6 @@ Steps:
 6. Enter you login to confirm and start removal process
 7. Wait patiently. __Do not reload or close the page!__
 8. You will be logged out from account upon successful account removal
-9. You may or *may not\** receive conformational email about successful account removal
+9. You may or *may not\** receive confirmatory email about successful account removal
 
 \*Email may not be delivered due to invalid or incorrect email address provided upon registration. Or due to technical issues and service interruptions on intermediate and primary email servers.
