@@ -38,6 +38,7 @@ Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, a
 - [Change login (primary email)](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/change-primary-email.md)
 - [Add extra email(s) for notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-email.md)
 - [Add phone number(s) for SMS notifications](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/add-notification-phone-number.md)
+- [Account Removal](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/account-removal.md)
 
 ### General User Support
 
