@@ -13,6 +13,7 @@
 
 ### Running pre-rendering integration tests:
 
+- Pass `/sitemap.xml` to <kbd>Pre-Render</kbd> (*Pre-render a website*) in __Pre-rendering Panel__ to instantly render whole website;
 - Use `cURL` and `Authorization` header (*see nginx integration*): `curl -v -H "Authorization: Basic TOKEN" https://render.ostr.io/?url=https://your-website-domain.com`;
 - Use `cURL` and authentication credentials (*see node.js integration*): `curl -v https://auth:string@render.ostr.io/?url=https://your-website-domain.com`;
 - Use `test:test` credentials to test general integration (*to make sure web application server can reach pre-rendering service*);
