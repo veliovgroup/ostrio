@@ -4,6 +4,32 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-10-29]
+
+- 🔥 Pre-rendering: Support for __styled-components__
+- 📊 Charts: Fix displayed date/time in some timezones
+- 📊 Charts: Add option to display date/time in *Local* and/or *UTC* timezones
+- 👨‍💻 User Account: Easily subscribe/unsubscribe from our newsletter in [account settings](https://ostr.io/account)
+- ✉️ Notifications: Better emails delivery with prioritization for *premium* billing plans and *urgent* notifications
+
+#### [2019-10-06]
+
+- Automated and simplified the [right to be forgotten](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/account-removal.md) following our GDPR compliance
+- Overall fixes to our mailing service, splitting "urgent" and "regular" email for better user experience
+- All forms: Better UI/UX implementation
+
+#### [2019-10-03]
+
+- Analytics — released [`ostrio-analytics@1.2.0`](https://github.com/VeliovGroup/ostrio-analytics/releases/tag/1.2.0) — Improving global JavaScript runtime errors report
+- Analytics — Fix "development" mode and overall codebase enhancements
+
+#### [2019-08-18]
+
+- Regular maintenance release
+- Overall infrastructure software upgrade
+- Internal packages and dependencies upgrade
+- Prerendering: Fix saving and pre-filling "path" and "scan pages limit" in "Pre-render the website" pop-up
+
 #### [2019-07-13]
 
 - Notification Triggers: More verbose UX interactions with UI
