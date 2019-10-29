@@ -19,6 +19,10 @@
 - Use `Authorization: Basic dGVzdDp0ZXN0` header to test general integration (*to make sure web application server can reach pre-rendering service*);
 - Learn more about running tests in [`spiderable-middleware` package documentation](https://github.com/VeliovGroup/spiderable-middleware#running-tests).
 
+## 📈 Web Analytics Tips
+
+- Enable "Development Mode" to test web analytics integration and data-reports right from `localhost`.
+
 ## 🔭 Monitoring Tips
 
 - Use `{{rand}}` placeholder (*including curly brackets*) in endpoint URL to generate unique random URI for every checking request. Note: `{{rand}}` can be used multiple times in a single URL, example: `/path/{{rand}}/part?nc={{rand}}`.
