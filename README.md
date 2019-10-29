@@ -13,6 +13,7 @@ Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, a
   - [__Domains Protection__](https://github.com/VeliovGroup/ostrio#domains-protection)
   - [__Web-CRON__](https://github.com/VeliovGroup/ostrio#web-cron)
   - [Referral Program](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/referral-program.md)
+  - [Service Tips'n'Tricks](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/tips-and-tricks.md)
 - [Tutorials](https://github.com/VeliovGroup/ostrio#tutorials):
   - MongoDB
   - SSL/TLS certificates
