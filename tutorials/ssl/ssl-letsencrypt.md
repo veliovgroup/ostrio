@@ -1,26 +1,29 @@
-Let's Encrypt / Free SSL (TLS) certificates
-======
+# Let's Encrypt / Free SSL (TLS) certificates
 
 In this tutorial we use HTTP for domain ownership validation, as alternative see:
- - [Validation via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
+
+- [Validation via DNS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt-dns-validation.md)
 
 In order to make World Wide Web safer and faster, we strongly recommend to use HTTPS protocol for your website, and add H2 protocol support to your web-server.
 
 This tutorial will show how to use [Let's Encrypt](https://letsencrypt.org) project. Which let's you to generate fully qualified SSL (TLS) certificate for free.
 
-### Notes: 
- - Examples is given for Debian/Ubuntu Linux and Nginx. Instructions for other platforms can be easily googled
- - We are not somehow affiliated with "Let's Encrypt", we just love to use this project. You can [support](https://letsencrypt.org/donate/) "Let's Encrypt" project if you like it too
+## Notes:
 
+- Examples is given for Debian/Ubuntu Linux and Nginx. Instructions for other platforms can be easily googled
+- We are not somehow affiliated with "Let's Encrypt", we just love to use this project. You can [support](https://letsencrypt.org/donate/) "Let's Encrypt" project if you like it too
 
-### Install Certbot:
+## Install Certbot:
+
 Clone Certbot from its [GitHub repository](https://github.com/certbot/certbot)
+
 ```shell
 git clone https://github.com/certbot/certbot.git
 cd certbot
 ```
 
-### Set Nginx configuration:
+## Set Nginx configuration:
+
 ```nginx
 # /etc/nginx/sites-available/example.conf
 server{
@@ -34,12 +37,14 @@ server{
 }
 ```
 
-### Make sure root exists:
+## Make sure root exists:
+
 ```shell
 mkdir -p /var/www/example
 ```
 
-### Generate certificate:
+## Generate certificate:
+
 ```shell
 # --email admin@example.com <- Email for important notifications
 # -w /var/www/example/ <- Nginx host "root"
@@ -51,7 +56,8 @@ mkdir -p /var/www/example
 # like: /etc/letsencrypt/live/example.com/
 ```
 
-### Generate `dhparam`:
+## Generate `dhparam`:
+
 ```shell
 # Go to /etc/nginx/ssl/
 mkdir -p /etc/nginx/ssl/
@@ -62,7 +68,8 @@ cd /etc/nginx/ssl/
 openssl dhparam -out dhparam.pem 4096
 ```
 
-### Update Nginx configuration:
+## Update Nginx configuration:
+
 ```nginx
 # /etc/nginx/sites-available/example.conf
 server{
@@ -83,14 +90,15 @@ server {
   ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
   ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;
 
-  ssl                 on;
+  ssl on;
 
   # Everything below can be moved to nginx.conf
   # To apply to all hosts with SSL
 
-  ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+  ssl_protocols TLSv1.3 TLSv1.2 TLSv1.1;
+  ssl_ecdh_curve secp384r1;
   ssl_prefer_server_ciphers on;
-  ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:AES:DES-CBC3-SHA:!RC4:!aNULL:!eNULL:!MD5:!EXPORT:!EXP:!LOW:!SEED:!CAMELLIA:!IDEA:!PSK:!SRP:!SSLv:!aECDH:!EDH-DSS-DES-CBC3-SHA:!EDH-RSA-DES-CBC3-SHA:!KRB5-DES-CBC3-SHA;
+  ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA256:RSA-AES128-SHA256:RSA-AES256-SHA256:RSA-AES128-SHA:RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA;
   ssl_session_cache   shared:SSL:32m;
   ssl_session_timeout 4h;
   ssl_buffer_size     1400;
@@ -104,12 +112,14 @@ server {
 }
 ```
 
-### Enable example.conf:
+## Enable example.conf:
+
 ```shell
 ln -s /etc/nginx/sites-available/example.conf /etc/nginx/sites-enabled/example.conf
 ```
 
-### Enable http2 (H2):
+## Enable http2 (H2):
+
 ```nginx
 # create or edit /etc/nginx/sites-available/default
 server {
@@ -121,19 +131,21 @@ server {
   ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
   ssl_trusted_certificate /etc/letsencrypt/live/example.com/chain.pem;
 
-  ssl                 on;
+  ssl on;
 
   return 444;
 }
 ```
 
-### Set permissions:
-If you've been generating certificates remotely (*not on the server*). 
-You may copy-paste all generated files to `/etc/nginx/ssl/` directory. 
+## Set permissions:
+
+If you've been generating certificates remotely (*not on the server*).
+You may copy-paste all generated files to `/etc/nginx/ssl/` directory.
 
 To provide security after copying files - we should set owner and restrict access.
 
 Use `chown` to set files owner, usually `www-data` for Nginx
+
 ```shell
 # Run only if nginx operates under www-data user
 # chown -R www-data:www-data /etc/nginx
@@ -145,18 +157,21 @@ chmod -R 600 /etc/nginx/ssl
 # chown -R www-data:www-data /var/www/example
 ```
 
-### Test configuration:
+## Test configuration:
+
 ```shell
 service nginx configtest
 nginx -t
 ```
 
-### Restart Nginx to apply changes:
+## Restart Nginx to apply changes:
+
 ```shell
 service nginx restart
 ```
 
-### Test SSL (TLS) setup:
- - Go to [ssllabs.com](https://www.ssllabs.com/ssltest/index.html)
- - Enter your domain
- - You should get A+ rating with this setup
+## Test SSL (TLS) setup:
+
+- Go to [ssllabs.com](https://www.ssllabs.com/ssltest/index.html)
+- Enter your domain
+- You should get A+ rating with this setup
