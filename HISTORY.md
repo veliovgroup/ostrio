@@ -4,6 +4,13 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-11-04]
+
+- 🤑 Referral Program: Now both users will get __$50 credits__!
+- 📊 Charts: Fix UTC on daily and monthly chart views
+- 👷‍ HTML: Change `referrer` meta-tag value to `same-origin`, *was `origin`*
+- ✉️ Notifications: Minor update to email template
+
 #### [2019-10-29]
 
 - 🔥 Pre-rendering: Support for __styled-components__
