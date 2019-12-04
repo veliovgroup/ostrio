@@ -4,6 +4,19 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2019-12-03]
+
+- 👷‍♂️ Micro-services refactoring
+- 👨‍💻 This update is mainly focused on micro-services efficiency and DB performance
+
+#### [2019-12-02]
+
+- 📲 Add support for web-push-notifications (Support: Galaxy PWA, Android Internet, Opera, Chrome, Firefox)!
+- 📱 Enhancements to PWA implementation
+- ⚡️ JavaScript runtime and scripts evaluation timing improvements
+- 👷‍♂️ This release is mainly focused on performance and speed improvements on mobile devices as well as PWA support with push-notifications on selected devices and browsers
+- 👷‍ HTML: Change `referrer` meta-tag value to `origin`, *was `same-origin`*; (*revert last release changes*)
+
 #### [2019-11-04]
 
 - 🤑 Referral Program: Now both users will get __$50 credits__!
