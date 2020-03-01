@@ -34,7 +34,7 @@
 
 ## 🤑 Free credits
 
-- Sing up using [this special link](https://ostr.io/signup/gCZWjiBScePWrnnDr) to get $5 off your second purchase;
+- Sign up using [this special link](https://ostr.io/signup/gCZWjiBScePWrnnDr) to get $50 off your second purchase;
 - Invite friends! Obtain [unique referral link](https://ostr.io/account#ref) and share it with your friends or colleagues to earn free credits;
 - Subscribe on our social accounts ([Twitter](https://twitter.com/ostrio_service), [Facebook](https://www.facebook.com/ostrio.service), [Instagram](https://www.instagram.com/ostr.io/), [Medium](https://medium.com/@ostr.io)) where we post promo-codes;
 - Subscribe on our newsletter in [account settings](https://ostr.io/account).
