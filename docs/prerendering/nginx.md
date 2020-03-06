@@ -121,7 +121,7 @@ server {
       # For more info read: http://nginx.org/en/docs/http/ngx_http_core_module.html#sendfile
       sendfile off;
       set $crawlable "render.ostr.io";
-
+      proxy_set_header User-Agent $http_user_agent;
       # Change $scheme to 'https', for http -> https proxy
       proxy_pass https://$crawlable/?url=$scheme://$host$orig_uri$fragment;
       break;
@@ -198,6 +198,7 @@ server {
     if ($crawlable = 1) {
       sendfile   off;
       set $crawlable "render.ostr.io";
+      proxy_set_header User-Agent $http_user_agent;
       proxy_pass https://$crawlable/?url=https://$host$orig_uri$fragment;
       break;
     }
@@ -288,6 +289,7 @@ server {
     if ($crawlable = 1) {
       sendfile   off;
       set $crawlable "render.ostr.io";
+      proxy_set_header User-Agent $http_user_agent;
       proxy_pass https://$crawlable/?url=https://$host$orig_uri$fragment;
       break;
     }
