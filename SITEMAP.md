@@ -6,10 +6,10 @@
 - 🤖 [Pre-rendering](https://ostr.io/info/prerendering)
 - 🔭 [Monitoring](https://ostr.io/info/monitoring)
 - 🛡 [Web Security](https://ostr.io/info/domain-names-protection)
-- 📈 [Web Anlytics](https://ostr.io/info/web-analytics)
+- 📈 [Website Analytics](https://ostr.io/info/web-analytics)
 - ⏰ [Web-CRON](https://ostr.io/info/web-cron)
-- 👨‍💻 [Built by Developers, for Developers](https://ostr.io/info/built-by-developers-for-developers)
-- 📜 [Docs and how-tos](https://ostr.io/info/docs)
+- 👨‍💻 [Built by Developers for Developers](https://ostr.io/info/built-by-developers-for-developers)
+- 📋 [Docs and how-tos](https://ostr.io/info/docs)
 - 🏷 [Pricing & Plans](https://ostr.io/info/pricing)
 - 📔 [ToS](https://ostr.io/info/terms-and-conditions)
 - 📔 [Privacy Policy](https://ostr.io/info/privacy-policy)
@@ -20,13 +20,13 @@
 
 These pages exist only for logged-in users.
 
-- 🎛 [My Servers](https://ostr.io/service/servers)
-- 🌎 [My Domains](https://ostr.io/service/domains)
-- 🔭 [Monitoring Panel](https://ostr.io/service/monitoring)
-- 📈 [Website Analytics Panel](https://ostr.io/service/analytics)
-- 🤖 [Pre-rendering Panel](https://ostr.io/service/prerender)
-- ⏰ [Web-CRON Tasks Panel](https://ostr.io/service/crons)
-- 📲 [SMSs](https://ostr.io/service/sms)
+- 🎛 [Servers Control Panel](https://ostr.io/service/servers)
+- 🌎 [Domains Control Panel](https://ostr.io/service/domains)
+- 🔭 [Monitoring Control Panel](https://ostr.io/service/monitoring)
+- 📈 [Website Analytics Control Panel](https://ostr.io/service/analytics)
+- 🤖 [Pre-rendering Control Panel](https://ostr.io/service/prerender)
+- ⏰ [Web-CRON Tasks Control Panel](https://ostr.io/service/crons)
+- 📲 [SMS Alerts](https://ostr.io/service/sms)
 
 ## Account
 
@@ -37,3 +37,21 @@ These pages exist only for logged-in users.
 - 📓 [Contacts](https://ostr.io/account/contacts)
 - 🛒 [Cart](https://ostr.io/account/cart)
 - 🤑 [Billing & Bonuses](https://ostr.io/account/billing)
+
+## Open Source
+
+- 📦 [`spiderable-moddleware`](https://github.com/VeliovGroup/spiderable-middleware#spiderable-middleware)
+- 📦 [`ostrio-analytics`](https://github.com/VeliovGroup/ostrio-analytics/#analytics-for-ostrio)
+- 📋 [Documentation repository](https://github.com/VeliovGroup/ostrio)
+
+## Domains
+
+List of related domain names.
+
+- 🤖 [prerendering.com](https://prerendering.com)
+- 🤖 [prerendering.info](https://prerendering.info)
+- 🤖 [prerender.info](https://prerender.info)
+- 🔭 [snmp-monitoring.com](https://snmp-monitoring.com)
+- 🔭 [snmp-monitoring.info](https://snmp-monitoring.info)
+- 🛡 [domain-protection.info](https://domain-protection.info)
+- ⏰ [web-cron.info](https://web-cron.info)
