@@ -4,6 +4,41 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2020-03-02]
+
+This release is a series of updates across our infrastructure, micro-services, and servers. As well as UI users interact with. From the user's perspective, our goal was to make the "Servers" panel great again. We have introduced "Available Services" with direct links to viewing, creating, and managing services. These changes dramatically reduce navigation clutter and help to observe individual server properties in a single place. Another feature presented in a server's panel — "Related Notifications," where you can observe and manage all notifications, alerts, and warnings for this individual server. Similarly, "Related Notifications" section is introduced at "Domains," "Monitoring," and "Web-CRON" panels.
+
+- 👨‍🎨 Overall UI refactoring for best UX;
+- 🎛 __Make "Server" panel great again:__
+  - 👨‍✈️ Add "Available Services" with short-links to managing websec, pre-rendering, web analytics, monitoring endpoints, and web-cron tasks services related __only__ to this server;
+  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this server, including notifications for domain, monitoring endpoints and web-cron tasks;
+  - 👨‍🎨 UI refactoring for better navigation and user experience
+- 🌎 __Domains:__
+  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __domain__;
+  - 👨‍🎨 UI refactoring for better navigation and user experience;
+- 🔭 __Monitoring:__
+  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __endpoint__;
+  - 👨‍🎨 UI refactoring for better navigation and user experience;
+- 📈 __Analytics:__
+  - 📡 Add support for Beacon API;
+  - 🐞 Better __Global Errors__ collection and reporting;
+  - 📦 Update [open source tracking code](https://github.com/VeliovGroup/ostrio-analytics#analytics-for-ostrio);
+  - 👨‍🎨 UI refactoring for better navigation and user experience;
+- 🤖 __Pre-rendering:__
+  - 📱 Add support for "mobile" crawlers;
+  - 🚀 Update server infrastructure gaining at least 12% rendering speed;
+  - 🤖 Pre-render a website as "mobile" or "desktop" crawler;
+  - 🤖 Collect data about crawler's user-agent;
+  - 📋 Add example for pre-rendering via cURL;
+  - 📦 Update [open source libraries](https://github.com/VeliovGroup/spiderable-middleware);
+  - 👨‍🎨 UI refactoring for better navigation and user experience;
+- ⏰ __Web-CRON:__
+  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __task__;
+  - 👨‍💻 Better notifications and error-reports;
+  - 👨‍🎨 UI refactoring for better navigation and user experience;
+
+__Do not forget__: our website is a fully-featured progressive web application (PWA). [Install it](https://twitter.com/ostrio_service/status/1189478520034136064) as a "native" mobile app on [iOS](https://www.instagram.com/stories/highlights/17970561190165807) and Android.
+
 #### [2019-12-03]
 
 - 👷‍♂️ Micro-services refactoring
