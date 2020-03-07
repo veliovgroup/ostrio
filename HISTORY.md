@@ -6,18 +6,24 @@
 
 #### [2020-03-02]
 
-This release is a series of updates across our infrastructure, micro-services, and servers. As well as UI users interact with. From the user's perspective, our goal was to make the "Servers" panel great again. We have introduced "Available Services" with direct links to viewing, creating, and managing services. These changes dramatically reduce navigation clutter and help to observe individual server properties in a single place. Another feature presented in a server's panel — "Related Notifications," where you can observe and manage all notifications, alerts, and warnings for this individual server. Similarly, "Related Notifications" section is introduced at "Domains," "Monitoring," and "Web-CRON" panels.
+Our service and all its components just landed a massive upgrade. Last week we released a series of updates across our infrastructure, micro-services, and servers.
+
+We have introduced “Available Services” with direct links to viewing, creating, and managing services. These changes dramatically reduce navigation clutter and help to observe individual server properties in a single place.
+
+Another feature presented in a server’s panel — “Related Notifications,” where you can observe and manage all notifications, alerts, and warnings for this individual server. Similarly, the “Related Notifications” section introduced at “Domains,” “Monitoring,” and “Web-CRON” panels.
+
+You are welcome to read in-depth insights about the latest updates to our service in [our Medium blog](https://medium.com/@ostr.io/march-2020-whats-new-b17178704d59).
 
 - 👨‍🎨 Overall UI refactoring for best UX;
 - 🎛 __Make "Server" panel great again:__
-  - 👨‍✈️ Add "Available Services" with short-links to managing websec, pre-rendering, web analytics, monitoring endpoints, and web-cron tasks services related __only__ to this server;
-  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this server, including notifications for domain, monitoring endpoints and web-cron tasks;
+  - 👨‍✈️ Add "Available Services" with short-links to managing websec, pre-rendering, web analytics, monitoring endpoints, and web-CRON tasks services related __only__ to this server;
+  - 🔔 Add "Related Notifications" with __all__ notifications related __only__ to this __server__, including notifications for domain WebSec, monitoring endpoints and web-CRON tasks;
   - 👨‍🎨 UI refactoring for better navigation and user experience
 - 🌎 __Domains:__
-  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __domain__;
+  - 🔔 Add "Related Notifications" with __all__ notifications related __only__ to this __domain__ (WebSec/DNS/Whois/SSL/TLS);
   - 👨‍🎨 UI refactoring for better navigation and user experience;
 - 🔭 __Monitoring:__
-  - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __endpoint__;
+  - 🔔 Add "Related Notifications" with __all__ notifications related __only__ to this __endpoint__ (HTTP/SNMP/API);
   - 👨‍🎨 UI refactoring for better navigation and user experience;
 - 📈 __Analytics:__
   - 📡 Add support for Beacon API;
