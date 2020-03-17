@@ -1,8 +1,8 @@
 # Track AMP pages
 
-[AMP project](https://www.ampproject.org/) aims to speedup and enhance user experience, and it's open source! API and markup is very limited and strict, and not easy to find a way to track and build analytics from views if AMP-powered pages.
+[AMP project](https://www.ampproject.org/) aims to speed up and enhance the user experience, and it's open source! API and markup are minimal and strict, and not easy to find a way to track and build analytics from views of AMP-powered pages.
 
-Below we suggest to use custom events of ostr.io web analytics to track views on Accelerated Mobile Pages (AMP) within `amp-img` tag:
+Below we suggest using custom events of ostr.io web analytics to track views on Accelerated Mobile Pages (AMP) within `amp-img` tag:
 
 ```html
 <!doctype html>
