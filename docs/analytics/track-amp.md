@@ -30,7 +30,14 @@ Below we suggest to use custom events of ostr.io web analytics to track views on
 
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{PAGE_ID}} with actual unique page ID -->
-    <amp-img src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp%22:%22{{PAGE_ID}}%22}&9=786345&v=112" width="1" height="1"></amp-img>
+    <amp-img
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp%22:%22{{PAGE_ID}}%22}&9=786589&v=207"
+      width="1"
+      height="1"
+      layout="fixed"
+      alt="analytics"
+      title="analytics"
+    ></amp-img>
   </body>
 </html>
 ```
@@ -48,7 +55,14 @@ As alternative (*or addition*) to track a visit only, without reporting to custo
 
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{amp-my-page-title}} with page title, recommended to start with `amp-*` -->
-    <amp-img src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?2={{amp-my-page-title}}&9=3547896&v=112" width="1" height="1"></amp-img>
+    <amp-img
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?2={{amp-my-page-title}}&9=3556787&v=207"
+      width="1"
+      height="1"
+      layout="fixed"
+      alt="analytics"
+      title="analytics"
+    ></amp-img>
   </body>
 </html>
 ```
@@ -65,12 +79,26 @@ Track page visit and track event when visitor reach end of the AMP page:
     <!-- Place event-tracking code before main AMP content to track page opening -->
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{PAGE_ID}} with page title, recommended to start with `amp-*` -->
-    <amp-img src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-start%22:%22{{PAGE_ID}}%22}&9=786346&v=112" width="1" height="1"></amp-img>
+    <amp-img
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-start%22:%22{{PAGE_ID}}%22}&9=908568&v=207"
+      width="1"
+      height="1"
+      layout="fixed"
+      alt="analytics"
+      title="analytics"
+    ></amp-img>
 
     <!-- ...Body markup here, see above... -->
 
     <!-- Place event-tracking code after main AMP content to track reaching end of the page: -->
-    <amp-img src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-end%22:%22{{PAGE_ID}}%22}&9=786347&v=112" width="1" height="1"></amp-img>
+    <amp-img
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-end%22:%22{{PAGE_ID}}%22}&9=896458&v=207"
+      width="1"
+      height="1"
+      layout="fixed"
+      alt="analytics"
+      title="analytics"
+    ></amp-img>
   </body>
 </html>
 ```
