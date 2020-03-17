@@ -4,6 +4,17 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2020-03-16]
+
+- 📋 Update GDPR - Add info about using and processing IP-addresses;
+- 📋 Update Privacy Policy - Add info about using and processing IP-addresses;
+- 📋 Add CCPR compliance to Privacy Policy;
+- 📋 Update User Agreement - Minor styling and wording update;
+- 📋 Update Disclaimer - Minor styling and wording update;
+- ⚡️ Update AMP pages;
+- 👨‍💻 Overall updates to documentation and texts on our website;
+- 🗺 [Sitemap](https://ostr.io/info/sitemap) update.
+
 #### [2020-03-02]
 
 Our service and all its components just landed a massive upgrade. Last week we released a series of updates across our infrastructure, micro-services, and servers.
