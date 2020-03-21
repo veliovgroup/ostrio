@@ -40,7 +40,7 @@ These pages exist only for logged-in users.
 
 ## Open Source
 
-- 📦 [`spiderable-moddleware`](https://github.com/VeliovGroup/spiderable-middleware#spiderable-middleware)
+- 📦 [`spiderable-middleware`](https://github.com/VeliovGroup/spiderable-middleware#spiderable-middleware)
 - 📦 [`ostrio-analytics`](https://github.com/VeliovGroup/ostrio-analytics/#analytics-for-ostrio)
 - 📋 [Documentation repository](https://github.com/VeliovGroup/ostrio)
 
