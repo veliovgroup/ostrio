@@ -1,23 +1,26 @@
-Nginx Integration
-======
+# Nginx Integration
 
- - Learn more - [what is Prerendering and why you need it](https://ostr.io/info/prerendering)
- - For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware).
+- Learn more - [what is Pre-rendering and why you need it](https://ostr.io/info/prerendering)
+- For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware).
 
-### ToC:
- - [Installation](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#installation)
- - [Update HTML Markup](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#update-html-markup)
- - [Nginx integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#nginx-integration-1)
- - [Nginx: Simple proxy pass](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#simple-proxy-pass)
- - [Nginx: Phusion Passenger + Nginx + Prerendering integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#phusion-passenger--nginx--prerendering-integration)
- - [Nginx: Advanced: WebSockets, socket.io, socketjs](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-websockets-socketio-socketjs)
- - [Nginx: Advanced: Prerendering on Load Balancer](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
+## ToC:
 
-### Installation
-All you need is installed Nginx in the latest stable release.
+- [Installation](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#installation)
+- [Update HTML Markup](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#update-html-markup)
+- [Nginx integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#nginx-integration-1)
+- [Nginx: Simple proxy pass](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#simple-proxy-pass)
+- [Nginx: Phusion Passenger + Nginx + Pre-rendering integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#phusion-passenger--nginx--prerendering-integration)
+- [Nginx: Advanced: WebSockets, socket.io, socketjs](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-websockets-socketio-socketjs)
+- [Nginx: Advanced: Pre-rendering on Load Balancer](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
 
-### Update HTML Markup
+## Installation
+
+All you need is installed nginx (or Phusion Passenger + nginx) in the latest stable release.
+
+## Update HTML Markup
+
 To cause the special behavior of web crawlers on JavaScript powered websites use `fragment` meta tag. Although it's officially deprecated by Google search engine, it's may be used by other search engines and web crawlers. [Learn more](https://developers.google.com/webmasters/ajax-crawling/docs/specification):
+
 ```html
 <html>
   <head>
@@ -30,18 +33,28 @@ To cause the special behavior of web crawlers on JavaScript powered websites use
 </html>
 ```
 
-### Nginx integration
-#### Simple proxy pass
+## Nginx integration
+
+### Simple proxy pass
+
 ```nginx
 server {
+  ###################
+  # Common server configuration
+  # As well as Phusion Passenger or MeteorUp configs
+  ###################
   listen 80;
   listen [::]:80;
-  server_name example.com;
+  server_name example.com ddp.example.com;
   root /path/to/public;
 
+  ###################
+  # Below is Crawlable (Pre-rendering) related configuration
+  ###################
+
   location / {
-    # Try static files, if the request is not for
-    # the static file - proxy pass to Prerendering
+    # Try static files, if request is not for
+    # the static file - proxy pass to Pre-rendering
     try_files $uri @crawlable;
   }
 
@@ -50,14 +63,14 @@ server {
     set $fragment  '';
     set $orig_uri  $request_uri;
 
-    # Avoid dead loop and drop get the query
+    # Avoid dead loop and drop get query
     if ($orig_uri ~ "^(.*)\?(.*)$") {
       set $orig_uri $1;
     }
 
     # Feel free to edit bots User Agent regular expression
     # to meet your needs we have included most of the bots
-    # which have been active around the Internet at least last 5 years
+    # which have been active around Internet for at least last 5 years
     if ($http_user_agent ~* "\.net crawler|360spider|50\.nu|8bo crawler bot|aboundex|accoona|adldxbot|adsbot-google|ahrefsbot|altavista|appengine-google|applebot|archiver|arielisbot|ask jeeves|auskunftbot|baidumobaider|baiduspider|becomebot|bingbot|bingpreview|bitbot|bitlybot|blitzbot|blogbridge|boardreader|botseer|catchbot|catchpoint bot|charlotte|checklinks|cliqzbot|clumboot|coccocbot|converacrawler|crawl-e|crawlconvera|dataparksearch|daum|deusu|developers\.google\.com/+/web/snippet|discordbot|dotbot|duckduckbot|elefent|embedly|evernote|exabot|facebookbot|facebookexternalhit|fatbot|fdse robot|feed seeker bot|feedfetcher|femtosearchbot|findlinks|flamingo_searchengine|flipboard|followsite bot|furlbot|fyberspider|gaisbot|galaxybot|geniebot|genieo|gigablast|gigabot|girafabot|gomezagent|gonzo1|google sketchup|google-structured-data-testing-tool|googlebot|haosouspider|heritrix|holmes|hoowwwer|htdig|ia_archiver|idbot|infuzapp|innovazion crawler|instagram|internetarchive|iqdb|iskanie|istellabot|izsearch\.com|kaloogabot|kaz\.kz_bot|kd bot|konqueror|kraken|kurzor|larbin|leia|lesnikbot|linguee bot|linkaider|linkapediabot|linkedinbot|lite bot|llaut|lookseek|lycos|mail\.ru_bot|masidani_bot|masscan|mediapartners-google|metajobbot|mj12bot|mnogosearch|mogimogi|mojeekbot|motominerbot|mozdex|msiecrawler|msnbot|msrbot|netpursual|netresearch|netvibes|newsgator|ng-search|nicebot|nutchcvs|nuzzel|nymesis|objectssearch|odklbot|omgili|oovoo|oozbot|openfosbot|orangebot|orbiter|org_bot|outbrain|pagepeeker|pagesinventory|parsijoobot|paxleframework|peeplo screenshot bot|pinterest|plantynet_webrobot|plukkie|pompos|psbot|quora link preview|qwantify|read%20later|reaper|redcarpet|redditbot|retreiver|riddler|rival iq|rogerbot|saucenao|scooter|scrapy|scrubby|searchie|searchsight|seekbot|semanticdiscovery|seznambot|showyoubot|simplepie|simpy|sitelockspider|skypeuripreview|slack-imgproxy|slackbot|slurp|snappy|sogou|solofield|speedy spider|speedyspider|sputnikbot|stackrambler|teeraidbot|teoma|theusefulbot|thumbshots\.ru|thumbshotsbot|tineye|toweya\.com|toweyabot|tumblr|tweetedtimes|tweetmemebot|twitterbot|url2png|vagabondo|vebidoobot|viber|visionutils|vkshare|voilabot|vortex|votay bot|voyager|w3c_validator|wasalive\.bot|web-sniffer|websquash\.com|webthumb|whatsapp|whatweb|wire|wotbox|yacybot|yahoo|yandex|yeti|yisouspider|yodaobot|yooglifetchagent|yoozbot|yottaamonitor|yowedo|zao-crawler|zebot_www\.ze\.bz|zooshot|zyborg") {
       set $crawlable 1;
     }
@@ -82,36 +95,44 @@ server {
       set $crawlable 0;
     }
 
-    # Disable Prerendering for WebSockets
+    # Disable Pre-rendering for WebSockets
     # More info: http://nginx.org/en/docs/http/websocket.html
     if ($http_upgrade) {
       set $crawlable 0;
     }
-  
-    # Minimize the number of forwarded headers
+
+    # Minimize amount of forwarded headers
     proxy_pass_request_headers off;
-
-    # !Very important and required:
-    proxy_set_header Host $proxy_host;
-
-    proxy_set_header Connection "close"; # Recommended
     proxy_hide_header WWW-Authenticate;
+
+    # !!Very important and required:
+    proxy_set_header Host $proxy_host;
+    proxy_ssl_server_name on;
 
     ########
     # Do not forget to change _YOUR_AUTH_TOKEN_ to token you get from ostr.io
     ########
     proxy_set_header Authorization "Basic _YOUR_AUTH_TOKEN_";
-    # Optional headers you may wish to pass to your app:
+
+    # Recommended to pass User-Agent
+    # for better bots/pre-rendering analytics
+    proxy_set_header User-Agent $http_user_agent;
+    proxy_set_header Connection "close";
+
+    # Optional headers, pass if necessary for backend:
+    # proxy_set_header Cache-Control $http_cache_control;
+    # proxy_set_header Pragma $http_pragma;
     # proxy_set_header Cache-Control $http_cache_control;
     # proxy_set_header Accept $http_accept;
     # proxy_set_header Accept-Encoding $http_accept_encoding;
+    # proxy_set_header Accept-Language $http_accept_language;
 
-    # Disable keepalive support, it's not needed for Prerendering
+    # Disable keepalive support, it's not needed for Pre-rendering
     # For more info read: http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_http_version
     proxy_http_version 1.0;
 
     # You can change resolver to local DNS server
-    # Resolver can be moved into `http` block
+    # And resolver can be moved to nginx.conf
     # Add ipv6=off if your server has no IPv6 support, ex.: `resolver 8.8.4.4 8.8.8.8 valid=300s ipv6=off;`
     resolver 8.8.4.4 8.8.8.8 valid=300s;
     resolver_timeout 15s;
@@ -120,23 +141,19 @@ server {
       # Sendfile is useless for proxied requests, disable it
       # For more info read: http://nginx.org/en/docs/http/ngx_http_core_module.html#sendfile
       sendfile off;
+      # UNCOMMENT IF NEEDED
+      # Use to avoid duplicated headers defined in other rules
+      # add_header X-Prerender-Status HIT;
       set $crawlable "render.ostr.io";
-      proxy_set_header User-Agent $http_user_agent;
       # Change $scheme to 'https', for http -> https proxy
       proxy_pass https://$crawlable/?url=$scheme://$host$orig_uri$fragment;
-      break;
-    }
-
-    if ($crawlable = 0) {
-      # Proxy pass request to your application
-      # Assuming `app` is an upstream name
-      proxy_pass http://app;
     }
   }
 }
 ```
 
-#### Phusion Passenger + Nginx + Prerendering integration
+### Phusion Passenger + Nginx + Prerendering integration
+
 ```nginx
 server {
   listen 80;
@@ -183,8 +200,10 @@ server {
     }
 
     proxy_pass_request_headers off;
-    proxy_set_header   Host $proxy_host;
-    proxy_hide_header  WWW-Authenticate;
+    proxy_hide_header WWW-Authenticate;
+    proxy_set_header Host $proxy_host;
+    proxy_ssl_server_name on;
+
     ########
     # Do not forget to change _YOUR_AUTH_TOKEN_ to token you get from ostr.io
     ########
@@ -206,8 +225,10 @@ server {
 }
 ```
 
-#### Advanced: WebSockets, socket.io, socketjs
-In order to make Prerendering work with websites where WebSockets or its polyfill is used, it should be ignored for Prerendering.
+### Advanced: WebSockets, socket.io, socketjs
+
+In order to make Pre-rendering work with websites where WebSockets or its polyfill is used, it should be ignored for Pre-rendering.
+
 ```nginx
 # Add to `location @crawlable` block:
 location @crawlable {
@@ -222,6 +243,7 @@ location @crawlable {
 ```
 
 #### Advanced: Prerendering on Load Balancer
+
 ```nginx
 upstream app {
   ip_hash;
@@ -274,8 +296,10 @@ server {
     }
 
     proxy_pass_request_headers off;
-    proxy_set_header   Host $proxy_host;
-    proxy_hide_header  WWW-Authenticate;
+    proxy_hide_header WWW-Authenticate;
+    proxy_set_header Host $proxy_host;
+    proxy_ssl_server_name on;
+
     ########
     # Do not forget to change _YOUR_AUTH_TOKEN_ to token you get from ostr.io
     ########
