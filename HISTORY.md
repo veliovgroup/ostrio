@@ -4,6 +4,11 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2020-04-04]
+
+- 👷 Fix "next check" when changing monitor's check frequency;
+- 👨‍💻 Better UX during sign up flow.
+
 #### [2020-03-16]
 
 - 📋 Update GDPR - Add info about using and processing IP-addresses;
