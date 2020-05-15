@@ -4,6 +4,16 @@
 
 - 👷‍♂️🏗 wip
 
+#### [2020-05-11]
+
+This release is aiming to improve sign up conversion rate and email deliverability:
+
+- 🖥 Better sign up process and plan selection;
+- 📧 LAX rules on email verification;
+- 🏷 Add pay-as-you-go pricing table to the Pricing page (no more price guessing);
+- 🎢 As requested by our users with high-volume usage — we added 5M and 10M pre-payment options in our pricing table;
+- 📮 Enhance email deliverability with various mechanisms, including DMARC, DKIM, SPF (getting 10/10 on mail-tester for private servers and delivery providers!).
+
 #### [2020-04-04]
 
 - 👷 Fix "next check" when changing monitor's check frequency;
