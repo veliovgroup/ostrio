@@ -104,6 +104,7 @@ server {
     # Minimize amount of forwarded headers
     proxy_pass_request_headers off;
     proxy_hide_header WWW-Authenticate;
+    proxy_hide_header Set-Cookie;
 
     # !!Very important and required:
     proxy_set_header Host $proxy_host;
@@ -201,6 +202,7 @@ server {
 
     proxy_pass_request_headers off;
     proxy_hide_header WWW-Authenticate;
+    proxy_hide_header Set-Cookie;
     proxy_set_header Host $proxy_host;
     proxy_ssl_server_name on;
 
@@ -297,6 +299,7 @@ server {
 
     proxy_pass_request_headers off;
     proxy_hide_header WWW-Authenticate;
+    proxy_hide_header Set-Cookie;
     proxy_set_header Host $proxy_host;
     proxy_ssl_server_name on;
 
