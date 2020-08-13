@@ -121,7 +121,6 @@ server {
     proxy_set_header Connection "close";
 
     # Optional headers, pass if necessary for backend:
-    # proxy_set_header Cache-Control $http_cache_control;
     # proxy_set_header Pragma $http_pragma;
     # proxy_set_header Cache-Control $http_cache_control;
     # proxy_set_header Accept $http_accept;
