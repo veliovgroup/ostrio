@@ -3,7 +3,7 @@ Permanently change server timezone
 
 Often you may want to set your server(s) to some exact time zone, and exclude cases of time shift when daylight saving time, winter time, summer time, etc. occurs.
 
-We suggest always to use UTC (GMT, or Greenwich) time zone (`+0`)
+We suggest always to use UTC time zone (`+0:00`)
 
 ```shell
 dpkg-reconfigure tzdata
