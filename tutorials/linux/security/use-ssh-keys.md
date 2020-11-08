@@ -1,16 +1,19 @@
-SSH key-based authentication
-======
+# SSH key-based authentication
 
-### Why?
- - No chance to brute-force SSH service if password-based login is disabled
- - No need to type-in password on every login via SSH
+## Why?
 
-### Disadvantages:
- - No way to login if key-file is lost
- - No way to login if passphrase from key-file is forgotten
+- No chance to brute-force SSH service if password-based login is disabled
+- No need to type-in password on every login via SSH
 
-### Create SSH keys
-Locally on your linux-based (mac or linux) machine:
+## Disadvantages:
+
+- No way to login if key-file is lost
+- No way to login if passphrase from key-file is forgotten
+
+## Create SSH keys
+
+On __local__ linux-based (mac or linux) machine:
+
 ```shell
 ssh-keygen
 
@@ -28,6 +31,7 @@ ssh-keygen
 ```
 
 ### Add to keychain (*mac os*)
+
 ```shell
 # To add keys permanently, use -K flag
 
@@ -38,13 +42,16 @@ ssh-add -K ~/.ssh/my-app-proj
 ```
 
 ### Add key to server
-On your machine:
+
+On __local__ machine copy __public__ key:
+
 ```shell
 # Copy contents of ~/.ssh/my-app-proj.pub
 cat ~/.ssh/my-app-proj.pub
 ```
 
-On Server, to login as root (*less secure*):
+On a Server, to login as root (*less secure*):
+
 ```shell
 # Paste copied public key to new line at:
 nano ~/.ssh/authorized_keys
@@ -53,9 +60,10 @@ nano ~/.ssh/authorized_keys
 # Close file with: "ctrl + x" combination
 ```
 
-On Server, to login as other user (*secure*, [read how to create a user](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/create-user.md))
+*Skip this step if root user will be used for login*. On a Server, to login as any other user (*secure*, [read how to create a user](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/create-user.md))
 
 __Note:__ Do not forget to change `username` to actual users' name below:
+
 ```shell
 # Go to users' home directory
 cd /home/username
@@ -75,7 +83,9 @@ chown -R username:username /home/username/.ssh
 ```
 
 ### Disable password auth (extra security)
-If you have backups of your local machine, and you 100% sure SSH keys is secure and won't be lost. You may add an extra layer of security by disabling password authentication:
+
+If SSH keys are 100% secure and won't be lost. Disabling password authentication would add an extra layer of security:
+
 ```shell
 # nano /etc/ssh/sshd_config
 # find the line with PasswordAuthentication
@@ -85,19 +95,23 @@ PasswordAuthentication no
 ```
 
 Restart SSH service:
+
 ```shell
 service sshd restart
 ```
 
-### Issue with many keys (mac os)
-If you have multiple keys, the system will try login with each of added "identity file" into keychain in alphabet order. 
-By default, Linux server will accept only 5 login attempts per connection, so if you will have more than 5 SSH keys in keychain you may end up with rejected connection. To solve this issue use `-i` flag to explicitly set "identity file":
+### Issue with multiple keys (mac os)
+
+Having multiple keys in the system keychain would result SSH command to try login with each of added "identity file" keys in alphabet order. By default, Linux server will accept only 5 login attempts per connection, so having more than 5 SSH keys in the keychain will result in rejected connection. To solve this issue use `-i` flag to explicitly set "identity file":
+
 ```shell
 ssh -i ~/.ssh/my-app-proj username@host -o PubkeyAuthentication=no
 ```
 
 ### Login with password (mac os)
-If for any reason you would like to force login with password, use `-o PubkeyAuthentication=no` and/or `-o PreferredAuthentications="password"` flags:
+
+To force login with password, use `-o PubkeyAuthentication=no` and/or `-o PreferredAuthentications="password"` flags:
+
 ```shell
 ssh username@host -o PubkeyAuthentication=no
 # or
@@ -106,12 +120,15 @@ ssh username@host -o PreferredAuthentications="password"
 ssh username@host -o PreferredAuthentications="password" -o PubkeyAuthentication=no
 ```
 
-If you're getting "Too many authentication failures" error, try to use `-o IdentitiesOnly=yes` flag:
+"Too many authentication failures" error can get fixed with `-o IdentitiesOnly=yes` flag:
+
 ```shell
 ssh username@host -o IdentitiesOnly=yes
 ```
 
 ### Further reading:
- - [SSH Key-Based Authentication by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
- - [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
- - [Disable root login via SSH](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
+
+- [SSH Key-Based Authentication by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [Change Default SSH port](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/change-ssh-port.md)
+- [Disable root login via SSH](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/disable-ssh-root.md)
+- [Sample `sshd_config`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/sshd_config)

@@ -1,46 +1,53 @@
-Create new system user
-======
+# Create new system user
 
-### Why create another system users in Linux?
- - Web-applications should run under its own users, to isolate system files in case of the breach
- - Databases should run under its own user
- - SSH login should be allowed to the user with limited permissions on the server and disabled for `root` user
- - Other security and usage reasons
+## Why create another system users in Linux?
 
-### We can differentiate two basic Linux users types:
- - With login permissions (password and home folder are not set)
- - Without login permissions
+- Web-applications should run under its own users, to isolate system files in case of the breach
+- Databases should run under its own user
+- SSH login should be allowed to the user with limited permissions on the server and disabled for `root` user
+- Other security and usage reasons
 
-__NOTE:__ change `username` to actual users' name
+## Two common Linux users types:
+
+- With login permissions (password and home folder are not set)
+- Without login permissions (*services and applications*)
+
+__NOTE:__ change `[username]` to actual users' name
 
 ### Password-less user
+
 Let's start with login-less (*or password-less*) users (most secure, best for running isolated web-apps):
+
 ```shell
-useradd username
+useradd [username]
 
 # that's it
 ```
 
 To allow login as `user` without password, just set new password for such user:
+
 ```shell
-passwd username
+passwd [username]
 
 # this command will ask
 # to prompt new password twice
 ```
 
 To add a home folder for such limited user, run:
+
 ```shell
 # Create folder
-mkdir -p /home/username
+mkdir -p /home/[username]
 # Set home folder
-usermod -m -d /home/username username
+usermod -m -d /home/[username] [username]
 ```
 
 ### Full-featured user
+
 Fully capable user (with password, home folder and SSH access) can be created with single command:
+
 ```shell
-adduser username
+adduser [username]
 
 # this command will ask
 # to fill additional info about user
@@ -50,4 +57,5 @@ adduser username
 ```
 
 ### Further reading:
- - [rbash - restricted users](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/rbash.md)
+
+- [rbash - restricted users](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/users/rbash.md)

@@ -1,5 +1,4 @@
-Basic firewall with iptables
-======
+# Basic firewall with iptables
 
 __NOTE: IT'S A DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise, you may end up with the unaccessible server.
 
@@ -8,11 +7,13 @@ This tutorial will set iptables rules to accept traffic only on `http (80)`, `ht
 See also the great article on iptables rules by [Digital Ocean](https://www.digitalocean.com/community/tutorials/iptables-essentials-common-firewall-rules-and-commands) and [VPS Cheap](https://crm.vpscheap.net/knowledgebase.php?action=displayarticle&id=29)
 
 Start with creating the blank iptables file:
+
 ```shell
 iptables-save > /etc/firewall.conf
 ```
 
 Now edit exported rules:
+
 ```shell
 # nano /etc/firewall.conf
 # You should end up with something like:
@@ -46,20 +47,24 @@ COMMIT
 ```
 
 To test rules run:
+
 ```shell
 iptables-restore < /etc/firewall.conf
 ```
 
 To make created rules persistent, create file `/etc/network/if-up.d/firewall`
+
 ```shell
 #!/bin/sh
 iptables-restore < /etc/firewall.conf
 ```
 
 Make it executable:
+
 ```shell
 chmod +x /etc/network/if-up.d/firewall
 ```
 
-### Further reading:
- - [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
+## Further reading:
+
+- [Basic ipv6 firewall with `ip6tables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)

@@ -1,0 +1,40 @@
+# /etc/ssh/sshd_config
+
+Port 22 # CHANGE TO RANDOM PORT 1024-65535
+
+AcceptEnv LANG LC_*
+AllowAgentForwarding no
+AllowTcpForwarding no
+# AllowUsers [username] # Enable to allow login only for a singe "special" user
+Banner /etc/issue.net # Make sure this file exists
+ChallengeResponseAuthentication no
+ClientAliveCountMax 2
+Compression no
+HostbasedAuthentication no
+HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+IgnoreRhosts yes
+LoginGraceTime 15
+LogLevel VERBOSE
+MaxAuthTries 2
+MaxSessions 2
+PasswordAuthentication yes # change to no to disable login with paswords
+PermitEmptyPasswords no
+PermitRootLogin yes # no|yes|without-password recommended: no and without-password to allow login for root using SSH-key
+PrintLastLog yes
+PrintMotd no
+Protocol 2
+PubkeyAuthentication no # change to yes to enable SSH-key based authentication
+StrictModes yes
+SyslogFacility AUTH
+TCPKeepAlive no
+ClientAliveInterval 5
+ClientAliveCountMax 2160
+UseDNS no
+UsePAM yes
+UsePrivilegeSeparation sandbox
+X11DisplayOffset 10
+X11Forwarding no
+DisableForwarding yes

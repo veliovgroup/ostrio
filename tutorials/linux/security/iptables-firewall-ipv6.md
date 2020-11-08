@@ -1,5 +1,4 @@
-Basic ipv6 firewall with ip6tables
-======
+# Basic ipv6 firewall with ip6tables
 
 __NOTE: IT'S A DANGER ZONE.__ This is expert-level settings setup. You must know what you're doing and do not blindly copy-paste commands and rules described below, otherwise, you may end up with the unaccessible server
 
@@ -10,11 +9,13 @@ This tutorial will set ip6tables rules to accept traffic only on `http (80)`, `h
 See also the great article on ip6tables rules by [linode](https://www.linode.com/docs/security/firewalls/control-network-traffic-with-iptables).
 
 Start with creating the blank ip6tables file:
+
 ```shell
 ip6tables-save > /etc/firewallv6.conf
 ```
 
 Now edit exported rules:
+
 ```shell
 # nano /etc/firewallv6.conf
 # You should end up with something like:
@@ -50,20 +51,24 @@ COMMIT
 ```
 
 To test rules run:
+
 ```shell
 ip6tables-restore < /etc/firewallv6.conf
 ```
 
 To make created rules persistent, create the file `/etc/network/if-up.d/firewall`
+
 ```shell
 #!/bin/sh
 ip6tables-restore < /etc/firewallv6.conf
 ```
 
 Make it executable:
+
 ```shell
 chmod +x /etc/network/if-up.d/firewall
 ```
 
-### Further reading:
- - [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
+## Further reading:
+
+- [Basic firewall with `iptables`](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)

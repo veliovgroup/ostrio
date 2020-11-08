@@ -28,10 +28,10 @@ Add extra security layer, with limiting login only to a single user (*optional*)
 ```shell
 # nano /etc/ssh/sshd_config
 
-# Add new line, where username
-# is a name of ONLY allowed to login
-# over SSH user:
-AllowUsers username
+# Add new line, where [username]
+# is the name of ONLY allowed to
+# login over SSH user:
+AllowUsers [username]
 
 # Save file with: "ctrl + o" combination
 # Close file with: "ctrl + x" combination

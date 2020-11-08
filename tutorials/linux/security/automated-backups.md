@@ -1,74 +1,82 @@
-Scheduled and Automated Backups
-======
+# Scheduled and Automated Backups
 
 In this tutorial (ToC):
- - [Create private GitHub Repository](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#create-private-github-repository)
- - [Add SSH Keys to private GitHub Repository](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#add-ssh-keys-to-private-github-repository)
- - [Enable LFS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#enable-lfs)
- - [Select resources to backup](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#select-resources-to-backup)
- - [Create a bash script](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#create-the-bash-script)
- - [Schedule backups with CRON](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#schedule-backups-with-cron)
 
-### Create private GitHub Repository
- - Go to [create new repository](https://github.com/new)
- - Enter its name, `backups` for example
- - Select "Private"
- - Hit <kbd>Create Repository</kbd> button
+- [Create private GitHub Repository](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#create-private-github-repository)
+- [Add SSH Keys to private GitHub Repository](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#add-ssh-keys-to-private-github-repository)
+- [Enable LFS](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#enable-lfs)
+- [Select resources to backup](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#select-resources-to-backup)
+- [Create a bash script](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#create-the-bash-script)
+- [Schedule backups with CRON](https://github.com/VeliovGroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md#schedule-backups-with-cron)
 
-### Add SSH Keys to private GitHub Repository
+## Create private GitHub Repository
+
+- Go to [create new repository](https://github.com/new)
+- Enter its name, `backups` for example
+- Select "Private"
+- Hit <kbd>Create Repository</kbd> button
+
+## Add SSH Keys to private GitHub Repository
+
 Read [official tutorial by GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
 
- - Check for existing ssh keys in `~/.ssh` if directory is empty, generate SSH key:
-     * Read [official instructions by GitHub](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux)
-     * `ssh-keygen -t rsa -b 4096 -C "john@example.com"` where `john@example.com` is email used to sign up on GitHub
- - Create identity record in `~/.ssh/config`:
+- Check for existing ssh keys in `~/.ssh` if directory is empty, generate SSH key:
+  - Read [official instructions by GitHub](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#platform-linux)
+  - `ssh-keygen -t rsa -b 4096 -C "john@example.com"` where `john@example.com` is email used to sign up on GitHub
+- Create identity record in `~/.ssh/config`:
+
 ```bash
 # ~/.ssh/config
-Host github.com
-  Hostname        github.com
-  User            git
-  IdentityFile    ~/.ssh/id_rsa
-  IdentitiesOnly  yes
+Host           github.com
+Hostname       github.com
+User           git
+IdentityFile   ~/.ssh/id_rsa
+IdentitiesOnly yes
 ```
- - Read SSH key: `cat ~/.ssh/id_rsa.pub`
- - Go to [Keys management page on GitHub](https://github.com/settings/keys)
- - Click on <kbd>New SSH key</kbd> button
- - Enter the "title" describing host
- - Copy paste contents of `~/.ssh/id_rsa.pub` into "Key" text area
- - Click on <kbd>Add SSH key</kbd> button
 
-### Enable LFS
- - LFS is highly recommended if the final backup archive is larger than 50 MBs
- - Read [official docs](https://help.github.com/articles/configuring-git-large-file-storage/)
- - Track `7z` archives with: `git lfs track "*.7z"` for our case
+- Read SSH key: `cat ~/.ssh/id_rsa.pub`
+- Go to [Keys management page on GitHub](https://github.com/settings/keys)
+- Click on <kbd>New SSH key</kbd> button
+- Enter the "title" describing host
+- Copy paste contents of `~/.ssh/id_rsa.pub` into "Key" text area
+- Click on <kbd>Add SSH key</kbd> button
 
-### Select resources to backup
+## Enable LFS
+
+- LFS is highly recommended if the final backup archive is larger than 50 MBs
+- Read [official docs](https://help.github.com/articles/configuring-git-large-file-storage/)
+- Track `7z` archives with: `git lfs track "*.7z"` for our case
+
+## Select resources to backup
+
 Think about what are you planning to backup, here are some paths and files for inspiration:
- - `/var/www`
- - `/var/log/syslog`
- - `/var/log/auth.log`
- - `/var/log/debug`
- - `/var/log/messages`
- - `/var/log/nginx/error.log`
- - `/var/log/mongodb/mongod.log`
- - Mongo DB with `mongodump`
- - Databases in general
 
-### Create the bash script
+- `/var/www`
+- `/var/log/syslog`
+- `/var/log/auth.log`
+- `/var/log/debug`
+- `/var/log/messages`
+- `/var/log/nginx/error.log`
+- `/var/log/mongodb/mongod.log`
+- Mongo DB with `mongodump`
+- Databases in general
+
+## Create the bash script
+
 Before you go:
 
- - Clone repository into `~/` (home directory) `git clone git://url-to-repository`
- - It will create directory with repository name, `backups` in our case
- - Install 7z, with: `apt-get install p7zip-full`
+- Clone repository into `~/` (home directory) `git clone git://url-to-repository`
+- It will create directory with repository name, `backups` in our case
+- Install 7z, with: `apt-get install p7zip-full`
 
 In this file:
 
- - Keep backups only for last 7 days (*change to meet your needs*)
- - Every backup has unique name with a date stamp
- - Backup Mongo DB (*change to DB of your choice*)
- - Backup `/var/www/` directory
- - Backup most useful log files
- - Archive every file into `.7z` with a password
+- Keep backups only for last 7 days (*change to meet your needs*)
+- Every backup has unique name with a date stamp
+- Backup Mongo DB (*change to DB of your choice*)
+- Backup `/var/www/` directory
+- Backup most useful log files
+- Archive every file into `.7z` with a password
 
 ```bash
 #!/bin/bash
@@ -126,22 +134,27 @@ git push origin master
 ```
 
 Create file `backup.sh`, with contents of script above:
+
 ```shell
 nano ~/backup.sh
 ```
 
 Give execution permissions:
+
 ```shell
 chmod +x ~/backup.sh
 ```
 
-### Schedule backups with CRON
+## Schedule backups with CRON
+
 Open CRON editor:
+
 ```shell
 crontab -e
 ```
 
 Enter next rule:
+
 ```crontab
 # Daily at 00:00, saving logs to /var/log/backup.log
 0 0 * * * /root/backup.sh > /var/log/backup.log 2>&1
