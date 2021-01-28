@@ -127,7 +127,7 @@ db.createUser({user:"admin", pwd:<password>, roles:[{role:"root", db:"admin"}]})
 ```
 
 ### 13. On __each__ server update CRON job:
-To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
+To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for higher security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod.conf --auth --fork
 ```

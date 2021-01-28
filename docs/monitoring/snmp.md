@@ -46,7 +46,7 @@ __Do not forget to change value in between `<` and `>` symbols to your own value
 
 ```bash
 # /etc/snmp/snmpd.conf
-# Change 161 to any other random port for more security
+# Change 161 to any other random port for higher security
 agentAddress udp:161,udp6:[::1]:161
 
 #       sec.name        source          community

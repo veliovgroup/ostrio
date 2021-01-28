@@ -1,15 +1,15 @@
-Single Server / Replica Set
-======
+# Single Server / Replica Set
 
 For more info see [original article](https://veliovgroup.com/article/2qsjtNf8NSB9XxZDh/mongodb-replica-set-with-oplog).
 
 We will use wiredTiger as engine, you can read [its release notes](https://www.mongodb.com/blog/post/whats-new-mongodb-30-part-3-performance-efficiency-gains-new-storage-architecture) to find out more about its benefits.
 
 ### Definitions:
- - `admin` user - User with full `root` access to MongoDB features and commands
- - `appUser` - User with `readWrite` access to database used for your application
- - `appDB` - Database used for application
- - `<password>` - placeholder, should be changed to strong password. __Always placed in double quotes__
+
+- `admin` user - User with full `root` access to MongoDB features and commands
+- `appUser` - User with `readWrite` access to database used for your application
+- `appDB` - Database used for application
+- `<password>` - placeholder, should be changed to strong password. __Always placed in double quotes__
 
 ### 1. Installation:
 Follow steps described in [installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-debian). During installation `mongodb` user in `mongodb` group will be created automatically
@@ -147,7 +147,7 @@ db.createUser({user:"admin", pwd:<password>, roles:[{role:"root", db:"admin"}]})
 ```
 
 ### 14. Update CRON job:
-To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for more security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
+To start MongoDB with `--auth` option (`crontab -u mongodb -e`) this will protect MongoDB from unauthorized access (for higher security read [this article](https://docs.mongodb.com/manual/administration/security-checklist/)):
 ```cron
 @reboot /usr/bin/mongod --config /etc/mongod-one.conf --auth --fork
 @reboot /usr/bin/mongod --config /etc/mongod-two.conf --auth --fork
