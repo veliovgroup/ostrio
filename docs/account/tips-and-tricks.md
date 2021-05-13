@@ -10,7 +10,7 @@
 ## 🤖 Pre-rendering Tips
 
 - Pass `/sitemap.xml` to <kbd>Pre-Render</kbd> (*Pre-render a website*) in __Pre-rendering Panel__ to instantly render whole website;
-- Use [alternative *rendering endpoint*](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md) to reach best performance results.
+- Use [alternative *rendering endpoint*](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md) to reach best performance results.
 
 ### Running pre-rendering integration tests:
 
@@ -18,7 +18,7 @@
 - Use `cURL` and authentication credentials (*see node.js integration*): `curl -v https://auth:string@render.ostr.io/?url=https://your-website-domain.com`;
 - Use `test:test` credentials to test general integration (*to make sure web application server can reach pre-rendering service*);
 - Use `Authorization: Basic dGVzdDp0ZXN0` header to test general integration (*to make sure web application server can reach pre-rendering service*);
-- Learn more about running tests in [`spiderable-middleware` package documentation](https://github.com/VeliovGroup/spiderable-middleware#running-tests).
+- Learn more about running tests in [`spiderable-middleware` package documentation](https://github.com/veliovgroup/spiderable-middleware#running-tests).
 
 ## 📈 Web Analytics Tips
 

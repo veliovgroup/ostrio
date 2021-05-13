@@ -12,22 +12,22 @@ Prerendering operates as middleware and can be easily integrated with Nginx or A
 - "Cache" and "Caching" - Page "rendering" is time and resource consuming operation. To provide best possible response time "prerendered" results will be saved for time defined as "Cache TTL";
 - "Cache Freshness" and "Cache TTL" - Time in hours, during this period cache will remain fresh and will be served to all request;
 - "Prerendering Engine" - Mainly our internal software build on top of PhantomJS and custom compiled Chromium. It visits websites, runs JavaScript code, and returns HTML as result;
-- "(Pre)rendering Endpoint" - Address where located "Prerendering engine", we have 3 differently configured [rendering endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md), to fit every case.
+- "(Pre)rendering Endpoint" - Address where located "Prerendering engine", we have 3 differently configured [rendering endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md), to fit every case.
 
 ## Prerendering ToC:
 
-- [Accelerated Mobile Pages (AMP) Integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/amp-support.md)
-- [Node.js Integration via NPM](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/node-npm.md)
-- [Meteor.js Integration via Atmosphere](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
-- [Nginx Integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md)
-- [Return genuine status code](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
-- [Client Optimization](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/optimization.md)
-- [Server Optimization](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
-- [Caching](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache.md)
-- [Cache purge](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
-- [ES6 / ECMAScript 2015 Support](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/es6-support.md)
-- [Strip JavaScript](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
-- [Detect Prerendering engine requests during runtime](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
-- [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
-- [Rendering Endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+- [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
+- [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
+- [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
+- [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+- [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+- [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
+- [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+- [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
+- [Cache purge](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
+- [ES6 / ECMAScript 2015 Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
+- [Strip JavaScript](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
+- [Detect Prerendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
+- [Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
 - [Learn more about Prerendering](https://ostr.io/info/prerendering)

@@ -54,7 +54,7 @@ You are welcome to read in-depth insights about the latest updates to our servic
 - 📈 __Analytics:__
   - 📡 Add support for Beacon API;
   - 🐞 Better __Global Errors__ collection and reporting;
-  - 📦 Update [open source tracking code](https://github.com/VeliovGroup/ostrio-analytics#analytics-for-ostrio);
+  - 📦 Update [open source tracking code](https://github.com/veliovgroup/ostrio-analytics#analytics-for-ostrio);
   - 👨‍🎨 UI refactoring for better navigation and user experience;
 - 🤖 __Pre-rendering:__
   - 📱 Add support for "mobile" crawlers;
@@ -62,7 +62,7 @@ You are welcome to read in-depth insights about the latest updates to our servic
   - 🤖 Pre-render a website as "mobile" or "desktop" crawler;
   - 🤖 Collect data about crawler's user-agent;
   - 📋 Add example for pre-rendering via cURL;
-  - 📦 Update [open source libraries](https://github.com/VeliovGroup/spiderable-middleware);
+  - 📦 Update [open source libraries](https://github.com/veliovgroup/spiderable-middleware);
   - 👨‍🎨 UI refactoring for better navigation and user experience;
 - ⏰ __Web-CRON:__
   - 🔔 Add "Related Notifications" with __all__ notifications related to __only__ this __task__;
@@ -101,13 +101,13 @@ __Do not forget__: our website is a fully-featured progressive web application (
 
 #### [2019-10-06]
 
-- Automated and simplified the [right to be forgotten](https://github.com/VeliovGroup/ostrio/blob/master/docs/account/account-removal.md) following our GDPR compliance
+- Automated and simplified the [right to be forgotten](https://github.com/veliovgroup/ostrio/blob/master/docs/account/account-removal.md) following our GDPR compliance
 - Overall fixes to our mailing service, splitting "urgent" and "regular" email for better user experience
 - All forms: Better UI/UX implementation
 
 #### [2019-10-03]
 
-- Analytics — released [`ostrio-analytics@1.2.0`](https://github.com/VeliovGroup/ostrio-analytics/releases/tag/1.2.0) — Improving global JavaScript runtime errors report
+- Analytics — released [`ostrio-analytics@1.2.0`](https://github.com/veliovgroup/ostrio-analytics/releases/tag/1.2.0) — Improving global JavaScript runtime errors report
 - Analytics — Fix "development" mode and overall codebase enhancements
 
 #### [2019-08-18]
@@ -192,7 +192,7 @@ __Do not forget__: our website is a fully-featured progressive web application (
 
 #### [2018-11-24 - 2018-12-02]
 
-- Add sitemap [to GitHub](https://github.com/VeliovGroup/ostrio/blob/master/SITEMAP.md) and [website](https://ostr.io/info/sitemap)
+- Add sitemap [to GitHub](https://github.com/veliovgroup/ostrio/blob/master/SITEMAP.md) and [website](https://ostr.io/info/sitemap)
 - Add support for sitemap.xml in prerender panel. Now you can scan your `/sitemap.xml` to render and cache all pages of your website
 - Various minor UI enhancements
 
@@ -238,12 +238,12 @@ We're listening you carefully, thank you all for contributions, suggestions, and
 - 🕸 Prerendering - __Most wanted feature__. Auto pre-render upon cache expiration. If this feature enabled, all pages which are about to expire will be scheduled for re-rendering;
 - 🕸 Prerendering - "Cache browser", browse and edit currently cached pages;
 - 🕸 Prerendering - Internal analytics for better SEO and service setup;
-- 🕸 Prerendering - [Support for Accelerated Mobile Pages (APM)](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/amp-support.md)
-- 🛑📈 Analytics - [Detect and Track __AdBlock__ usage](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/detect-adblock.md);
-- 📈 Analytics - [Track Accelerated Mobile Pages (AMP) and other static pages](https://github.com/VeliovGroup/ostrio/blob/master/docs/analytics/track-amp.md)
+- 🕸 Prerendering - [Support for Accelerated Mobile Pages (APM)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
+- 🛑📈 Analytics - [Detect and Track __AdBlock__ usage](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/detect-adblock.md);
+- 📈 Analytics - [Track Accelerated Mobile Pages (AMP) and other static pages](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/track-amp.md)
 - 📈 Analytics - Fix displayed dates (*for some users charts had wrong month title*);
 - 📈 Analytics - Referrers now grouped by the domain name;
-- 📈 Analytics - "Development" mode for localhost testing. See [this suggestion](https://github.com/VeliovGroup/ostrio-analytics/issues/2), thanks to @nicooprat;
+- 📈 Analytics - "Development" mode for localhost testing. See [this suggestion](https://github.com/veliovgroup/ostrio-analytics/issues/2), thanks to @nicooprat;
 - 📈 Analytics - Better global JavaScript runtime exceptions/errors tracking, new error tracking panel;
 - 📈 Analytics - Globally caught errors are nicely grouped, with additional data about the environment;
 - 🤓 Accessibility - Dark and high-contrast version of the website following all guidelines for visually impaired users;
@@ -259,7 +259,7 @@ We're listening you carefully, thank you all for contributions, suggestions, and
 
 #### [2017-12-09]
 
-- __Prerendering__ - Introducing "[Rendering Endpoints](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)"
+- __Prerendering__ - Introducing "[Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)"
 - Upgrade front-face app to [`meteor@1.6.0.1`](https://github.com/meteor/meteor/blob/devel/History.md#v1601-2017-12-08)
 
 #### [2017-12-08]
@@ -287,14 +287,14 @@ We're listening you carefully, thank you all for contributions, suggestions, and
 
 #### [2017-12-03]
 
-- __Prerendering__ - Expose `IS_PRERENDERING` global variable inside "prerendering" engines, [see this issue](https://github.com/VeliovGroup/spiderable-middleware/issues/4), and [updated docs](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- __Prerendering__ - Expose `IS_PRERENDERING` global variable inside "prerendering" engines, [see this issue](https://github.com/veliovgroup/spiderable-middleware/issues/4), and [updated docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
 - __Prerendering__ - New rendering farm for __PRO__ and __Business__. Up to 3 seconds load time decrease on __PRO__ and __Business__ plans
 
 #### [2017-12-02]
 
 - Overall codebase optimizations
 - Dependencies update
-- __Prerendering__ - Update integration docs, [see this commit](https://github.com/VeliovGroup/spiderable-middleware/commit/8d0c55d488d1c3a61606604feec3c8116c447002)
+- __Prerendering__ - Update integration docs, [see this commit](https://github.com/veliovgroup/spiderable-middleware/commit/8d0c55d488d1c3a61606604feec3c8116c447002)
 
 #### [2017-09-20]
 

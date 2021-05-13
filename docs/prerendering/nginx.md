@@ -1,17 +1,17 @@
 # Nginx Integration
 
 - Learn more - [what is Pre-rendering and why you need it](https://ostr.io/info/prerendering)
-- For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware).
+- For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/veliovgroup/spiderable-middleware).
 
 ## ToC:
 
-- [Installation](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#installation)
-- [Update HTML Markup](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#update-html-markup)
-- [Nginx integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#nginx-integration-1)
-- [Nginx: Simple proxy pass](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#simple-proxy-pass)
-- [Nginx: Phusion Passenger + Nginx + Pre-rendering integration](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#phusion-passenger--nginx--prerendering-integration)
-- [Nginx: Advanced: WebSockets, socket.io, socketjs](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-websockets-socketio-socketjs)
-- [Nginx: Advanced: Pre-rendering on Load Balancer](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
+- [Installation](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#installation)
+- [Update HTML Markup](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#update-html-markup)
+- [Nginx integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#nginx-integration-1)
+- [Nginx: Simple proxy pass](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#simple-proxy-pass)
+- [Nginx: Phusion Passenger + Nginx + Pre-rendering integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#phusion-passenger--nginx--prerendering-integration)
+- [Nginx: Advanced: WebSockets, socket.io, socketjs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-websockets-socketio-socketjs)
+- [Nginx: Advanced: Pre-rendering on Load Balancer](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md#advanced-prerendering-on-load-balancer)
 
 ## Installation
 

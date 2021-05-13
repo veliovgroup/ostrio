@@ -1,6 +1,6 @@
 # Return Genuine Status Code
 
-- For more detailed documentation see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware#return-genuine-status-code)
+- For more detailed documentation see [`spiderable-middleware` package repository](https://github.com/veliovgroup/spiderable-middleware#return-genuine-status-code)
 
 Returning genuine status code is very important for indexing by search engines. Most of the front-end JavaScript frameworks returns the same page to every request with `200 OK` status code, mean `404` pages rendered in a browser is returned with `200`status to the web crawlers.
 
@@ -30,4 +30,4 @@ Use __any__ standard or custom status codes:
 
 ## Result:
 
-![Return Genuine Status Code Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/prerendering/prerendering-genuine-status-code.png?raw=true)
+![Return Genuine Status Code Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/prerendering-genuine-status-code.png?raw=true)

@@ -1,20 +1,23 @@
-Monitoring Basics
-======
+# Monitoring Basics
 
-### ToC:
- - [Availability Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#availability-httphttps-monitoring)
- - [Custom Data Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#custom-data-monitoring)
- - [SNMP (Health) Monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/basics.md#snmp-monitoring)
+## ToC:
 
-### Availability HTTP/HTTPS Monitoring
+- [Availability Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md#availability-httphttps-monitoring)
+- [Custom Data Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md#custom-data-monitoring)
+- [SNMP (Health) Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md#snmp-monitoring)
+
+## Availability HTTP/HTTPS Monitoring
+
 This is the most basic type of monitoring. Only most basic data is collected and analyzed - "Response Time", "Status Code", "Uptime".
 
-![Availability Monitoring Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/availability-monitoring.png?raw=true)
+![Availability Monitoring Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/availability-monitoring.png?raw=true)
 
-### Custom Data Monitoring
+## Custom Data Monitoring
+
 Return custom data from endpoint as JSON or XML to parse it into charts with notifications triggers.
 
-#### As JSON:
+### As JSON:
+
 ```json
 {
   "active": 98,
@@ -24,7 +27,8 @@ Return custom data from endpoint as JSON or XML to parse it into charts with not
 }
 ```
 
-#### As XML:
+### As XML:
+
 ```xml
 <data>
   <active>98</active>
@@ -35,7 +39,9 @@ Return custom data from endpoint as JSON or XML to parse it into charts with not
 ```
 
 #### Result:
-![Custom Data Monitoring Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/custom-monitoring.png?raw=true)
 
-### SNMP Monitoring
-SNMP monitoring also known as "Health Monitoring", where a lot of data is collected, including but not limited to:  "SSH Sessions", "CPU Consumption", "Storage Space Utilization", "Network Consumption", "RAM Usage", "System Load", "Uptime" and etc. [Read how to configure and enable SNMP monitoring](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/snmp.md).
+![Custom Data Monitoring Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/custom-monitoring.png?raw=true)
+
+## SNMP Monitoring
+
+SNMP monitoring also known as "Health Monitoring", where a lot of data is collected, including but not limited to:  "SSH Sessions", "CPU Consumption", "Storage Space Utilization", "Network Consumption", "RAM Usage", "System Load", "Uptime" and etc. [Read how to configure and enable SNMP monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/snmp.md).

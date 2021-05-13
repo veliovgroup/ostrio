@@ -105,5 +105,4 @@ Track page visit and track event when visitor reach end of the AMP page:
 
 ## Further reading:
 
-- [web-analytics docs](https://github.com/VeliovGroup/ostrio-analytics#analytics-for-ostrio)
-
+- [web-analytics docs](https://github.com/veliovgroup/ostrio-analytics#analytics-for-ostrio)

@@ -1,8 +1,9 @@
-Custom Path
-======
+# Custom Path
 
-To avoid caching on `http(s)` endpoints - use `{{rand}}` placeholder. 
-Example: `/path/?noCahe={{rand}}`. 
+To avoid caching on `http(s)` endpoints - use `{{rand}}` placeholder.
+
+Example: `/path/?noCahe={{rand}}`.
+
 Where `{{rand}}` will be replaced with random *String*.
 
-![Monitoring with Custom Path Screenshot](https://github.com/VeliovGroup/ostrio/blob/master/docs/monitoring/custom-path.png?raw=true)
+![Monitoring with Custom Path Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/custom-path.png?raw=true)

@@ -2,7 +2,7 @@ Node.js Integration via NPM
 ======
 
  - Learn more - [what is Prerendering and why you need it](https://ostr.io/info/prerendering)
- - For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/VeliovGroup/spiderable-middleware).
+ - For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/veliovgroup/spiderable-middleware).
 
 This integration will work with any Node.js solution which follows Node's middleware convention, like: [express](https://www.npmjs.com/package/express), [connect](https://www.npmjs.com/package/connect), [vanilla Node.js server](https://nodejs.org/api/http.html), and others.
 
@@ -26,7 +26,7 @@ To cause the special behavior of web crawlers on JavaScript powered websites use
 ```
 
 ### Middleware integration
-[See all examples here](https://github.com/VeliovGroup/spiderable-middleware/tree/master/examples).
+[See all examples here](https://github.com/veliovgroup/spiderable-middleware/tree/master/examples).
 ```js
 'use strict';
 var http       = require('http');
