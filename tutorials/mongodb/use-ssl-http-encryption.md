@@ -80,18 +80,21 @@ mongod --sslMode requireSSL --sslPEMKeyFile <pem>
 ```
 
 Check logs for errors:
+
 ```shell
 tail -n 50 -f /var/log/mongodb/mongod.log
 # ctrl + c to exit tail command
 ```
 
 ### Connect:
+
 ```shell
 mongo mongodb://[hostname]:[PORT]/ --ssl --sslPEMKeyFile=/etc/nginx/ssl/mongodb.pem
 ```
 
 ### Connect in app (node.js):
-```jsx
+
+```js
 // Note: File "mongodb.pem" must accessible
 // make sure parent folder and file has 404 or higher permissions
 
@@ -106,6 +109,7 @@ MongoClient.connect('mongodb://[hostname]:[PORT]?ssl=true', {
 });
 ```
 
-### Further reading:
- - [gist](https://gist.github.com/leommoore/1e773a7d230ca4bbe1c2) by @leommoore
- - Read [official mongodb reference](https://docs.mongodb.com/manual/tutorial/configure-ssl/) for more info.
+## Further reading:
+
+- [gist](https://gist.github.com/leommoore/1e773a7d230ca4bbe1c2) by @leommoore
+- Read [official mongodb reference](https://docs.mongodb.com/manual/tutorial/configure-ssl/) for more info.
