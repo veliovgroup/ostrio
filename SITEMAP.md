@@ -1,5 +1,7 @@
 # Sitemap
 
+- 🗺 [Sitemap](https://ostr.io/info/sitemap)
+
 ## Info
 
 - 🏠 [Homepage landing](https://ostr.io)
