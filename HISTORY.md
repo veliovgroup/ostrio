@@ -1,8 +1,19 @@
 # [ostr.io](https://ostr.io) changelog
 
+List of changes in chronological order, most recent first.
+
 #### [v.Next]
 
 - 👷‍♂️🏗 wip
+
+#### [2024-07-12]
+
+- 🏷 Pricing Table: Link to "Purchase credits" for logged-in users
+- 🖥 Various UI and typo fixes
+- 👨‍💻 fix: account removal showing error
+- 👨‍💻 fix: CSS styling and "sticky" navbar on large screens
+- 👷 refactor: `data-href` click event
+- 👷 refactor: Dark Mode - keep the same font-size
 
 #### [2020-05-11]
 
