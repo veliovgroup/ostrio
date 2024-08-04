@@ -31,7 +31,7 @@ Below we suggest using custom events of ostr.io web analytics to track views on 
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{PAGE_ID}} with actual unique page ID -->
     <amp-img
-      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp%22:%22{{PAGE_ID}}%22}&9=786589&v=207"
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp%22:%22{{PAGE_ID}}%22}&9=786589&v=220"
       width="1"
       height="1"
       layout="fixed"
@@ -56,7 +56,7 @@ As alternative (*or addition*) to track a visit only, without reporting to custo
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{amp-my-page-title}} with page title, recommended to start with `amp-*` -->
     <amp-img
-      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?2={{amp-my-page-title}}&9=3556787&v=207"
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?2={{amp-my-page-title}}&9=3556787&v=220"
       width="1"
       height="1"
       layout="fixed"
@@ -80,7 +80,7 @@ Track page visit and track event when visitor reach end of the AMP page:
     <!-- TODO: replace {{TRACKING_ID}} with actual tracking ID -->
     <!-- TODO: replace {{PAGE_ID}} with page title, recommended to start with `amp-*` -->
     <amp-img
-      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-start%22:%22{{PAGE_ID}}%22}&9=908568&v=207"
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-start%22:%22{{PAGE_ID}}%22}&9=908568&v=220"
       width="1"
       height="1"
       layout="fixed"
@@ -92,7 +92,7 @@ Track page visit and track event when visitor reach end of the AMP page:
 
     <!-- Place event-tracking code after main AMP content to track reaching end of the page: -->
     <amp-img
-      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-end%22:%22{{PAGE_ID}}%22}&9=896458&v=207"
+      src="https://analytics.ostr.io/{{TRACKING_ID}}.gif?3={%22amp-end%22:%22{{PAGE_ID}}%22}&9=896458&v=220"
       width="1"
       height="1"
       layout="fixed"

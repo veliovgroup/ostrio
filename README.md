@@ -90,7 +90,7 @@ Learn how to use ostr.io services and manage your account
 
 ### Analytics
 
-- __About__: Our solution is made to be Open Source and transparent in a soul, lightweight, efficient and with respect to DNT policy. No heavy tasks, no mouse tracking, no DOM changes, no UI freezes, no negative UX impact. All data is available instantly in real-time.
+- __About__: Our solution is made to be Open Source and transparent in a soul, with real-time data reporting, lightweight and efficient performance, and privacy-friendly data collection. No heavy tasks, no mouse tracking, no DOM changes, no UI freezes, no negative UX impact. All data is available instantly in real-time.
 - __Packages & Open Source:__
   - [`ostrio-analytics` open source repository](https://github.com/veliovgroup/ostrio-analytics)
   - [NPM `ostrio-analytics` package](https://www.npmjs.com/package/ostrio-analytics)
