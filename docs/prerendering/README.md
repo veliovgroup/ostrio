@@ -1,8 +1,8 @@
 # Prerendering
 
-Prerendering for JavaScript powered websites. Great solution for PWAs (Progressive Web Apps), SPAs (Single Page Applications), and other websites based on top of front-end JavaScript frameworks like Meteor.js, Vue.js, React.js, Angular.js, Backbone.js, Ember.js, etc. __ostr.io the first service to support ES6/ECMAScript2015 syntax.__
+Prerendering for JavaScript powered websites. Great solution for PWAs (Progressive Web Apps), SPAs (Single Page Applications), and other websites based on top of front-end JavaScript frameworks like Next.js, Svelte.js, Blaze.js, Meteor.js, Vue.js, React.js, Angular.js, Backbone.js, Ember.js, etc.
 
-Prerendering operates as middleware and can be easily integrated with Nginx or Apache without extra plugins. Integration with express.js, connect.js, and vanilla node.js server available via NPM package. For Meteor.js integration, we have published Atmosphere package.
+Prerendering operates as middleware and can be easily integrated with CloudFlare Workers, Nginx, or Apache without extra plugins. Application specific integrations are Integration with express.js, connect.js, and vanilla node.js server available via NPM package. For Meteor.js integration, we have published Atmosphere package.
 
 ## Used Terms:
 
@@ -16,11 +16,12 @@ Prerendering operates as middleware and can be easily integrated with Nginx or A
 
 ## Prerendering ToC:
 
-- [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
+- [CloudFlare Worker Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cloudflare-worker.md)
 - [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
 - [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
 - [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
 - [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+- [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
 - [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
 - [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
 - [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
