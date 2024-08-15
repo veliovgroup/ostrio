@@ -15,7 +15,7 @@
 ### Running pre-rendering integration tests:
 
 - Use `cURL` and `Authorization` header (*see nginx integration*): `curl -v -H "Authorization: Basic TOKEN" https://render.ostr.io/?url=https://your-website-domain.com`;
-- Use `cURL` and authentication credentials (*see node.js integration*): `curl -v https://auth:string@render.ostr.io/?url=https://your-website-domain.com`;
+- Use `cURL` and authentication credentials (*see node.js integration*): `curl -v https://auth:string@render-bypass.ostr.io/?url=https://your-website-domain.com`;
 - Use `test:test` credentials to test general integration (*to make sure web application server can reach pre-rendering service*);
 - Use `Authorization: Basic dGVzdDp0ZXN0` header to test general integration (*to make sure web application server can reach pre-rendering service*);
 - Learn more about running tests in [`spiderable-middleware` package documentation](https://github.com/veliovgroup/spiderable-middleware#running-tests).
