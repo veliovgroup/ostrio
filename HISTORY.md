@@ -6,6 +6,31 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2024-08-03]
+
+This release brings new features and improvements in Pre-rendering and deprecates DNT policy in Web-Analytics.
+
+##### What's new
+
+- ✨ `new feature` __Pre-rendering: "Load Image"__ — When enabled rendering engine will wait for images (and other media assets) to finish loading; Enable when JS-logic relies on reading media assets
+- ✨ `new feature` __Web Analytics: "One-click opt-out"__ procedure; And [new tracking settings page](https://analytics.ostr.io/settings/manage/)
+- ✨ `new feature` __Billing: Monthly plans__; *Invite-only feature, reach out to one of ostr.io social accounts or support team*
+
+##### Changes
+
+- 🤖 Pre-rendering: "Render entire website" increase single batch limits to:
+  - Hobby: `500`
+  - Pro: `2500`
+  - Business: `10000`
+- 🖥 Pre-rendering UI: Modal with cached records — Improve horizontal scroll
+- 📈 `deprecated` Analytics deprecating DNT policy; [DNT header deprecation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/DNT), [`.doNotTrack` deprecation](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack)
+- 📈 `deprecated` Analytics dropping Beacon API usage to increase data deliverability (*as blocked by default by many "ad blockers"*)
+- 📋 GDPR: Deprecate DNT policy
+- 📋 GDPR: Add "One-click opt-out" procedure (*as alternative to DNT*)
+- 📋 Privacy Policy: Deprecate DNT policy
+- 📋 Privacy Policy: Explain how cookies are used
+- 📋 Privacy Policy: Add "One-click opt-out" procedure (*as alternative to DNT*)
+
 #### [2024-07-12]
 
 - 🏷 Pricing Table: Link to "Purchase credits" for logged-in users
