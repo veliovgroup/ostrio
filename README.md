@@ -1,6 +1,6 @@
 # [ostr.io](https://ostr.io)
 
-Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, and other JavaScript-based websites, web apps, single page applications (SPA), and progressive web applications (PWA). Our services: [Pre-rendering](https://ostr.io/info/prerendering), [Monitoring](https://ostr.io/info/monitoring), [Web Analytics](https://ostr.io/info/web-analytics), [WebSec](https://ostr.io/info/domain-names-protection), [Web-CRON](https://ostr.io/info/web-cron).
+Web services for modern and legacy websites, web apps, e-commerce shops, social and corporate portals, and IoT devices. Our services: [Pre-rendering](https://ostr.io/info/prerendering), [Monitoring](https://ostr.io/info/monitoring), [Web Analytics](https://ostr.io/info/web-analytics), [WebSec](https://ostr.io/info/domain-names-protection), [Web-CRON](https://ostr.io/info/web-cron).
 
 ## ToC
 
@@ -23,7 +23,7 @@ Web services for JavaScript, Angular.js, React.js, Vue.js, Meteor.js, Node.js, a
   - <a href="mailto:info@ostr.io" target="_parent">Send us a message</a>
   - Follow us on [Twitter](https://twitter.com/ostrio_service)
   - Like and subscribe at [Facebook](https://www.facebook.com/ostrio.service)
-- [CHANGELOG](https://github.com/veliovgroup/ostrio/blob/master/HISTORY.md) - Dev blog
+- [CHANGELOG](https://github.com/veliovgroup/ostrio/blob/master/HISTORY.md) - Learn what's new
 - [Sitemap](https://github.com/veliovgroup/ostrio/blob/master/SITEMAP.md)
 - Misc:
   - [Desktop and Mobile Wallpapers](https://github.com/veliovgroup/ostrio/tree/master/wallpapers)
@@ -57,57 +57,66 @@ Learn how to use ostr.io services and manage your account
 
 ### Prerendering (Spiderable / Crawlable)
 
-- __About__: Modern front-end JavaScript solutions don't render pages on a server side, instead, the server returns same HTML markup to all requests, while a page is rendered in a browser. This technology leads to many benefits - faster page load, lower bandwidth usage, great user experience with fast and responsive UI. On the other hand web crawlers and search engines, like Google, Bing, Yandex, Facebook, Slack, Skype etc. doesn't execute JavaScript and fetch an empty page without content. Prerendering will serve content properly to every request by a web crawler, social network, messaging app and search engine, which is so important for SEO and social sharing.
+- __About__: Modern front-end JavaScript solutions don't render pages on a server side, instead, the server returns same HTML markup to all requests, while a page is rendered in a browser. This technology leads to many benefits - faster page load, lower bandwidth usage, great user experience with fast and responsive UI. On the other hand web crawlers and search engines, like Google, Bing, Facebook, Slack, Skype etc. doesn't execute JavaScript and fetch an empty page without content. Prerendering will serve content properly to every request by a web crawler, social network, messaging app and search engine, which is so important for SEO and social sharing
 - __Packages & Open Source:__
   - [`spiderable-middleware` open source repository](https://github.com/veliovgroup/spiderable-middleware)
-  - [NPM `spiderable-middleware` package](https://www.npmjs.com/package/spiderable-middleware)
-  - [Atmosphere `ostrio:spiderable-middleware` package](https://atmospherejs.com/ostrio/spiderable-middleware)
+  - [NPM `spiderable-middleware` Node.js package](https://www.npmjs.com/package/spiderable-middleware)
+  - [Atmosphere `ostrio:spiderable-middleware` Meteor.js package](https://atmospherejs.com/ostrio/spiderable-middleware)
+- __Integrations:__
+  - [CloudFlare Worker Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cloudflare-worker.md)
+  - [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+  - [Apache Integration](https://github.com/veliovgroup/spiderable-middleware/blob/master/examples/apache.htaccess)
+  - [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
+  - [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
+- __Pre-rendering control panel features:__
+  - [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
+  - [Cache purge](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
+  - [Strip JavaScript](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
+  - [ES5 & Legacy Websites Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
+- __Tutorials:__
+  - [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+  - [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
+  - [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+  - [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
+  - [Detect Prerendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+  - [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
+  - [Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
 - [Learn more about Prerendering](https://ostr.io/info/prerendering)
-- [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
-- [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
-- [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
-- [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
-- [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
-- [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
-- [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
-- [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
-- [Cache purge](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
-- [ES6 / ECMAScript 2015 Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
-- [Strip JavaScript](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
-- [Detect Prerendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
-- [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
-- [Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
 
 ### Monitoring
 
-- __About__: Nowadays website downtime may cause profit loss for any online business, and nearly every business is presented online. It's very important to take an action as soon as possible in event of server, hardware or software failure. We offer proactive monitoring with alerts about occurred issues and issues prediction which may lead to failures in the future.
+- __About__: Nowadays website downtime may cause profit loss for any online business, and nearly every business is presented online. It's very important to take an action as soon as possible in event of server, hardware or software failure. We offer proactive monitoring with alerts about occurred issues and issues prediction which may lead to failures in the future
+- __Integrations:__
+  - [Basic HTTP(S) Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md)
+  - [HTTP(S) Monitoring with web-authentication](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/with-auth.md)
+  - [Nginx stats and usage Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/nginx-stats.md)
+- __Tutorials:__
+  - [How to prevent cached results](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/custom-path.md)
+  - Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/snmp.md)
 - [Learn more about Monitoring](https://ostr.io/info/monitoring)
-- [Basic HTTP(S) Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md)
-- [Build "uncacheable" path to endpoint, prevent cached results](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/custom-path.md)
-- [HTTP(S) Monitoring with web-authentication](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/with-auth.md)
-- [Nginx stats and usage Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/nginx-stats.md)
-- Advanced: [SNMP (CPU, RAM, HDD, SSD, Bandwidth, Processes, SSH Sessions, Server Reboot) monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/snmp.md)
 
 ### Analytics
 
-- __About__: Our solution is made to be Open Source and transparent in a soul, with real-time data reporting, lightweight and efficient performance, and privacy-friendly data collection. No heavy tasks, no mouse tracking, no DOM changes, no UI freezes, no negative UX impact. All data is available instantly in real-time.
+- __About__: The real-time, lightweight, privacy-friendly, and GDPR compliant web analytics with 100% open source tracking code. Web Analytics by ostr.io is drop-in web tracking solution with zero configuration. Data collection is minimalistic and transparent (as per GDPR and Privacy Policy) with a straightforward opt-out for end users
 - __Packages & Open Source:__
   - [`ostrio-analytics` open source repository](https://github.com/veliovgroup/ostrio-analytics)
-  - [NPM `ostrio-analytics` package](https://www.npmjs.com/package/ostrio-analytics)
-  - [Atmosphere `ostrio:analytics` package](https://atmospherejs.com/ostrio/analytics)
-- [Detect AdBlock usage](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/detect-adblock.md)
-- [Track Accelerated Mobile Pages (AMP)](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/track-amp.md)
+  - [NPM `ostrio-analytics` JavaScript package](https://www.npmjs.com/package/ostrio-analytics)
+  - [Atmosphere `ostrio:analytics` Meteor.js package](https://atmospherejs.com/ostrio/analytics)
+- __Integrations:__
+  - [Read integration docs](https://github.com/veliovgroup/ostrio-analytics)
+- __Tutorials:__
+  - [Detect AdBlock usage](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/detect-adblock.md)
+  - [Track Accelerated Mobile Pages (AMP)](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/track-amp.md)
 - [Learn more about Web-Analytics](https://ostr.io/info/web-analytics)
-- [Read Open Source Library Docs](https://github.com/veliovgroup/ostrio-analytics)
 
 ### Domains Protection
 
-- __About__: Be aware of data substitution, traffic redirection, theft, and hijacking of a domain name, DNS, Whois and SSL/TLS certificate. Nowadays protection and security are number one priority for IT industry. Whenever you are involved in IT as a hobbyist or as a business of any size, your data and data of your visitors must be well protected. __And we made it easy__, no setup is required our famous "*One Click Setup*" will configure everything for you in a matter of seconds.
+- __About__: Be aware of data substitution, traffic redirection, theft, and hijacking of a domain name, DNS, Whois and SSL/TLS certificate. Nowadays protection and security are number one priority for IT industry. Whenever you are involved in IT as a hobbyist or as a business of any size, your data and data of your visitors must be well protected. __And we made it easy__, no setup is required our famous "*One Click Setup*" will configure everything for you in a matter of seconds
 - [Learn more about __free__ Domains Protection](https://ostr.io/info/domain-names-protection)
 
 ### Web-CRON
 
-- __About__: Sometimes webmasters need to schedule CRON jobs, but unable due to a current hosting provider. With our service, CRON tasks can be set in the same way as you used to with classic Linux CRON scheduler. But it is more than running tasks, we will send an alert if a task is failed to run, and our robot will retry to run a task in the case if your server is temporary down.
+- __About__: Sometimes webmasters need to schedule CRON jobs, but unable due to a current hosting provider. With our service, CRON tasks can be set in the same way as you used to with classic Linux CRON scheduler. But it is more than running tasks, we will send an alert if a task is failed to run, and our robot will retry to run a task in the case if your server is temporary down
 - [Learn more about Web-CRON](https://ostr.io/info/web-cron)
 
 <!--  - Custom: [JSON Endpoint Monitoring]()
@@ -169,6 +178,10 @@ Learn how to use ostr.io services and manage your account
     - [Basic firewall with `iptables`](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
     - [Basic ipv6 firewall with `ip6tables`](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
     - [Scheduled and Automated Backups](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md)
+
+----
+
+> ▲ with ♥
 
 <!-- ### nginx
  - [nginx + Node.js with WebSockets]() - Meteor.js, MEAN.js or any other Node.js project with WebSockets
