@@ -6,6 +6,25 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2024-08-15]
+
+This release include various UI/UX enhancements and fixes across the app, improves Pre-rendering response timings, and reduced Web Analytics costs!
+
+##### Major changes
+
+- 📈 Reduce Web-Analytics Prices
+- 🚀 Increase free-tier credits for new users
+
+##### Changes
+
+- 🤖 Pre-rendering: Reduce response delays
+- 🤖 Pre-rendering: Enable ES6/ES7 rendering engine by default
+- 🤖 Pre-rendering: ES5 support now marketed as "for legacy websites"
+- 🖥 UI/UX: Refactored pricing and landing pages
+- 😎 UI: Improve dark mode styles
+- 📔 Pre-rendering docs: [Improve Nginx tutorials](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+- 📔 Pre-rendering docs: [Add CloudFlare tutorial](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cloudflare-worker.md)
+
 #### [2024-08-03]
 
 This release brings new features and improvements in Pre-rendering and deprecates DNT policy in Web-Analytics.
