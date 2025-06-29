@@ -51,7 +51,7 @@ Pre-rendering integration via Nginx is the most efficient and simple way to enab
 > [!IMPORTANT]
 > These `map` definitions must be defined for all NGINX configuration examples below
 
-Use `map` module to check if request coming from bot and if request has `_escaped_fragment_` query. These two `map` definitions will set `$is_webbot` and `$fragment` variables that are used for pre-rendering logic
+Use `map` module to check if request coming from bot and if request has `_escaped_fragment_` query. These three `map` definitions will set `$is_webbot`, `$fragment`, and `$filtered_args` variables that are used for pre-rendering logic
 
 ```nginx
 # Feel free to edit bots User Agent regular expression
