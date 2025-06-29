@@ -6,6 +6,19 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2025-06-25]
+
+- 🤖 Pre-rendering: Improved Nginx integration
+- 📔 Pre-rendering docs: [Improved examples in Nginx tutorials](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+- 🤖 Pre-rendering: Improved "cache purge" UX/UI
+- 🤖 Pre-rendering: Improved redirect handling in edge cases
+- 🤖 Pre-rendering: Improved "status code" reporting; Fixing [#20](https://github.com/veliovgroup/spiderable-middleware/issues/20); Thanks to @FTCHD
+- 🤖 Pre-rendering: Support URLs with `?get=query` params in Nginx/Apache integrations
+- 🤖 Pre-rendering: Do not collect "response time" for cached pages
+- 📜 Domain SSL: Add exact expiration time
+- 😎 Domains SSL/DNS/WHOIS: improve UI/UX
+- 😎 UI: Improved charts UI and rendering
+
 #### [2024-08-15]
 
 This release include various UI/UX enhancements and fixes across the app, improves Pre-rendering response timings, and reduced Web Analytics costs!
