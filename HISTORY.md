@@ -6,6 +6,13 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2025-07-03]
+
+- 🤖 Pre-rendering: Added `window.IS_PRERENDERING_TYPE` runtime variable, — [see docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- 📔 Docs: Pre-rendering: Added details regarding custom "status codes" in pre-rendering panel, — [see docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#custom-status-codes)
+- 📔 Docs: Pre-rendering: updated [runtime engine documentation](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- 🌎 Domain Whois: Display "domain expiration" detailed to a minute
+
 #### [2025-06-25]
 
 - 🤖 Pre-rendering: Improved Nginx integration
@@ -161,7 +168,7 @@ __Do not forget__: our website is a fully-featured progressive web application (
 
 #### [2019-10-29]
 
-- 🔥 Pre-rendering: Support for __styled-components__
+- 💅 Pre-rendering: Support for __styled-components__
 - 📊 Charts: Fix displayed date/time in some timezones
 - 📊 Charts: Add option to display date/time in *Local* and/or *UTC* timezones
 - 👨‍💻 User Account: Easily subscribe/unsubscribe from our newsletter in [account settings](https://ostr.io/account)
