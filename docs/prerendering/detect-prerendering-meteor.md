@@ -27,4 +27,4 @@ __Note__: `window.IS_PRERENDERING` might be `undefined` on initial page load, an
 
 ## Detect type of the pre-rendering engine
 
-Like browsers, crawler, and bots come as "mobile" (small screen touch-devices) or as "desktop" (large screens without touch-events) the pre-rendering engine has same two types. For cases when content needs to get optimized for different screens pre-rendering engine will set `window.IS_PRERENDERING_TYPE` global variable to `desktop` or `mobile`
+Like browsers, crawler, and bots come as "mobile" (small screen touch-devices) or as "desktop" (large screens without touch-events) the pre-rendering engine has the same two types. For cases when content needs to get optimized for different screens pre-rendering engine will set `window.IS_PRERENDERING_TYPE` global variable to `desktop` or `mobile`
