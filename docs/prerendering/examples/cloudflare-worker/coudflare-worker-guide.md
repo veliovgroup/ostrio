@@ -31,8 +31,8 @@ Step-by-step integration instructions for ostr.io pre-rendering via CloudFlare W
     - Ensure `X-Prerender-Id` header returned with response
     - Check ostr.io: Rendering statistics will appear in real-time
 11. Further reading:
-    - [Speed-up rendering](https://github.com/veliovgroup/spiderable-middleware?tab=readme-ov-file#speed-up-rendering)
-    - [Detect requests from pre-rendering](https://github.com/veliovgroup/spiderable-middleware?tab=readme-ov-file#detect-request-from-pre-rendering-engine-during-runtime)
+    - [Speed-up rendering](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md#speed-up-rendering)
+    - [Detect requests from pre-rendering](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
 
 ## Example
 
