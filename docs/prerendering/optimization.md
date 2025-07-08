@@ -90,3 +90,7 @@ http {
   }
 }
 ```
+
+## Further reading
+
+- [Content optimization for different crawlers](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
