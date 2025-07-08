@@ -4,7 +4,7 @@
 
 In the case of significant changes on a website, cached results can be purged. Full cache purging available once per 2 hours.
 
-![Purge Full Prerendering Cache Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/prerendering-cache-purge.png?raw=true)
+![Purge Full Pre-rendering Cache Screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/prerendering-cache-purge.png?raw=true)
 
 ## Individual page cache purge:
 
@@ -19,9 +19,9 @@ While full cache purging is limited by time-frame. The individually cached page 
   </td>
 </tr></tbody></table>
 
-## Purge aggressively cached pages or AppCache
+## Purge aggressively cached pages
 
-The reason why you may not found `x-prerender-id` header in DevTools is aggressive caching or usage of AppCache, to avoid this issue please follow next steps (*in Chrome, Opera, Brave, and other Chromium-based browser*):
+The reason why you may not found `x-prerender-id` header in DevTools is aggressive caching headers or usage of ServiceWorker or AppCache, to avoid this issue please follow next steps (*in Chrome, Opera, Brave, and other Chromium-based browser*):
 
 1. Open new **Private** window
 2. Open URL with appended `?_escaped_fragment_=`
@@ -35,4 +35,4 @@ The reason why you may not found `x-prerender-id` header in DevTools is aggressi
 
 ## Notes:
 
-While cache is purged from Prerendering engine it may remain cached from few minutes to several days, it depends from selected "Cache TTL" and [rendering endpoint](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md).
+While cache is purged from Pre-rendering engine it may remain cached in intermediate caching layers from few minutes to several days, it depends on selected "Cache TTL" and [rendering endpoint](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md).
