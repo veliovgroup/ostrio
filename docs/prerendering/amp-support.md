@@ -3,7 +3,7 @@
 To properly serve pages for [Accelerated Mobile Pages](https://www.ampproject.org) (AMP) we support following URI schemes:
 
 ```shell
-# Regular URIs:
+# Regular URIs (not optimized for AMP):
 https://example.com/index.html
 https://example.com/articles/article-title.html
 https://example.com/articles/article-uniq-id/article-slug
