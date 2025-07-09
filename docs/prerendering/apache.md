@@ -10,7 +10,7 @@ Enable required modules via `.htaccess` file or `CLI` commands
 
 Add the next lines into `.htaccess` file:
 
-```htaccess
+```apacheconf
 LoadModule headers_module libexec/apache2/mod_headers.so
 LoadModule proxy_module libexec/apache2/mod_proxy.so
 LoadModule proxy_http_module libexec/apache2/mod_proxy_http.so
@@ -34,7 +34,7 @@ sudo a2enmod rewrite
 
 Add the next `RewriteCond` and `RewriteRule` into existing `.htaccess` file to redirect bot's traffic to pre-rendering engine
 
-```htaccess
+```apacheconf
 # IF SSL MANAGED BY APACHE, ADD NEXT LINE:
 # SSLProxyEngine on
 
