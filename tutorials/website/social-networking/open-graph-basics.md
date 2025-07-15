@@ -12,7 +12,7 @@ __Description by [Redclay Interactive](https://www.redclayinteractive.com/what-a
 This example is very basic usage, but will cover most of the cases. For more info and examples - *see links below*.
 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
     <!-- standard meta tags -->
     <meta charset="UTF-8">
