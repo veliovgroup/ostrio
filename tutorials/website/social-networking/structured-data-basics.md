@@ -39,7 +39,7 @@ Code-sample below is showcasing the most used case - *Website + Article*. There 
         "name": "Traveler: Norway",
         "headline": "Articles about travel in Norway",
         "alternativeHeadline": "Traveling in Norway",
-        "description": "Hand-picked collection of quality articles about travel in Norway"
+        "description": "Hand-picked collection of quality articles about travel in Norway",
         "image":[
           "https://example.com/social-1280x640.png"
         ],
