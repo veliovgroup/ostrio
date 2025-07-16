@@ -6,12 +6,20 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
-#### [2025-07-03]
+#### [2025-07-16]
 
 - 🤖 Pre-rendering: Added `window.IS_PRERENDERING_TYPE` runtime variable, — [see docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- 🤖 Pre-rendering: Added details to errors returned from pre-rendering endpoints for better debugging, integration process, and support
 - 📔 Docs: Pre-rendering: Added details regarding custom "status codes" in pre-rendering panel, — [see docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#custom-status-codes)
 - 📔 Docs: Pre-rendering: updated [runtime engine documentation](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+- 📔 Docs: [New Apache integration guide](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/apache.md)
 - 🌎 Domain Whois: Display "domain expiration" detailed to a minute
+- 🌍 DNS Checks: Full support for CloudFlare, now CloudFlare `A` and `AAAA` records reported as `CloudFlare` without unnecessary alerts when CloudFlare rotates IPs
+- 🌍 WHOIS Checks: now supports most of TLDs
+- 🌍 WHOIS Checks: now supports RDAP
+- 🌏 Domain Protection: DNS, WHOIS, and SSL panels has UI updated for better UX
+- 🖥️ Servers Panel: Refactored and improved UI for better UX
+- 📦 Released [`spiderable-middleware@2.3.0` for NPM and Meteor.js](https://github.com/veliovgroup/spiderable-middleware/releases/tag/2.3.0)
 
 #### [2025-06-25]
 
@@ -383,4 +391,4 @@ We're listening you carefully, thank you all for contributions, suggestions, and
 
 - Critical fix for SNMP Monitoring
 
-*...This project is started somewhere in the middle of 2015...*
+*...This project is started in the middle of 2015...*
