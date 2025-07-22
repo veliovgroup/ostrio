@@ -6,6 +6,17 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2025-07-22]
+
+- 🐞 WebSec: Fix incorrect WHOIS record formatting in some domain names
+- 🐞 WebSec: Fix missing DNS records (introduced in the previous update)
+- ✨ Extend server verification period to 10 days (240 hours)
+- 🖥️ Refactored "My account" UI for better UX
+- 🖥️ Refactored "Login" form UI for better UX
+- 🖥️ Refactored "Sign up" form UI for better UX
+- 🔭 Monitoring: Reference ["JSON" and "XML" custom data monitoring examples](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/basics.md#custom-data-monitoring)
+- ⚠️ Change grace period between changing pricing plans to 24 hours (*was 3 minutes*)
+
 #### [2025-07-16]
 
 - 🤖 Pre-rendering: Added `window.IS_PRERENDERING_TYPE` runtime variable, — [see docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
