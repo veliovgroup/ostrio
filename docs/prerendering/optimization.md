@@ -57,7 +57,7 @@ http {
   # Enable caching
   proxy_cache_path /var/lib/nginx/cache levels=1:2 keys_zone=backcache:10m max_size=5G inactive=60m use_temp_path=off;
 
-  location @crawlable {
+  location @prerendering {
     # Enlarge this directives in case of 408 errors
     proxy_read_timeout    25s;
     proxy_send_timeout    35s;
