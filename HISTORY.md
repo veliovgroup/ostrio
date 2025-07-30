@@ -6,6 +6,14 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2025-07-30]
+
+- 📔 Pre-rendering docs: Refactor and improve CloudFlare worker: [`cloudflare.worker.js`](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/cloudflare.worker.js)
+
+#### [2025-07-29]
+
+- ⚠️ Fixed issue with false DNS and WHOIS warnings/alerts
+
 #### [2025-07-22]
 
 - 🐞 WebSec: Fix incorrect WHOIS record formatting in some domain names
