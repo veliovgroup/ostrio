@@ -35,7 +35,7 @@ const STRS = {
   service: {
     origin: 'ostr.io',
     originTld: '.ostr.io',
-    renderBase: 'https://render.ostr.io/?url=',
+    renderBase: 'https://render.ostr.io/?url=', // @see https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md
   },
   headers: {
     ua: 'User-Agent',
@@ -100,9 +100,14 @@ export default {
       fetchUrl += url.search;
     }
 
-    return fetch(new Request(`${STRS.service.renderBase}${encodeURIComponent(fetchUrl)}${STRS.args.bot}${encodeURIComponent(userAgent)}`, {
-      headers: headers,
-      redirect: STRS.manual,
-    }));
+    try {
+      return fetch(new Request(`${STRS.service.renderBase}${encodeURIComponent(fetchUrl)}${STRS.args.bot}${encodeURIComponent(userAgent)}`, {
+        headers: headers,
+        redirect: STRS.manual,
+      }));
+    } catch (fetchError) {
+      console.warn('[CloudFlare Worker] [pre-rendering] [fetch] REDIRECT TO ostr.io FIALED WITH fetchError:', fetchError);
+      return fetch(request);
+    }
   }
 };
