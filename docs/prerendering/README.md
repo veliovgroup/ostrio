@@ -16,30 +16,25 @@ Prerendering operates as middleware and can be easily integrated with CloudFlare
 
 ## Prerendering ToC:
 
-- [CloudFlare Worker Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cloudflare-worker.md)
-- [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
-- [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
-- [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
-- [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
-- [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
-- [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
-- [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
-- [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
-- [Cache purge](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
-- [ES6 / ECMAScript 2015 Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
-- [Strip JavaScript](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
-- [Detect Prerendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
-- [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
-- [Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+- **Integrations**
+  - [CloudFlare Worker Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cloudflare-worker.md)
+  - [Next.js Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nextjs-prerendering.md)
+  - [Netlify Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/netlify-prerendering.md)
+  - [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
+  - [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
+  - [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+- **How to's**
+  - [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
+  - [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
+  - [Client Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/optimization.md)
+  - [Server Optimization](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+  - [Detect Prerendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
+  - [Detect Prerendering engine requests during runtime (*Meteor specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
+- **Features**
+  - [Caching](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache.md)
+  - [Cache purge](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/cache-purge.md)
+  - [ES6 / ECMAScript 2015 Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
+  - [Strip JavaScript](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/strip-javascript.md)
+  - [Rendering Endpoints](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md)
+  - [Custom Status Codes in Analytics](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/prerendering-custom-status-codes.md)
 - [Learn more about Prerendering](https://ostr.io/info/prerendering)
-
-## Custom status codes
-
-The "status codes" chart in pre-rendering panel displays origin response codes from rendered pages. In addition in may display custom `7**` codes that intended to help in debugging and improving pre-rendering integration, here's custom codes meanings:
-
-- `701` and `702` — Credentials error
-- `703` — Insufficient credits; Origin page is returned bypassing pre-rendering
-- `704` — Pre-rendering requesting features not available in current plan/tariff (e.g. subdomains, load-images, etc)
-- `705` — Unexpected error
-- `707` — Too many errors on the original page (unrecoverable JS or HTML errors); Origin page is returned bypassing pre-rendering
-- `708` — Origin takes too long to respond 90+ seconds; Origin page is returned bypassing pre-rendering;
