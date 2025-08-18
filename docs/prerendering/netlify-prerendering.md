@@ -2,6 +2,8 @@
 
 This guide explains how to enable [ostr.io pre-rendering](https://ostr.io/info/prerendering) for sites deployed on Netlify.
 
+<img width="1536" height="1024" alt="ostrio-prerendering-netlify-support_web" src="https://github.com/user-attachments/assets/350da2b5-40ed-45d1-a680-231a05c9916b" />
+
 ## Overview
 
 ostr.io pre-rendering delivers fully rendered HTML to search engines and modern AI crawlers, improving index coverage and discoverability while reducing origin load. The Netlify integration routes crawler traffic through ostr.io pre-rendering engine.
