@@ -1,6 +1,6 @@
 # NEXT.JS
 
-ostr.io pre-rendering integration with Next.js apps
+[ostr.io pre-rendering](https://ostr.io/info/prerendering) integration with Next.js apps
 
 <img width="1536" height="1024" alt="ostrio-prerendering-nextjs-support_web" src="https://github.com/user-attachments/assets/6b51b594-be82-4c0f-b66f-903dadd93063" />
 
