@@ -15,16 +15,14 @@ ostr.io pre-rendering delivers fully rendered HTML to search engines and modern 
 > [!IMPORTANT]
 > **Security note:** Treat the Auth Token as a secret. Do not share it publicly or commit it to source control.
 
----
 
 ## Prerequisites
 
 1. An active ostr.io account
-2. An active Netlify account on **PRO** or **ENTERPRISE**
+2. An active Netlify account on **PRO** or **ENTERPRISE** plans
 3. A site deployed on Netlify
 4. An ostr.io **Pre-rendering Auth Header/Token** issued for specific host (string that starts with `Basic ...`).
 
----
 
 ## Enablement Steps (via Netlify Support)
 
@@ -62,7 +60,6 @@ This integration should route crawler traffic through ostrio's pre-rendering eng
 Thank you.
 ```
 
----
 
 ## Verifying the Integration
 
@@ -81,7 +78,6 @@ Expected result: the response includes `X-Prerender-Id` header with server-rende
 > [!TIP]
 > Try different tools and real crawler fetch tools (e.g., Search Console’s URL inspection). Include "escaped fragment" query at the end in tools like "page speed", for example: `https://example.com/?_escaped_fragment_=/`
 
----
 
 ## Common Issues & Fixes
 
@@ -107,8 +103,8 @@ Expected result: the response includes `X-Prerender-Id` header with server-rende
 
 * **Plan limitation**
 
-  * Symptoms: enablement requests declined or integration inactive.
-  * Action: upgrade to **PRO** or **ENTERPRISE**.
+  * Symptoms: integration requests declined or integration inactive in Netlify.
+  * Action: upgrade Netlify account to **PRO** or **ENTERPRISE** plans.
 
 * **Caching delay**
 
@@ -120,29 +116,26 @@ Expected result: the response includes `X-Prerender-Id` header with server-rende
   * Symptoms: blocked crawler traffic through the pre-rendering layer.
   * Action: ensure any origin firewall/CDN rules allow Netlify and ostr.io traffic.
 
----
 
 ## Disable Pre-rendering integration
 
 Open new Netlify Support ticket requesting removal of the ostr.io pre-rendering integration for the site (list site(s)).
 
----
 
 ## FAQ
 
-**Is this automatic?**
-No. Netlify must enable the integration after receiving the `Basic ...` Auth Token.
+* **Is this automatic?**
+  * No. Netlify must enable the integration after receiving the `Basic ...` Auth Token.
 
-**How long does enablement take?**
-Netlify typically completes enablement within **24 hours** of receiving the request.
+* **How long does enablement take?**
+  * Netlify typically completes enablement within **24 hours** of receiving the request.
 
-**Which requests are pre-rendered?**
-Crawler traffic (search engines and modern AI crawlers/agents). Regular visitor traffic is unaffected.
+* **Which requests are pre-rendered?**
+  * Crawler traffic (search engines and modern AI crawlers/agents). Regular visitor traffic is unaffected.
 
-**Does this impact Core Web Vitals?**
-Yes, it improves Web Vitals Scores for crawlers and bots that positively impacts index and organic traffic. Visitor-side Core Web Vitals remain unaffected by the crawler integration.
+* **Does this impact Core Web Vitals?**
+  * Yes, it improves Web Vitals Scores for crawlers and bots with positive impact on crawler index, SEO scores, and organic traffic. Visitor-side Core Web Vitals remain unaffected by the crawler integration.
 
----
 
 ## Support
 
