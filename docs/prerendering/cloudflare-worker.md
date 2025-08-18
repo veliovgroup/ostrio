@@ -1,5 +1,7 @@
 # CloudFlare Worker integration
 
+<img width="1536" height="1024" alt="ostrio-prerendering-cloudflare-support" src="https://github.com/user-attachments/assets/b775192e-1d6b-49c7-925c-a17e60d97304" />
+
 CloudFlare Workers is the great alternative to server-specific proxy (Nginx, Apache, HAProxy) and app-specific middleware (NPM, PHP, Node.js, Django, and other)
 
 - [Step-by-step Tutorial](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/coudflare-worker-guide.md)
