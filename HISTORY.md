@@ -6,6 +6,15 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+#### [2025-08-18]
+
+- 📔 [Next.js: integration docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nextjs-prerendering.md)
+- 📔 [Netlify: integration docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/netlify-prerendering.md)
+
+#### [2025-07-31]
+
+- ⚠️ Fixed issue with false SSL and WHOIS expiration dates warnings/alerts
+
 #### [2025-07-30]
 
 - 📔 Pre-rendering docs: Refactor and improve CloudFlare worker: [`cloudflare.worker.js`](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/cloudflare.worker.js)
