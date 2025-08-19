@@ -3,10 +3,10 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
 // [IMPORTANT!]
-// SET `PRERENDER_SERVICE_URL` OR `OSTR_AUTH` ENVIRONMENT VARIABLE
+// SET `PRERENDER_SERVICE_AUTH` OR `OSTR_AUTH` ENVIRONMENT VARIABLE
 // TO TOKEN THAT STARTS WITH `Basic ...base64 encoded string...` FROM PRE-RENDERING PANEL
 // OR HARD-CODE IT TO BELOW AS STRING
-const AUTH_HEADER = process.env.PRERENDER_SERVICE_URL || process.env.OSTR_AUTH || '';
+const AUTH_HEADER = process.env.PRERENDER_SERVICE_AUTH || process.env.SPIDERABLE_SERVICE_AUTH || process.env.OSTR_AUTH || '';
 
 // SET TO false TO DISABLE SUPPORT OF _escaped_fragment_ GET QUERY
 // DEPRECATED BY GOOGLE: https://developers.google.com/search/blog/2015/10/deprecating-our-ajax-crawling-scheme
