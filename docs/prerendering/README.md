@@ -23,6 +23,7 @@ Prerendering operates as middleware and can be easily integrated with CloudFlare
   - [Node.js Integration via NPM](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/node-npm.md)
   - [Meteor.js Integration via Atmosphere](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/meteor-atmosphere.md)
   - [Nginx Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nginx.md)
+  - [Apache Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/apache.md)
 - **How to's**
   - [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
   - [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
