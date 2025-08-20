@@ -50,7 +50,8 @@ const DICT = {
     auth: 'authorization',
     host: 'host',
   },
-  keepHeaders: ['user-agent', 'accept-language'],
+  keepReqHeaders: ['user-agent', 'accept-language'],
+  ignoreRespHeaders: ['age', 'alt-svc', 'cache-status', 'cf-connecting-ip', 'cf-ipcountry', 'cf-cache-status', 'cf-ray', 'cf-request-id', 'cnection', 'cneonction', 'connection', 'content-encoding', 'content-length', 'date', 'etag', 'expect-ct', 'expires', 'keep-alive', 'last-modified', 'link', 'nel', 'nncoection', 'pragma', 'server', 'set-cookie', 'status', 'transfer-encoding', 'report-to', 'vary', 'via', 'www-authenticate', 'x-accel-buffering', 'x-accel-charset', 'x-accel-expires', 'x-accel-limit-rate', 'x-accel-redirect', 'x-ostrio-domain', 'x-powered-by', 'x-preprender-status', 'x-prerender-status', 'x-real-ip', 'x-runtime'],
 };
 
 const beginningSlashRe = /^\//;
@@ -61,7 +62,7 @@ if (!AUTH_HEADER) {
 }
 
 export const config = {
-  matcher: '/((?!api|_next/static|_next/image|_next/webpack-hmr|\\.well-known).*)'
+  matcher: '/((?!api|_next/static|_next/image|_next/webpack-hmr|\\.well-known|favicon.ico).*)'
 };
 
 function checkStatic(path: string): boolean {
@@ -132,7 +133,13 @@ export async function middleware(req: NextRequest) {
   let fetchUrl = `${url.origin}`;
   if (SUPPORT_ESCAPED_FRAGMENT && typeof escapedFragment === 'string') {
     url.searchParams.delete(DICT.escapedFragment);
-    fetchUrl += `${url.pathname.replace(trailingSlashRe, DICT.empty)}${DICT.slash}${escapedFragment.replace(beginningSlashRe, DICT.empty)}`;
+
+    if (escapedFragment.length) {
+      fetchUrl += `${url.pathname.replace(trailingSlashRe, DICT.empty)}${DICT.slash}${escapedFragment.replace(beginningSlashRe, DICT.empty)}`;
+    } else {
+      fetchUrl += url.pathname.replace(trailingSlashRe, DICT.empty);
+    }
+
     if (checkStatic(fetchUrl.toLowerCase())) {
       return NextResponse.next();
     }
@@ -147,7 +154,7 @@ export async function middleware(req: NextRequest) {
   const headers = new Headers();
   headers.set(DICT.headers.auth, AUTH_HEADER);
 
-  for (const h of DICT.keepHeaders) {
+  for (const h of DICT.keepReqHeaders) {
     if (req.headers.has(h)) {
       headers.set(h, req.headers.get(h));
     }
@@ -158,10 +165,15 @@ export async function middleware(req: NextRequest) {
   try {
     const res = await sendRequest(renderUrl, headers);
 
-    if (res && res.body) {
+    if (res) {
+      const outHeaders = new Headers(res.headers);
+      for (const h of DICT.ignoreRespHeaders) {
+        outHeaders.delete(h);
+      }
+
       return new NextResponse(res.body, {
         status: res.status,
-        headers: res.headers,
+        headers: outHeaders,
       });
     }
 
