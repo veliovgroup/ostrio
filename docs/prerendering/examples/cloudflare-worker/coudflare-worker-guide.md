@@ -9,21 +9,24 @@ Step-by-step integration instructions for ostr.io pre-rendering via CloudFlare W
 5. Inside server's pre-rendering panel scroll down to <kbd>integration guide</kbd>
 6. In the <kbd>CLOUDFLARE</kbd> tab — grab `env.OSTR_AUTH` value for CloudFlare's WebWorker environment variable
 7. __Create CF Worker:__
-    - Workers & Pages > <kbd>Create</kbd> > Select "Start with Hello World!" or "Create Worker via CloudFlare Dashboard"
-    - New Worker > Enter memorable name > click on <kbd>deploy</kbd>
+    - __In sidebar menu:__ Compute (Workers) > Workers & Pages > <kbd>Create</kbd> > Select "Start with Hello World!" or "Create Worker via CloudFlare Dashboard"
+    - New Worker > Enter memorable name (ex.: `examplecom-prerendering-worker`) > click on <kbd>deploy</kbd>
     - Worker > click on <kbd>Edit Code</kbd>
     - Worker Editor > Remove default code and replace with [CF Worker Code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/cloudflare.worker.js)
     - Worker Editor > click on <kbd>Deploy</kbd>
-    - Workers & Pages > Open Newly Created Worker > Settings > Variables and Secrets: Place value (*from step no.6*) as `OSTR_AUTH` to WebWorker's environment variables
+    - Workers & Pages > Open Newly Created Worker > Settings > Variables and Secrets > Click on <kbd>Add</kbd> button:
+        - Type: `test`
+        - Variable Name: `OSTR_AUTH`
+        - Value: Place value (*from step no.6*) that starts with `Basic ...`
     - Click on <kbd>Deploy</kbd> after adding `OSTR_AUTH` variable
 8. __Connect Worker to a website__
-    - Websites > example.com > Workers Routes > [Add Route]
+    - Account Home > (*click on your domain name*) > Workers Routes > [Add Route]
     - Route (one of below):
-        - Standard (*recommended*): `https://example.com/*`
+        - Standard (*recommended*): `https://example.com/*` or `https://www.example.com/` (*if `www.` is your primary website location*)
         - `http:` and `https:` protocols : `*example.com/*`
-        - All for subdomains __only__ (*PRO and BUSINESS plans only*) `*.example.com/*`
         - Main domain and all subdomains (*PRO and BUSINESS plans only*) `*example.com/*`
-    - Worker: Select newly created worker
+        - All for subdomains __only__ (*PRO and BUSINESS plans only*) `*.example.com/*`
+    - Worker: Select newly created worker from dropdown
     - Click on <kbd>save</kbd>
 9. __Purge cache:__ Websites > example.com > Caching > Configuration > <kbd>Purge Everything</kbd>
 10. __Check `X-Prerender-Id` header to confirm that pre-rendering works__
