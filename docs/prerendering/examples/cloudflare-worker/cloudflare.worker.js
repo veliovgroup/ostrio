@@ -1,3 +1,9 @@
+// [IMPORTANT!]
+// SET `OSTR_AUTH`` ENVIRONMENT VARIABLE
+// TO TOKEN THAT STARTS WITH `Basic ...base64 encoded string...` FROM PRE-RENDERING PANEL
+// OR HARD-CODE `BASIC_TOKEN` BELOW AS STRING
+const BASIC_TOKEN = '';
+
 // SET TO false TO DISABLE SUPPORT OF _escaped_fragment_ GET QUERY
 // DEPRECATED BY GOOGLE: https://developers.google.com/search/blog/2015/10/deprecating-our-ajax-crawling-scheme
 // BUT STILL SUPPORTED BY OTHER SEARCH ENGINES
@@ -18,7 +24,7 @@ const IGNORE_EXTENSIONS = new Set(['3ds', '3g2', '3gp', '3gpp', '7z', 'a', 'aac'
 const BOT_AGENTS = ['\\.net crawler', '360spider', '50\\.nu', '8bo crawler bot', 'aboundex', 'accoona', 'adldxbot', 'adsbot-google', 'ahrefsbot', 'altavista', 'appengine-google', 'applebot', 'archiver', 'arielisbot', 'ask jeeves', 'auskunftbot', 'baidumobaider', 'baiduspider', 'becomebot', 'bingbot', 'bingpreview', 'bitbot', 'bitlybot', 'blitzbot', 'blogbridge', 'boardreader', 'botseer', 'catchbot', 'catchpoint bot', 'charlotte', 'checklinks', 'cliqzbot', 'clumboot', 'coccocbot', 'converacrawler', 'crawl-e', 'crawlconvera', 'dataparksearch', 'daum', 'deusu', 'developers\\.google\\.com/+/web/snippet', 'discordbot', 'dotbot', 'duckduckbot', 'elefent', 'embedly', 'evernote', 'exabot', 'facebookbot', 'facebookexternalhit', 'fatbot', 'fdse robot', 'feed seeker bot', 'feedfetcher', 'femtosearchbot', 'findlinks', 'flamingo_searchengine', 'flipboard', 'followsite bot', 'furlbot', 'fyberspider', 'gaisbot', 'galaxybot', 'geniebot', 'genieo', 'gigablast', 'gigabot', 'girafabot', 'gomezagent', 'gonzo1', 'google sketchup', 'google-structured-data-testing-tool', 'googlebot', 'haosouspider', 'heritrix', 'holmes', 'hoowwwer', 'htdig', 'ia_archiver', 'idbot', 'infuzapp', 'innovazion crawler', 'internetarchive', 'iqdb', 'iskanie', 'istellabot', 'izsearch\\.com', 'kaloogabot', 'kaz\\.kz_bot', 'kd bot', 'konqueror', 'kraken', 'kurzor', 'larbin', 'leia', 'lesnikbot', 'linguee bot', 'linkaider', 'linkapediabot', 'linkedinbot', 'lite bot', 'llaut', 'lookseek', 'lycos', 'mail\\.ru_bot', 'masidani_bot', 'masscan', 'mediapartners-google', 'metajobbot', 'mj12bot', 'mnogosearch', 'mogimogi', 'mojeekbot', 'motominerbot', 'mozdex', 'msiecrawler', 'msnbot', 'msrbot', 'netpursual', 'netresearch', 'netvibes', 'newsgator', 'ng-search', 'nicebot', 'nutchcvs', 'nuzzel', 'nymesis', 'objectssearch', 'odklbot', 'omgili', 'oovoo', 'oozbot', 'openfosbot', 'orangebot', 'orbiter', 'org_bot', 'outbrain', 'pagepeeker', 'pagesinventory', 'parsijoobot', 'paxleframework', 'peeplo screenshot bot', 'pinterest', 'plantynet_webrobot', 'plukkie', 'pompos', 'psbot', 'quora link preview', 'qwantify', 'read%20later', 'reaper', 'redcarpet', 'redditbot', 'retreiver', 'riddler', 'rival iq', 'rogerbot', 'saucenao', 'scooter', 'scrapy', 'scrubby', 'searchie', 'searchsight', 'seekbot', 'semanticdiscovery', 'seznambot', 'showyoubot', 'simplepie', 'simpy', 'sitelockspider', 'skypeuripreview', 'slack-imgproxy', 'slackbot', 'slurp', 'snappy', 'sogou', 'solofield', 'speedy spider', 'speedyspider', 'sputnikbot', 'stackrambler', 'teeraidbot', 'teoma', 'theusefulbot', 'thumbshots\\.ru', 'thumbshotsbot', 'tineye', 'toweya\\.com', 'toweyabot', 'tumblr', 'tweetedtimes', 'tweetmemebot', 'twitterbot', 'url2png', 'vagabondo', 'vebidoobot', 'viber', 'visionutils', 'vkshare', 'voilabot', 'vortex', 'votay bot', 'voyager', 'w3c_validator', 'wasalive\\.bot', 'web-sniffer', 'websquash\\.com', 'webthumb', 'whatsapp', 'whatweb', 'wire', 'wotbox', 'yacybot', 'yahoo', 'yandex', 'yeti', 'yisouspider', 'yodaobot', 'yooglifetchagent', 'yoozbot', 'yottaamonitor', 'yowedo', 'zao-crawler', 'zebot_www\\.ze\\.bz', 'zooshot', 'zyborg', 'ai2bot', 'amazonbot', 'anthropic\\.com', 'bard', 'bytespider', 'ccbot', 'chatgpt-user', 'claude-web', 'claudebot', 'cohere-ai', 'deepseek', 'diffbot', 'duckassistbot', 'gemini', 'google-extended', 'gptbot', 'grok', 'meta-external', 'mistralai', 'oai-searchbot', 'omgili', 'openai\\.com', 'perplexity\\.ai', 'perplexitybot', 'xai', 'youbot'];
 const BOT_AGENTS_RE = new RegExp(BOT_AGENTS.join('|'), 'i');
 
-const STRS = {
+const DICT = {
   escapedFragment: '_escaped_fragment_',
   wellknownPath: '/.well-known/',
   slash: '/',
@@ -26,15 +32,14 @@ const STRS = {
   string: 'string',
   stringEmpty: '',
   manual: 'manual',
-  methods: {
-    get: 'GET',
-  },
+  allowedMethods: new Set(['GET', 'HEAD']),
   args: {
     bot: '&bot=',
   },
   service: {
     origin: 'ostr.io',
     originTld: '.ostr.io',
+    testAuth: 'Basic dGVzdDp0ZXN0',
     renderBase: 'https://render.ostr.io/?url=', // @see https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/rendering-endpoints.md
   },
   headers: {
@@ -47,18 +52,18 @@ const beginningSlashRe = /^\//;
 const trailingSlashRe = /\/$/;
 
 const shouldPrerender = (request, url, userAgent) => {
-  if (request.method !== STRS.methods.get) {
+  if (!DICT.allowedMethods.has(request.method)) {
     return false;
   }
 
   const pathName = url.pathname.toLowerCase();
-  if (url.hostname === STRS.service.origin || url.hostname.endsWith(STRS.service.originTld) || pathName.includes(STRS.wellknownPath)) {
+  if (url.hostname === DICT.service.origin || url.hostname.endsWith(DICT.service.originTld) || pathName.includes(DICT.wellknownPath)) {
     return false;
   }
 
-  const lastDot = pathName.lastIndexOf(STRS.dot);
-  const lastSlash = pathName.lastIndexOf(STRS.slash);
-  const extension = (lastDot > lastSlash) ? pathName.substring(lastDot + 1).toLowerCase() : STRS.stringEmpty;
+  const lastDot = pathName.lastIndexOf(DICT.dot);
+  const lastSlash = pathName.lastIndexOf(DICT.slash);
+  const extension = (lastDot > lastSlash) ? pathName.substring(lastDot + 1).toLowerCase() : DICT.stringEmpty;
   if (extension && IGNORE_EXTENSIONS.has(extension)) {
     return false;
   }
@@ -76,34 +81,40 @@ const shouldPrerender = (request, url, userAgent) => {
 
 export default {
   async fetch(request, env) {
+    const AUTH_HEADER = env.OSTR_AUTH || BASIC_TOKEN || DICT.service.testAuth;
     const url = new URL(request.url);
-    const userAgent = (request.headers.get(STRS.headers.ua) || STRS.stringEmpty).toLowerCase();
+    const userAgent = (request.headers.get(DICT.headers.ua) || DICT.stringEmpty).toLowerCase();
+    const escapedFragment = url.searchParams.has(DICT.escapedFragment) ? url.searchParams.get(DICT.escapedFragment) : false;
 
-    if (!shouldPrerender(request, url, userAgent)) {
+    if (!shouldPrerender(request, url, userAgent) && typeof escapedFragment !== DICT.string) {
       return fetch(request);
     }
 
     const headers = new Headers(request.headers);
-    headers.delete(STRS.headers.auth);
-    headers.set(STRS.headers.auth, env.OSTR_AUTH);
+    headers.delete(DICT.headers.auth);
+    headers.set(DICT.headers.auth, AUTH_HEADER);
 
     let fetchUrl = url.origin;
-    const escapedFragment = url.searchParams.has(STRS.escapedFragment) ? url.searchParams.get(STRS.escapedFragment) : false;
-    if (SUPPORT_ESCAPED_FRAGMENT && typeof escapedFragment === STRS.string && escapedFragment.length) {
-      url.searchParams.delete(STRS.escapedFragment);
-      fetchUrl += `${url.pathname.replace(trailingSlashRe, STRS.stringEmpty)}${STRS.slash}${escapedFragment.replace(beginningSlashRe, STRS.stringEmpty)}`;
+    if (SUPPORT_ESCAPED_FRAGMENT && typeof escapedFragment === DICT.string) {
+      url.searchParams.delete(DICT.escapedFragment);
+
+      if (escapedFragment.length) {
+        fetchUrl += `${url.pathname.replace(trailingSlashRe, DICT.stringEmpty)}${DICT.slash}${escapedFragment.replace(beginningSlashRe, DICT.stringEmpty)}`;
+      } else {
+        fetchUrl += url.pathname.replace(trailingSlashRe, DICT.stringEmpty);
+      }
     } else {
       fetchUrl += url.pathname;
     }
 
-    if (PRERENDER_WITH_QUERY && typeof url.search === STRS.string && url.search.length > 1) {
+    if (PRERENDER_WITH_QUERY && typeof url.search === DICT.string && url.search.length > 1) {
       fetchUrl += url.search;
     }
 
     try {
-      return fetch(new Request(`${STRS.service.renderBase}${encodeURIComponent(fetchUrl)}${STRS.args.bot}${encodeURIComponent(userAgent)}`, {
+      return fetch(new Request(`${DICT.service.renderBase}${encodeURIComponent(fetchUrl)}${DICT.args.bot}${encodeURIComponent(userAgent)}`, {
         headers: headers,
-        redirect: STRS.manual,
+        redirect: DICT.manual,
       }));
     } catch (fetchError) {
       console.warn('[CloudFlare Worker] [pre-rendering] [fetch] REDIRECT TO ostr.io FIALED WITH fetchError:', fetchError);
