@@ -38,7 +38,7 @@ const DICT = {
   slash: '/',
   dot: '.',
   empty: '',
-  allowedMethods: ['GET', 'HEAD'],
+  allowedMethods: new Set(['GET', 'HEAD']),
   args: { bot: '&bot=' },
   service: {
     origin: 'ostr.io',
@@ -76,7 +76,7 @@ function checkStatic(path: string): boolean {
 }
 
 function shouldPrerender(req: NextRequest, url: URL, ua: string): boolean {
-  if (!DICT.allowedMethods.includes(req.method)) {
+  if (!DICT.allowedMethods.has(req.method)) {
     return false;
   }
 
