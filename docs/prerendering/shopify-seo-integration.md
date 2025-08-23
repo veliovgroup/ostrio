@@ -20,10 +20,10 @@ To begin Shopify pre-rendering integration via CloudFlare ensure you have active
 3. Go through on-boarding steps, under "__Block AI training bots__" section select "__Do not block (off)__" option
 4. __Setup DNS:__ Ensure `A` and `CNAME` records correctly pointing to Shopify:
     - __a.__ For shops on `www.` and other subdomains (e.g. `www.example.com` or `shop.example.com`):
-        - `A`: `23.227.38.65`
-        - `CNAME`: `shops.myshopify.com`
+        - `A`: `23.227.38.65` (__*with Orange Cloud enabled*__)
+        - `CNAME`: `shops.myshopify.com` (__*with Orange Cloud enabled*__)
     - __b.__ For shops on TLD/primary domain (e.g. `example.com`):
-       - `CNAME`: `shops.myshopify.com`
+       - `CNAME`: `shops.myshopify.com` (__*with Orange Cloud enabled*__)
        - __NOTE: NO `A` RECORD NEEDED FOR TLD DOMAIN__
 
 ### Setup domain name at ostr.io
