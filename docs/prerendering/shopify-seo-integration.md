@@ -4,12 +4,12 @@ Step-by-step integration instructions for ostr.io pre-rendering for Shopify doma
 
 ## ToC
 
-- [Setup domain name at CloudFlare]()
-- [Setup domain name at ostr.io]()
-- [Create CloudFlare Worker and Connect to Domain]()
-- [Check that setup is correctly configured and working]()
-   - [Check via Browser]()
-   - [Check in Terminal/Console using `curl`]()
+- [Setup domain name at CloudFlare](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#setup-domain-name-at-cloudflare)
+- [Setup domain name at ostr.io](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#setup-domain-name-at-ostrio)
+- [Create CloudFlare Worker and Connect to Domain](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-cloudflare-worker-and-connect-to-domain)
+- [Check that setup is correctly configured and working](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#check-that-setup-is-correctly-configured-and-working)
+  - [Check via Browser](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#via-browser)
+  - [Check in Terminal/Console using `curl`](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#via-terminalconsole-using-curl)
 
 ### Setup domain name at CloudFlare
 
