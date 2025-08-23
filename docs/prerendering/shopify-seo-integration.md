@@ -25,6 +25,14 @@ To begin Shopify pre-rendering integration via CloudFlare ensure you have active
     - __b.__ For shops on TLD/primary domain (e.g. `example.com`):
        - `CNAME`: `shops.myshopify.com`
        - __NOTE: NO `A` RECORD NEEDED FOR TLD DOMAIN__
+     
+<table><tbody><tr><td>
+<p>Option (a.) for shops on subdomians (<code>A</code> and <code>CNAME</code> records)</p>
+<img width="1513" height="814" alt="shopify-subdomain" src="https://github.com/user-attachments/assets/8c8519b9-7fd9-4f93-893f-2416a8c7b444" />
+</td><td>
+<p>Option (b.) for shops on TLD (only one <code>CNAME</code> record)</p>
+<img width="1513" height="814" alt="shopify-tld" src="https://github.com/user-attachments/assets/1fc5f873-4469-42b9-b165-db744e0ceef8" />  
+</td></tr></tbody></table>
 
 ### Setup domain name at ostr.io
 
