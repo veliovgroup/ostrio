@@ -32,6 +32,9 @@ To begin Shopify pre-rendering integration via CloudFlare ensure you have active
 </td><td>
 <p>Option (b.) for shops on TLD (only one <code>CNAME</code> record)</p>
 <img width="1513" height="814" alt="shopify-tld" src="https://github.com/user-attachments/assets/1fc5f873-4469-42b9-b165-db744e0ceef8" />  
+</td></tr><tr><td colspan="2">
+  <p>Shopify domain settings</p>
+  <img width="1557" height="858" alt="shopify-domain-settings" src="https://github.com/user-attachments/assets/85564d84-14e0-4e46-8543-2ada48dcfc39" />
 </td></tr></tbody></table>
 
 ### Setup domain name at ostr.io
@@ -70,6 +73,26 @@ Create a new account if you don't have one yet. Then add and verify your domain 
     - Go to "Account Home" in the sidebar menu
     - (*click on your domain name*) > Caching > Configuration > <kbd>Purge Everything</kbd>
 
+Step 1.
+<img width="1557" height="858" alt="create-worker-step-1" src="https://github.com/user-attachments/assets/a380746a-41d3-47bb-b70e-709ff20f97c1" />
+Step 2.
+<img width="1557" height="858" alt="create-worker-step-2" src="https://github.com/user-attachments/assets/cb46cc34-b404-481a-8504-3ad42ef63157" />
+Step 3.
+<img width="1513" height="814" alt="create-worker-step-3" src="https://github.com/user-attachments/assets/81fb66a5-dc76-4b20-9fff-72b4a7e4e5cb" />
+Step 4.
+<img width="1513" height="814" alt="create-worker-step-4" src="https://github.com/user-attachments/assets/d4f693cb-ef7e-49fa-93a1-7454619a87c3" />
+Step 5.
+<img width="1557" height="858" alt="create-worker-step-5" src="https://github.com/user-attachments/assets/3b19c1d5-be24-4fb9-85b2-6e027f6bfd87" />
+Step 6.
+<img width="1557" height="858" alt="create-worker-step-6" src="https://github.com/user-attachments/assets/47eed9af-3173-4033-bd98-30c62d0d071d" />
+Step 7.
+<img width="1557" height="858" alt="create-worker-step-7" src="https://github.com/user-attachments/assets/a7246c95-281c-42c5-bd60-f6590d6d2872" />
+Step 8.
+<img width="1557" height="858" alt="create-worker-step-8" src="https://github.com/user-attachments/assets/5fb62ff6-4af3-41b0-8198-10b9faf3dea0" />
+Step 9.
+<img width="1557" height="858" alt="create-worker-step-9" src="https://github.com/user-attachments/assets/141cc154-49ca-4350-9ca0-36cba5160922" />
+
+
 ### Check that setup is correctly configured and working
 
 Check that `X-Prerender-Id` exists in response headers
@@ -79,10 +102,13 @@ Check that `X-Prerender-Id` exists in response headers
 1. Open DevTools
     - Windows: <kbd>F12</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>
     - MacOS: <kbd>Option</kbd> + <kbd>⌘</kbd> + <kbd>I</kbd>
-2. __In DevTools:__ OPen "Network" tab and check "Disable Cache" checkbox
+2. __In DevTools:__ Open "Network" tab and check "Disable Cache" checkbox
 3. Open shop URL adding `?_escaped_fragment_=` query at the end. Ex.: `https://example.com/?_escaped_fragment_=/`
 4. Ensure `X-Prerender-Id` header returned with response
 5. Check ostr.io: Rendering statistics will appear in real-time
+
+<img width="2056" height="906" alt="create-worker-step-10_check-browser" src="https://github.com/user-attachments/assets/7fb06a95-7f4c-4afb-bb51-8a8789c3940d" />
+
 
 #### Via Terminal/Console using CURL
 
