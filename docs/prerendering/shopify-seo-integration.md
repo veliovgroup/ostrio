@@ -11,6 +11,9 @@ Step-by-step ostr.io pre-rendering integration instructions for Shopify domains 
   - [Check via Browser](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#via-browser)
   - [Check in Terminal/Console using `curl`](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#via-terminalconsole-using-curl)
 
+![ostrio-shopify-cloudflare](https://github.com/user-attachments/assets/9c32a8ac-d3d9-4df1-b3cc-0eb61857c4bb)
+
+
 ### Setup domain name at CloudFlare
 
 To begin Shopify pre-rendering integration via CloudFlare ensure you have active account and connected domain name.
