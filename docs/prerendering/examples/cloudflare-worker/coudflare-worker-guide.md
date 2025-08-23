@@ -15,7 +15,7 @@ Step-by-step integration instructions for ostr.io pre-rendering via CloudFlare W
     - Worker Editor > Remove default code and replace with [CF Worker Code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/cloudflare.worker.js)
     - Worker Editor > click on <kbd>Deploy</kbd>
     - Workers & Pages > Open Newly Created Worker > Settings > Variables and Secrets > Click on <kbd>Add</kbd> button:
-        - Type: `test`
+        - Type: `text`
         - Variable Name: `OSTR_AUTH`
         - Value: Place value (*from step no.6*) that starts with `Basic ...`
     - Click on <kbd>Deploy</kbd> after adding `OSTR_AUTH` variable
