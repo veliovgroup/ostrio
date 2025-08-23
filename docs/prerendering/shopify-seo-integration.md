@@ -1,6 +1,6 @@
 # SEO Middleware Worker for Shopify
 
-Step-by-step integration instructions for ostr.io pre-rendering for Shopify domains via CloudFlare Workers
+Step-by-step ostr.io pre-rendering integration instructions for Shopify domains via CloudFlare Workers
 
 ## ToC
 
