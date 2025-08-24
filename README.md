@@ -6,11 +6,11 @@ Web services for modern and legacy websites, web apps, e-commerce shops, IoT dev
 
 ## Services
 
-- [__Pre-rendering SEO Middleware: Increase organic traffic from SERPs and AI agents/bots__](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md)
-- [__HTTP/SNMP Monitoring: Prevent incidents and reduce Mean Time to Repair__](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md)
-- [__Web Analytics: Lightweight, GDPR/CCPA compliant, and real-time metrics with opensource code__](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/README.md)
-- [__Web-CRON: Serverless Automation & Tasks Scheduler__](https://github.com/veliovgroup/ostrio/blob/master/docs/web-cron/README.md)
-- [__WebSec: Domains, DNS, SSL, and Whois Monitoring__](https://github.com/veliovgroup/ostrio/blob/master/docs/websec/README.md)
+- [__Pre-rendering SEO Middleware:__ Increase organic traffic from SERPs and AI agents/bots](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md)
+- [__HTTP/SNMP Monitoring:__ Prevent incidents and reduce Mean Time to Repair](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md)
+- [__Web Analytics:__ Lightweight, GDPR/CCPA compliant, and real-time metrics with opensource code](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/README.md)
+- [__Web-CRON:__ Serverless Automation & Tasks Scheduler](https://github.com/veliovgroup/ostrio/blob/master/docs/web-cron/README.md)
+- [__WebSec:__ Domains, DNS, SSL, and Whois Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/websec/README.md)
 
 ## Account & Help
 
