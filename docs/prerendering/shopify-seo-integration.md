@@ -54,25 +54,25 @@ Create a new account if you don't have one yet. Then add and verify your domain 
 ### Create CloudFlare Worker and Connect to Domain
 
 1. Go to "Account Home" in the sidebar
-2. __In the sidebar:__ Compute (Workers) > Workers & Pages
-3. At __Workers & Pages__ page click on <kbd>Create</kbd> > Then select "Start with Hello World!"
-4. __New Worker Form__: Enter memorable name (ex.: `examplecom-seo-worker`) > click on <kbd>Deploy</kbd>
-5. After __new Worker__ created > click on <kbd>Edit Code</kbd>
+2. __In the sidebar:__ Compute (Workers) > Workers & Pages (*see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-new-worker-from-step-2)*)
+3. At __Workers & Pages__ page click on <kbd>Create</kbd> > Then select "Start with Hello World!" (*see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-new-worker-from-hello-world-template-from-step-3)*)
+4. __New Worker Form__: Enter memorable name (ex.: `examplecom-seo-worker`) > click on <kbd>Deploy</kbd> (*see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-new-worker-deploy-hello-world-worker-from-step-4)*)
+5. After __new Worker__ created > click on <kbd>Edit Code</kbd> (*see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-new-worker-edit-hello-world-worker-from-step-5)*)
 6. At __Worker Editor__ > Remove default "Hello World" worker code and replace with [CF Worker Code tailored for Shopify](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/shopify.clouflare.worker.js)
-7. After Worker's code placed into __Worker Editor__ > click on <kbd>Deploy</kbd>
-8. __Pass API key to CloudFlare Worker via environment variable__
+7. After Worker's code placed into __Worker Editor__ > click on <kbd>Deploy</kbd> (*see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#create-new-worker-paste-and-deploy-workers-code-from-step-7)*)
+8. __Pass API key to CloudFlare Worker via environment variable__ (*see [UI screenshots](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#add-api-key-from-step-8)*)
     - Go to "Workers & Pages" > Open Newly Created Worker > Settings > Variables and Secrets > Click on <kbd>Add</kbd> button:
         - Type: `text`
         - Variable Name: `OSTR_AUTH`
         - Value: Place value (*from "integration guide", see step no.6*) that starts with `Basic ...`
     - Click on <kbd>Deploy</kbd> after adding `OSTR_AUTH` variable
-9. __Connect Worker to a website__
+9. __Connect Worker to a website__ (*see [UI screenshots](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#connect-worker-to-a-website-from-step-9)*)
     - Go to "Account Home" > Domains > (*click on your domain name*)
     - In sidebar open "__Workers Routes__" > HTTP Routes > click on <kbd>Add Route</kbd>
     - __Add Route__: `https://example.com/*` or `https://subdomain.example.com/` (*if `www.` or other subdomain is your primary website location; __Should match primary domain settings in Shopify__*)
     - __Worker:__ Select newly created worker from dropdown
     - Click on <kbd>save</kbd>
-10. __Purge cache at CloudFlare__
+10. __Purge cache at CloudFlare__ (see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#purge-websites-cache-from-step-10))
     - Go to "Account Home" in the sidebar menu
     - (*click on your domain name*) > Caching > Configuration > <kbd>Purge Everything</kbd>
 
@@ -113,7 +113,7 @@ Open "Workers Routes" in sidebar > Click on <kbd>Add Route</kbd>
 Add route entering shop's domain name (*see step 8 above for more details*)
 <img width="1557" height="858" alt="create-worker-step-8" src="https://github.com/user-attachments/assets/5fb62ff6-4af3-41b0-8198-10b9faf3dea0" />
 
-#### Purche website's cache (*from step 10*)
+#### Purge website's cache (*from step 10*)
 Go back to "Account Home" > Open Shop's domain > Caching > Configuration > <kbd>Purge Everything</kbd>
 <img width="1557" height="858" alt="create-worker-step-9" src="https://github.com/user-attachments/assets/141cc154-49ca-4350-9ca0-36cba5160922" />
 
