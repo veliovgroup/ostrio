@@ -101,7 +101,7 @@ Go back to "Workers & Pages" > Open recently created Worker > Settings > Variabl
 <img width="1557" height="858" alt="create-worker_add-api-key_1" src="https://github.com/user-attachments/assets/0bad5669-0613-4220-ab94-46c0cea255c8" />
 
 Create `OSTR_AUTH` variable, paste API key that starts with `Basic xxx...` (*as found in ["integration guide" at ostr.io](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#setup-domain-name-at-ostrio)*)
-
+<img width="1557" height="858" alt="create-worker_add-api-key_2" src="https://github.com/user-attachments/assets/14d335eb-895c-47eb-8ad0-ee0107c1c1eb" />
 
 #### Connect Worker to a website (*from step 9*)
 Go back to "Account Home" > Domains > Open shop's domain
