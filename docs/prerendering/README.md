@@ -14,6 +14,7 @@ Lightning-fast, technology-agnostic SEO for websites, web apps, online shops and
   - [Features](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#features)
   - [Optimizations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#optimizations)
   - [Extra features](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#extra-features)
+  - [Integration Tests](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#integration-tests)
 
 ## Why Pre-rendering SEO Middleware
 
@@ -82,6 +83,9 @@ Learn how to use different features and settings within pre-rendering SEO middle
 - [Custom Status Codes in Analytics](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/prerendering-custom-status-codes.md)
 - [ES5 & Legacy Websites Support](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/es6-support.md)
 
+> [!TIP]
+> Pass `/sitemap.xml` to <kbd>Pre-Render</kbd> (*Pre-render a website*) in **Pre-rendering Panel** to instantly render whole website
+
 ### Optimizations
 
 - [Return genuine status code](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/genuine-status-code.md)
@@ -94,3 +98,10 @@ Learn how to use different features and settings within pre-rendering SEO middle
 - [Accelerated Mobile Pages (AMP) Integration](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/amp-support.md)
 - [Detect Pre-rendering engine requests during runtime](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering.md)
 - [Detect Pre-rendering engine requests during runtime (*Meteor.js specific*)](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/detect-prerendering-meteor.md)
+
+### Integration tests
+
+- Use `cURL` and `Authorization` header (*see nginx integration*): `curl -v -H "Authorization: Basic TOKEN" https://render-bypass.ostr.io/?url=https://your-website-domain.com`;
+- Use `cURL` and authentication credentials (*see node.js integration*): `curl -v https://auth:string@render-bypass.ostr.io/?url=https://your-website-domain.com`;
+- Use `test:test` credentials to test general integration (*to make sure web application server can reach pre-rendering service*);
+- Use `Authorization: Basic dGVzdDp0ZXN0` header to test general integration (*to make sure web application server can reach pre-rendering service*);
