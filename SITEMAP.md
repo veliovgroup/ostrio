@@ -42,6 +42,7 @@ These pages exist only for logged-in users.
 
 ## Open Source
 
+- 📦 [`seo-middleware-nextjs`](https://github.com/veliovgroup/seo-middleware-nextjs)
 - 📦 [`spiderable-middleware`](https://github.com/veliovgroup/spiderable-middleware#spiderable-middleware)
 - 📦 [`ostrio-analytics`](https://github.com/veliovgroup/ostrio-analytics/#analytics-for-ostrio)
 - 📋 [Documentation repository](https://github.com/veliovgroup/ostrio)
