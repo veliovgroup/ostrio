@@ -76,23 +76,45 @@ Create a new account if you don't have one yet. Then add and verify your domain 
     - Go to "Account Home" in the sidebar menu
     - (*click on your domain name*) > Caching > Configuration > <kbd>Purge Everything</kbd>
 
-Step 1.
+#### Create new Worker (*from step 2*)
+Open "Workers & Pages" and click on <kbd>Create</kbd> button to initiate new CloudFlare worker
 <img width="1557" height="858" alt="create-worker-step-1" src="https://github.com/user-attachments/assets/a380746a-41d3-47bb-b70e-709ff20f97c1" />
-Step 2.
+
+#### Create new Worker from "Hello World" template (*from step 3*)
+Choose "Start with Hello World!" and click <kbd>Get Started</kbd>
 <img width="1557" height="858" alt="create-worker-step-2" src="https://github.com/user-attachments/assets/cb46cc34-b404-481a-8504-3ad42ef63157" />
-Step 3.
+
+#### Create new Worker: Deploy "Hello World" worker (*from step 4*)
+Enter Worker's name and click on <kbd>Depoloy</kbd>
 <img width="1513" height="814" alt="create-worker-step-3" src="https://github.com/user-attachments/assets/81fb66a5-dc76-4b20-9fff-72b4a7e4e5cb" />
-Step 4.
+
+#### Create new Worker: Edit "Hello World" worker (*from step 5*)
+Click on <kbd>Edit code</kbd> to start editing default "Hello World!" worker's code
 <img width="1513" height="814" alt="create-worker-step-4" src="https://github.com/user-attachments/assets/d4f693cb-ef7e-49fa-93a1-7454619a87c3" />
-Step 5.
+
+#### Create new Worker: Paste and deploy worker's code (*from step 7*)
+In editor paste [pre-rendering worker's code tailored for Shopify](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/shopify.clouflare.worker.js) and click on <kbd>Deploy</kbd> then click on the name of the worker to go back
 <img width="1557" height="858" alt="create-worker-step-5" src="https://github.com/user-attachments/assets/3b19c1d5-be24-4fb9-85b2-6e027f6bfd87" />
-Step 6.
+
+#### Add API Key (*from step 8*)
+Go back to "Workers & Pages" > Open recently created Worker > Settings > Variables and Secrets > Click on <kbd>Add</kbd>
+<img width="1557" height="858" alt="create-worker_add-api-key_1" src="https://github.com/user-attachments/assets/0bad5669-0613-4220-ab94-46c0cea255c8" />
+
+Create `OSTR_AUTH` variable, paste API key that starts with `Basic xxx...` (*as found in ["integration guide" at ostr.io](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#setup-domain-name-at-ostrio)*)
+
+
+#### Connect Worker to a website (*from step 9*)
+Go back to "Account Home" > Domains > Open shop's domain
 <img width="1557" height="858" alt="create-worker-step-6" src="https://github.com/user-attachments/assets/47eed9af-3173-4033-bd98-30c62d0d071d" />
-Step 7.
+
+Open "Workers Routes" in sidebar > Click on <kbd>Add Route</kbd>
 <img width="1557" height="858" alt="create-worker-step-7" src="https://github.com/user-attachments/assets/a7246c95-281c-42c5-bd60-f6590d6d2872" />
-Step 8.
+
+Add route entering shop's domain name (*see step 8 above for more details*)
 <img width="1557" height="858" alt="create-worker-step-8" src="https://github.com/user-attachments/assets/5fb62ff6-4af3-41b0-8198-10b9faf3dea0" />
-Step 9.
+
+#### Purche website's cache (*from step 10*)
+Go back to "Account Home" > Open Shop's domain > Caching > Configuration > <kbd>Purge Everything</kbd>
 <img width="1557" height="858" alt="create-worker-step-9" src="https://github.com/user-attachments/assets/141cc154-49ca-4350-9ca0-36cba5160922" />
 
 
