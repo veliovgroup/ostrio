@@ -1,7 +1,9 @@
 # Nginx Integration
 
-- Learn more - [what is Pre-rendering and why you need it](https://ostr.io/info/prerendering)
-- For more detailed info, examples and API see [`spiderable-middleware` package repository](https://github.com/veliovgroup/spiderable-middleware).
+ostr.io pre-rendering SEO Middleware delivers fully rendered HTML to search engines and modern AI crawlers, improving index coverage and discoverability while reducing origin load. The Nginx integration redirects bot's traffic to ostr.io pre-rendering engine.
+
+- Learn more - [what is Pre-rendering and why you need it](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md)
+- [Nginx config examples](https://github.com/veliovgroup/ostrio/tree/master/docs/prerendering/examples/nginx)
 
 ## ToC:
 
@@ -45,18 +47,16 @@ Pre-rendering integration via Nginx is the most efficient and simple way to enab
 ### Map module
 
 > [!IMPORTANT]
-> Use these `map` definitions on the `http` block level
-
-
-> [!IMPORTANT]
-> These `map` definitions must be defined for all NGINX configuration examples below
+>
+> 1. Use these `map` definitions on the `http` block level
+> 2. `map` definitions must be defined for all NGINX configuration examples below
 
 Use `map` module to check if request coming from bot and if request has `_escaped_fragment_` query. These three `map` definitions will set `$is_webbot`, `$fragment`, and `$filtered_args` variables that are used for pre-rendering logic
 
 ```nginx
-# Feel free to edit bots User Agent regular expression
-# to meet your needs we have included most of the crawlers and AI Bots
-# which have been active around the Internet for at least last 5 years
+# Edit bots User Agent regular expression when necessary
+# This example includes most of the crawlers and AI Bots
+# that were active for at least 5 past years
 map $http_user_agent $is_webbot {
   default 0;
   "~*(?:\.net crawler|360spider|50\.nu|8bo crawler bot|aboundex|accoona|adldxbot|ahrefsbot|altavista|appengine-google|applebot|archiver|arielisbot|ask jeeves|auskunftbot|baidumobaider|baiduspider|becomebot|bingbot|bingpreview|bitbot|bitlybot|blitzbot|blogbridge|boardreader|botseer|catchbot|catchpoint bot|charlotte|checklinks|cliqzbot|clumboot|coccocbot|converacrawler|crawl-e|crawlconvera|dataparksearch|daum|deusu|discordbot|dotbot|duckduckbot|elefent|embedly|evernote|exabot|facebookbot|facebookexternalhit|meta-external|fatbot|fdse robot|feed seeker bot|feedfetcher|femtosearchbot|findlinks|flamingo_searchengine|flipboard|followsite bot|furlbot|fyberspider|gaisbot|galaxybot|geniebot|genieo|gigablast|gigabot|girafabot|gomezagent|gonzo1|googlebot|google sketchup|adsbot-google|google-structured-data-testing-tool|google-extended|developers\.google\.com/+/web/snippet|haosouspider|heritrix|holmes|hoowwwer|htdig|ia_archiver|idbot|infuzapp|innovazion crawler|instagram|internetarchive|iqdb|iskanie|istellabot|izsearch\.com|kaloogabot|kaz\.kz_bot|kd bot|konqueror|kraken|kurzor|larbin|leia|lesnikbot|linguee bot|linkaider|linkapediabot|linkedinbot|lite bot|llaut|lookseek|lycos|mail\.ru_bot|masidani_bot|masscan|mediapartners-google|metajobbot|mj12bot|mnogosearch|mogimogi|mojeekbot|motominerbot|mozdex|msiecrawler|msnbot|msrbot|netpursual|netresearch|netvibes|newsgator|ng-search|nicebot|nutchcvs|nuzzel|nymesis|objectssearch|odklbot|omgili|oovoo|oozbot|openfosbot|orangebot|orbiter|org_bot|outbrain|pagepeeker|pagesinventory|parsijoobot|paxleframework|peeplo screenshot bot|pinterest|plantynet_webrobot|plukkie|pompos|psbot|quora link preview|qwantify|read%20later|reaper|redcarpet|redditbot|retreiver|riddler|rival iq|rogerbot|saucenao|scooter|scrapy|scrubby|searchie|searchsight|seekbot|semanticdiscovery|seznambot|showyoubot|simplepie|simpy|sitelockspider|skypeuripreview|slackbot|slack-imgproxy|slurp|snappy|sogou|solofield|speedyspider|speedy spider|sputnikbot|stackrambler|teeraidbot|teoma|theusefulbot|thumbshots\.ru|thumbshotsbot|tineye|toweya\.com|toweyabot|tumblr|tweetedtimes|tweetmemebot|twitterbot|url2png|vagabondo|vebidoobot|viber|visionutils|vkshare|voilabot|vortex|votay bot|voyager|w3c_validator|wasalive\.bot|web-sniffer|websquash\.com|webthumb|whatsapp|whatweb|wire|wotbox|yacybot|yahoo|yandex|yeti|yisouspider|yodaobot|yooglifetchagent|yoozbot|yottaamonitor|yowedo|zao-crawler|zebot_www\.ze\.bz|zooshot|zyborgi|ai2bot|amazonbot|anthropic\.com|bard|bytespider|ccbot|chatgpt-user|claude-web|claudebot|cohere-ai|deepseek|diffbot|duckassistbot|gemini|gptbot|grok|mistralai|oai-searchbot|omgili|openai\.com|perplexity\.ai|perplexitybot|xai|youbot)" 1;
