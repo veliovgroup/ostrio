@@ -4,16 +4,16 @@ Lightning-fast, technology-agnostic SEO for websites, web apps, online shops and
 
 ## ToC
 
-- [Reasons to use SEO Middleware]()
-- [Terminology]()
-- [Integrations]()
-  - [Cloud-level integrations]()
-  - [Server-level integrations]()
-  - [Application-level integrations]()
-- [How to's and pre-rendering features]()
-  - [Features]()
-  - [Optimizations]()
-  - [Extra features]()
+- [Reasons to use SEO Middleware](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#why-pre-rendering-seo-middleware)
+- [Terminology](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#used-terms)
+- [Integrations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#integrations)
+  - [Cloud-level integrations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#cloud-level-integrations)
+  - [Server-level integrations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#server-level-integrations)
+  - [Application-level integrations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#application-level-integrations)
+- [How to's and pre-rendering features](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#how-tos-and-pre-rendering-features)
+  - [Features](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#features)
+  - [Optimizations](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#optimizations)
+  - [Extra features](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md#extra-features)
 
 ## Why Pre-rendering SEO Middleware
 
@@ -25,9 +25,9 @@ Reasons to use SEO Middleware
 - 🖥 Supports PWAs and SPAs;
 - 📱 Supports mobile-like crawlers;
 - ⚡️ Supports [AMP (Accelerated Mobile Pages)](https://www.ampproject.org);
-- ❤️ AI agents, search engines, and social network crawlers love optimized pages that delivered in blazingly-fast manner;
+- 🤝 AI agents, search engines, and social network crawlers love optimized pages that delivered in blazingly-fast manner;
 - 🖼️ Consistent link previews in messaging apps, like iMessage, Messages, Facebook, Slack, Telegram, WhatsApp, Viber, VK, Twitter, and other apps;
-- 💻 Image, title, and description previews for links posted at social networks, like Facebook, X/Twitter, Instagram, and other social networks.
+- 👥 Image, title, and description previews for links posted at social networks, like Facebook, X/Twitter, Instagram, and other social networks.
 
 ## Used Terms
 
