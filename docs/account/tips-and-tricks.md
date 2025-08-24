@@ -1,11 +1,20 @@
 # Tips and Tricks
 
+ostr.io usage tips and tricks
+
 ## ⌨️ Key bindings and shortcuts
 
 - Pagination: Arrow keys <kbd>←</kbd> and <kbd>→</kbd> (*works on every page and modals with pagination*);
 - Activate Search: <kbd>ctrl</kbd>+<kbd>f</kbd> (<kbd>⌘</kbd>+<kbd>f</kbd> on MacOS);
 - Start Searching: <kbd>return</kbd> (<kbd>⏎</kbd>) key;
 - Cancel Search: <kbd>esc</kbd> key.
+
+## 🤑 Free credits
+
+- Create an account using [this special link](https://ostr.io/signup/gCZWjiBScePWrnnDr) to get $50 off your second purchase;
+- Invite friends! Obtain [unique referral link](https://ostr.io/account#ref) and share it with your friends or colleagues to earn free credits;
+- Subscribe on our social accounts ([Twitter](https://twitter.com/ostrio_service), [Facebook](https://www.facebook.com/ostrio.service), [Instagram](https://www.instagram.com/ostr.io/), [Medium](https://medium.com/@ostr.io)) where we post promo-codes;
+- Subscribe on our newsletter in [account settings](https://ostr.io/account).
 
 ## 🤖 Pre-rendering Tips
 
@@ -31,10 +40,3 @@
 ## ⏰ Web-CRON Tips
 
 - Use `{{rand}}` placeholder (*including curly brackets*) in endpoint URL to generate unique random URI for every CRON request. Note: `{{rand}}` can be used multiple times in a single URL, example: `/path/{{rand}}/part?nc={{rand}}`.
-
-## 🤑 Free credits
-
-- Create an account using [this special link](https://ostr.io/signup/gCZWjiBScePWrnnDr) to get $50 off your second purchase;
-- Invite friends! Obtain [unique referral link](https://ostr.io/account#ref) and share it with your friends or colleagues to earn free credits;
-- Subscribe on our social accounts ([Twitter](https://twitter.com/ostrio_service), [Facebook](https://www.facebook.com/ostrio.service), [Instagram](https://www.instagram.com/ostr.io/), [Medium](https://medium.com/@ostr.io)) where we post promo-codes;
-- Subscribe on our newsletter in [account settings](https://ostr.io/account).
