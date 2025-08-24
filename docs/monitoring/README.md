@@ -27,6 +27,9 @@ Learn about Monitoring Service features.
 - [Nginx stats and usage Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/nginx-stats.md)
 - [Build "uncacheable" path to endpoint, prevent cached results](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/custom-path.md)
 
+> [!TIP]
+> Use `{{rand}}` placeholder (*including curly brackets*) in endpoint URL to generate unique random URI for every checking request. Note: `{{rand}}` can be used multiple times in a single URL, example: `/path/{{rand}}/part?nc={{rand}}`
+
 ## Further reading
 
 - [Learn more about Monitoring Service by ostr.io](https://ostr.io/info/monitoring)
