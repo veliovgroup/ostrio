@@ -14,7 +14,7 @@ Web services for modern and legacy websites, web apps, e-commerce shops, IoT dev
 
 ## Account & Help
 
-- 👤 [Account Basics](https://github.com/veliovgroup/ostrio#account-basics) - *Learn how to manage your account, contact, and other ostr.io features*
+- 👤 [Account Basics](https://github.com/veliovgroup/ostrio/blob/master/docs/account/README.md) - *Learn how to manage your account, contact, and other ostr.io features*
 - 🤝 [Get Help: General User Support](https://github.com/veliovgroup/ostrio/blob/master/docs/SUPPORT.md)
 
 ## Additional Info
