@@ -7,7 +7,7 @@ Web services for modern and legacy websites, web apps, e-commerce shops, IoT dev
 ## Services
 
 - [__Pre-rendering SEO Middleware__](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md) — *Improve SEO and Web Vitals scores. Increase organic traffic from SERPs and AI agents/bots*
-- [__HTTP/SNMP Monitoring__](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md) — Proactive monitoring for websites, APIs, microservices, servers, hardware, and IoT. Preventing incidents and reducing Mean Time to Repair
+- [__HTTP/SNMP Monitoring__](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md) — *Proactive monitoring for websites, APIs, microservices, servers, hardware, and IoT. Preventing incidents and reducing Mean Time to Repair*
 - [__Web Analytics__](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/README.md) — *Lightweight, GDPR/CCPA compliant, and real-time metrics with opensource code*
 - [__Web-CRON__](https://github.com/veliovgroup/ostrio/blob/master/docs/web-cron/README.md) — *Serverless Automation & Tasks Scheduler*
 - [__WebSec__](https://github.com/veliovgroup/ostrio/blob/master/docs/websec/README.md) — *Domains, DNS, SSL, and Whois Monitoring*
