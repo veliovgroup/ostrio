@@ -2,15 +2,6 @@
 
 Set of tutorials dedicated to improvements and optimizations of MongoDB, SSL/TLS certificates, Web Development, SEO, Linux.
 
-## MongoDB Tutorials
-
-- Security:
-  - [Use SSL certificates](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/use-ssl-http-encryption.md)
-- Performance & Maintenance:
-  - [Create Single Server ReplicaSet](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/single-server-replica-set.md)
-  - [Create Multiple (Custer) Server ReplicaSet](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
-  - [Use OpLog](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
-
 ## SSL/TLS certificates Tutorials
 
 - [Free letsencrypt certificates](https://github.com/veliovgroup/ostrio/blob/master/tutorials/ssl/ssl-letsencrypt.md)
@@ -42,6 +33,15 @@ Set of tutorials dedicated to improvements and optimizations of MongoDB, SSL/TLS
   - [Basic firewall with `iptables`](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall.md)
   - [Basic ipv6 firewall with `ip6tables`](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/iptables-firewall-ipv6.md)
   - [Scheduled and Automated Backups](https://github.com/veliovgroup/ostrio/blob/master/tutorials/linux/security/automated-backups.md)
+
+## MongoDB Tutorials
+
+- Security:
+  - [Use SSL certificates](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/use-ssl-http-encryption.md)
+- Performance & Maintenance:
+  - [Create Single Server ReplicaSet](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/single-server-replica-set.md)
+  - [Create Multiple (Custer) Server ReplicaSet](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/multiple-server-replica-set.md)
+  - [Use OpLog](https://github.com/veliovgroup/ostrio/blob/master/tutorials/mongodb/enable-oplog.md)
 
 <!-- ### nginx
  - [nginx + Node.js with WebSockets]() - Meteor.js, MEAN.js or any other Node.js project with WebSockets
