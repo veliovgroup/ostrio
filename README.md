@@ -6,26 +6,26 @@ Web services for modern and legacy websites, web apps, e-commerce shops, IoT dev
 
 ## Services
 
-- [__Pre-rendering SEO Middleware:__ Increase organic traffic from SERPs and AI agents/bots](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md)
-- [__HTTP/SNMP Monitoring:__ Prevent incidents and reduce Mean Time to Repair](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md)
-- [__Web Analytics:__ Lightweight, GDPR/CCPA compliant, and real-time metrics with opensource code](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/README.md)
-- [__Web-CRON:__ Serverless Automation & Tasks Scheduler](https://github.com/veliovgroup/ostrio/blob/master/docs/web-cron/README.md)
-- [__WebSec:__ Domains, DNS, SSL, and Whois Monitoring](https://github.com/veliovgroup/ostrio/blob/master/docs/websec/README.md)
+- [__Pre-rendering SEO Middleware__](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/README.md) — *Improve SEO and Web Vitals scores. Increase organic traffic from SERPs and AI agents/bots*
+- [__HTTP/SNMP Monitoring__](https://github.com/veliovgroup/ostrio/blob/master/docs/monitoring/README.md) — Proactive monitoring for websites, APIs, microservices, servers, hardware, and IoT. Preventing incidents and reducing Mean Time to Repair
+- [__Web Analytics__](https://github.com/veliovgroup/ostrio/blob/master/docs/analytics/README.md) — *Lightweight, GDPR/CCPA compliant, and real-time metrics with opensource code*
+- [__Web-CRON__](https://github.com/veliovgroup/ostrio/blob/master/docs/web-cron/README.md) — *Serverless Automation & Tasks Scheduler*
+- [__WebSec__](https://github.com/veliovgroup/ostrio/blob/master/docs/websec/README.md) — *Domains, DNS, SSL, and Whois Monitoring*
 
 ## Account & Help
 
-- 👤 [Account Basics](https://github.com/veliovgroup/ostrio/blob/master/docs/account/README.md) - *Learn how to manage your account, contact, and other ostr.io features*
-- 🤝 [Get Help: General User Support](https://github.com/veliovgroup/ostrio/blob/master/docs/SUPPORT.md)
+- 👤 [Account Basics](https://github.com/veliovgroup/ostrio/blob/master/docs/account/README.md) — *Learn how to manage your account, contact, and other ostr.io features*
+- 🤝 [Get Help & Support](https://github.com/veliovgroup/ostrio/blob/master/docs/SUPPORT.md) — *General User Support*
 
 ## Additional Info
 
-- [CHANGELOG](https://github.com/veliovgroup/ostrio/blob/master/HISTORY.md) - Learn what's new
+- [CHANGELOG](https://github.com/veliovgroup/ostrio/blob/master/HISTORY.md) — *Learn what's new*
 - [Sitemap](https://github.com/veliovgroup/ostrio/blob/master/SITEMAP.md)
-- [ostr.io themed desktop and mobile wallpapers](https://github.com/veliovgroup/ostrio/tree/master/wallpapers)
+<!-- - [ostr.io themed desktop and mobile wallpapers](https://github.com/veliovgroup/ostrio/tree/master/wallpapers) -->
 
 ## Tutorials
 
-- [Tutorials](https://github.com/veliovgroup/ostrio/blob/master/tutorials/README.md) dedicated to improvements and optimizations of SSL/TLS certificates, Web Development, SEO, Linux, and MongoDB
+- [Tutorials](https://github.com/veliovgroup/ostrio/blob/master/tutorials/README.md) — *Dedicated tutorials focused on improvements and optimizations of SSL/TLS certificates, Web Development, SEO, Linux, and MongoDB*
 
 ----
 
