@@ -6,6 +6,13 @@ List of changes in chronological order, most recent first.
 
 - 👷‍♂️🏗 wip
 
+
+#### [2025-08-22]
+
+- 🛍️ Shopify: [pre-rendering integration guidelines via CloudFlare](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#seo-middleware-worker-for-shopify)
+- 🌤️ Pre-rendering CloudFlare worker: [Refactoring and improvements in `cloudflare.worker.js`](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/examples/cloudflare-worker/cloudflare.worker.js)
+- 📔 Pre-rendering Next.js middleware and NPM package: [minor refactoring](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nextjs-prerendering.md)
+
 #### [2025-08-18]
 
 - 📔 [Next.js: integration docs](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/nextjs-prerendering.md)
