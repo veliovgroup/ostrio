@@ -17,7 +17,7 @@ Step-by-step ostr.io pre-rendering integration instructions for Shopify domains 
 
 To begin Shopify pre-rendering integration via CloudFlare ensure you have an active account and connected domain name.
 
-1. [Sign up](https://dash.cloudflare.com/sign-up) of [Login](https://dash.cloudflare.com/login) to CloudFlare
+1. [Sign up](https://dash.cloudflare.com/sign-up) or [Login](https://dash.cloudflare.com/login) to CloudFlare
 2. __Add domain:__ "Account Home" > click on <kbd>Onboard a domain</kbd>
 3. Go through on-boarding steps, under "__Block AI training bots__" section select "__Do not block (off)__" option
 4. __Setup DNS:__ Ensure `A` and `CNAME` records correctly pointing to Shopify:
