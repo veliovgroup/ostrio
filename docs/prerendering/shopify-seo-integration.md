@@ -17,6 +17,15 @@ Step-by-step ostr.io pre-rendering integration instructions for Shopify domains 
 
 To begin Shopify pre-rendering integration via CloudFlare ensure you have an active account and connected domain name.
 
+> [!important]
+> If domain purchased through Shopify (Shopify-managed) — *Shopify doesn't let edit the nameservers (NS).*
+> In this case you will need to transfer the domain out to a provider that lets you set NS (CloudFlare, Namecheap, GoDaddy, etc.).
+>
+> 1. Read [Shopify instruction to obtain __transfer code__](https://help.shopify.com/en/manual/domains/managing-domain-ownership/transferring-shopify-domains#transfer-domain-provider) — Settings > Domains > Domain settings (*dropdown*) > Transfer to another provider
+> 2. Read how to [transferd domain to CloudFlare](https://developers.cloudflare.com/registrar/get-started/transfer-domain-to-cloudflare/)
+>
+> If you're able to change NS records within your registrar — *Follow steps below to create CloudFlare account*
+
 1. [Sign up](https://dash.cloudflare.com/sign-up) or [Login](https://dash.cloudflare.com/login) to CloudFlare
 2. __Add domain:__ "Account Home" > click on <kbd>Onboard a domain</kbd>
 3. Go through on-boarding steps, under "__Block AI training bots__" section select "__Do not block (off)__" option
