@@ -49,7 +49,7 @@ Create a new account if you don't have one yet. Then add and verify your domain 
     - Go to "Account Home" > Domains > (*click on your domain name*)
     - In sidebar open "__Workers Routes__" > HTTP Routes > click on <kbd>Add Route</kbd>
     - __Add Route__ (*one of below*):
-        - Standard (*recommended*): `https://example.com/*` or `https://www.example.com/` (*if `www.` is your primary website location*)
+        - Standard (*recommended*): `https://example.com/*` or `https://www.example.com/*` (*if `www.` is your primary website location; __Must include `/*` (slash and asterisk) at the end of route__*)
         - Support both `http:` and `https:` protocols : `*example.com/*`
         - Apply to main domain (TLD) and __all__ subdomains (*PRO and BUSINESS plans only*) `*example.com/*`
         - Apply __only__ to for subdomains __only__ (*PRO and BUSINESS plans only*) `*.example.com/*`
