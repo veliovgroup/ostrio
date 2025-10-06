@@ -77,7 +77,7 @@ Create a new account if you don't have one yet. Then add and verify your domain 
 9. __Connect Worker to a website__ (*see [UI screenshots](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#connect-worker-to-a-website-from-step-9)*)
     - Go to "Account Home" > Domains > (*click on your domain name*)
     - In sidebar open "__Workers Routes__" > HTTP Routes > click on <kbd>Add Route</kbd>
-    - __Add Route__: `https://example.com/*` or `https://subdomain.example.com/` (*if `www.` or other subdomain is your primary website location; __Should match primary domain settings in Shopify__*)
+    - __Add Route__: `https://example.com/*` or `https://subdomain.example.com/*` (*if `www.` or other subdomain is your primary website location; __Should match primary domain settings in Shopify; Must include `/*` (slash and asterisk) at the end of route__*)
     - __Worker:__ Select newly created worker from dropdown
     - Click on <kbd>save</kbd>
 10. __Purge cache at CloudFlare__ (see [UI screenshot](https://github.com/veliovgroup/ostrio/blob/master/docs/prerendering/shopify-seo-integration.md#purge-websites-cache-from-step-10))
