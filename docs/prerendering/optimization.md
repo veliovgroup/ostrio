@@ -23,7 +23,7 @@ You should tell to the Prerendering engine when the page is fully rendered. It's
 After the page is fully rendered and filled with data, set `IS_RENDERED` to `true`:
 
 ```html
-<html><
+<html>
   <head>
     <script type="text/javascript">
       window.IS_RENDERED = false;
