@@ -71,6 +71,11 @@ const shouldPrerender = (request, url, userAgent) => {
     return false;
   }
 
+  const hasEscapedFragment = url.searchParams.has(DICT.escapedFragment);
+  if (SUPPORT_ESCAPED_FRAGMENT && hasEscapedFragment) {
+    return true;
+  }
+
   if (!userAgent || !BOT_AGENTS_RE.test(userAgent)) {
     return false;
   }
@@ -84,9 +89,8 @@ export default {
     const url = new URL(request.url);
     const userAgent = (request.headers.get(DICT.headers.ua) || DICT.stringEmpty).toLowerCase();
     const hasEscapedFragment = url.searchParams.has(DICT.escapedFragment);
-    const escapedFragment = hasEscapedFragment ? url.searchParams.get(DICT.escapedFragment) : '';
 
-    if (!shouldPrerender(request, url, userAgent) && typeof escapedFragment !== DICT.string) {
+    if (!shouldPrerender(request, url, userAgent)) {
       return fetch(request);
     }
 
@@ -96,6 +100,7 @@ export default {
 
     let fetchUrl = url.origin;
     if (SUPPORT_ESCAPED_FRAGMENT && hasEscapedFragment) {
+      const escapedFragment = url.searchParams.get(DICT.escapedFragment);
       url.searchParams.delete(DICT.escapedFragment);
 
       if (escapedFragment.length) {
